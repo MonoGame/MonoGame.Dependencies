@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ouya.Console.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Ouya.Console.Api.OuyaFacade">
+            <summary>
+            Entry point for the OUYA API. Applications should use the singleton instance.
+            </summary>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.Init(Android.Content.Context,System.String)">
+            <summary>
+            Initializes the facade. Should only be called once.
+            </summary>
+            <param name="context">An Android Context object. Usually the Activity object.</param>
+            <param name="developerUuid">The developer UUID, which is obtained from the developer portal.</param>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.RequestGamerUuidAsync">
+            <summary>
+            Requests the current gamer's UUID.
+            </summary>
+            <returns>The UUID of the gamer to whom the console is currently registered.</returns>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.RequestProductListAsync(System.String[])">
+            <summary>
+            Returns a list of Product objects that describe the products (including current price) associated with the specified list of Purchasables.
+            </summary>
+            <param name="purchasables">One or more string IDs that identify the products to be returned.</param>
+            <returns>The list of Product objects.</returns>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.RequestProductListAsync(System.Collections.Generic.IList{Ouya.Console.Api.Purchasable})">
+            <summary>
+            Returns a list of Product objects that describe the products (including current price) associated with the specified list of Purchasables.
+            </summary>
+            <param name="purchasables">A list of Purchasable objects that identify the products to be returned.</param>
+            <returns>The list of Product objects.</returns>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.RequestPurchaseAsync(Ouya.Console.Api.Product)">
+            <summary>
+            Requests that the specified Purchasable be purchased on behalf of the current user.
+            The IAP client service is responsible for identifying the user and requesting credentials as appropriate,
+            as well as providing all of the UI for the purchase flow. When purchases are successful, a Product object
+            is returned that describes the product that was purchased.
+            </summary>
+            <param name="product">The Purchasable object that describes the item to be purchased.</param>
+            <returns>Returns true if the purchase was successful.</returns>
+        </member>
+        <member name="M:Ouya.Console.Api.OuyaFacade.RequestReceiptsAsync">
+            <summary>
+            Requests the current receipts from the Store. If the Store is not available, the cached
+            receipts from a previous call are returned.
+            </summary>
+            <returns>The list of Receipt objects.</returns>
+        </member>
+        <member name="P:Ouya.Console.Api.OuyaFacade.Timeout">
+            <summary>
+            The timeout for the asynchronous requests, specified in milliseconds.
+            </summary>
+        </member>
+        <member name="M:Ouya.Console.Api.TaskExtensions.TimeoutAfter(System.Threading.Tasks.Task,System.Int32)">
+            <summary>
+            Starts a task that will complete within the timeout period, or fail with a TimeoutException if the timeout is exceeded.
+            </summary>
+            <param name="millisecondsTimeout">The timeout in milliseconds</param>
+            <returns>The task to wait on</returns>
+        </member>
+        <member name="M:Ouya.Console.Api.TaskExtensions.TimeoutAfter``1(System.Threading.Tasks.Task{``0},System.Int32)">
+            <summary>
+            Starts a task that will complete within the timeout period, or fail with a TimeoutException if the timeout is exceeded.
+            </summary>
+            <typeparam name="T">The return type of the task</typeparam>
+            <param name="millisecondsTimeout">The timeout in milliseconds</param>
+            <returns>The task to wait on</returns>
+        </member>
+    </members>
+</doc>
