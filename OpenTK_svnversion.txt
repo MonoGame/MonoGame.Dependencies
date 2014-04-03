@@ -1,5 +1,1 @@
-This OpenTk dll is based on r3125 from http://www.opentk.com/project/svn
-
-In addition to that, this entry was added to OpenTK.dll.config:
-<dllmap os="linux" dll="libXi" target="libXi.so.6"/>
-
+This OpenTK dll is based on tag 1.1-1 (5c8b966e71228f54ab1af292ca10eeaa22b7495f) from https://github.com/opentk/opentk
