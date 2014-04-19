@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpRazor</name>
+    </assembly>
+    <members>
+        <member name="T:SharpRazor.AttributeValue">
+            <summary>
+            AttributeValue used by the template.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.AttributeValue.#ctor(SharpRazor.PositionTagged{System.String},SharpRazor.PositionTagged{System.Object},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.AttributeValue"/> class.
+            </summary>
+            <param name="prefix">The prefix.</param>
+            <param name="value">The value.</param>
+            <param name="literal">if set to <c>true</c> [literal].</param>
+        </member>
+        <member name="M:SharpRazor.AttributeValue.FromTuple(System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{System.Object,System.Int32},System.Boolean})">
+            <summary>
+            Creates a <see cref="T:SharpRazor.AttributeValue"/> from a tuple {PrefixPosition, ValuePosition, Literal}.
+            </summary>
+            <param name="value">The tuple value.</param>
+            <returns>A new instance of <see cref="T:SharpRazor.AttributeValue"/>.</returns>
+        </member>
+        <member name="M:SharpRazor.AttributeValue.FromTuple(System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Boolean})">
+            <summary>
+            Creates a <see cref="T:SharpRazor.AttributeValue"/> from a tuple {PrefixPosition, ValuePosition, Literal}.
+            </summary>
+            <param name="value">The tuple value.</param>
+            <returns>A new instance of <see cref="T:SharpRazor.AttributeValue"/>.</returns>
+        </member>
+        <member name="M:SharpRazor.AttributeValue.op_Implicit(System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{System.Object,System.Int32},System.Boolean})~SharpRazor.AttributeValue">
+            <summary>
+            Performs an implicit conversion from <see cref="!:Tuple&lt;Tuple&lt;System.StringSystem.Int32&gt;Tuple&lt;System.ObjectSystem.Int32&gt;System.Boolean&gt;"/> to <see cref="T:SharpRazor.AttributeValue"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SharpRazor.AttributeValue.op_Implicit(System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Boolean})~SharpRazor.AttributeValue">
+            <summary>
+            Performs an implicit conversion from <see cref="!:Tuple&lt;Tuple&lt;System.StringSystem.Int32&gt;Tuple&lt;System.StringSystem.Int32&gt;System.Boolean&gt;"/> to <see cref="T:SharpRazor.AttributeValue"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="P:SharpRazor.AttributeValue.Prefix">
+            <summary>
+            Gets the prefix.
+            </summary>
+            <value>The prefix.</value>
+        </member>
+        <member name="P:SharpRazor.AttributeValue.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:SharpRazor.AttributeValue.Literal">
+            <summary>
+            Gets a value indicating whether this <see cref="T:SharpRazor.AttributeValue"/> is literal.
+            </summary>
+            <value><c>true</c> if literal; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:SharpRazor.HtmlRawString">
+            <summary>
+            A string outputed as a RAW html strong.
+            </summary>
+        </member>
+        <member name="T:SharpRazor.IHtmlString">
+            <summary>
+            An html stringyfier.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.IHtmlString.ToHtmlString">
+            <summary>
+            Converts this instance to a raw HTML string.
+            </summary>
+            <returns>A raw HTML string.</returns>
+        </member>
+        <member name="M:SharpRazor.HtmlRawString.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.HtmlRawString"/> class.
+            </summary>
+            <param name="htmlText">The htmlText.</param>
+        </member>
+        <member name="T:SharpRazor.TemplateParsingException">
+            <summary>
+            An exception occuring when parsing a razor template.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.TemplateParsingException.#ctor(System.String,System.Collections.Generic.List{System.Web.Razor.Parser.SyntaxTree.RazorError})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.TemplateParsingException"/> class.
+            </summary>
+            <param name="templateFilePath">Path of the template file.</param>
+            <param name="errors">The errors.</param>
+        </member>
+        <member name="P:SharpRazor.TemplateParsingException.Location">
+            <summary>
+            Gets the location of the template where the error was encountered.
+            </summary>
+            <value>The location.</value>
+        </member>
+        <member name="P:SharpRazor.TemplateParsingException.Errors">
+            <summary>
+            Gets the errors.
+            </summary>
+            <value>The errors.</value>
+        </member>
+        <member name="T:SharpRazor.DynamicAnonymousObject">
+            <summary>
+            Defines a dynamic object for anonymous types.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.DynamicAnonymousObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+            <summary>
+            Gets the value of the specified member.
+            </summary>
+            <param name="binder">The current binder.</param>
+            <param name="result">The member result.</param>
+            <returns>True.</returns>
+        </member>
+        <member name="P:SharpRazor.DynamicAnonymousObject.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+        </member>
+        <member name="T:SharpRazor.CompilerServicesUtility">
+            <summary>
+            Provides service methods for compilation.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.IsAnonymousType(System.Type)">
+            <summary>
+            Determines if the specified type is an anonymous type.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the type is an anonymous type, otherwise false.</returns>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.IsDynamicType(System.Type)">
+            <summary>
+            Determines if the specified type is a dynamic type.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the type is an anonymous type, otherwise false.</returns>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.IsIteratorType(System.Type)">
+            <summary>
+            Determines if the specified type is a compiler generated iterator type.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the type is an iterator type, otherwise false.</returns>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.GetConstructors(System.Type)">
+            <summary>
+            Gets the public or protected constructors of the specified type.
+            </summary>
+            <param name="type">The target type.</param>
+            <returns>An enumerable of constructors.</returns>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.GetFirstGenericInterface(System.Type)">
+            <summary>
+            Gets the first generic interface of the specified type if one exists.
+            </summary>
+            <param name="type">The target type.</param>
+            <returns>The first generic interface if one exists, otherwise the first interface or the target type itself if there are no interfaces.</returns>
+        </member>
+        <member name="M:SharpRazor.CompilerServicesUtility.GetLoadedAssemblies">
+            <summary>
+            Gets an enumerable of all assemblies loaded in the current domain.
+            </summary>
+            <returns>An enumerable of loaded assemblies.</returns>
+        </member>
+        <member name="T:SharpRazor.CSharp.CSharpCodeParser">
+            <summary>
+            Defines a code parser that supports the C# syntax. This parser is adding support
+            for the <c>model</c> directive.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.CSharp.CSharpCodeParser.#ctor">
+            <summary>
+            Initialises a new instance of <see cref="T:SharpRazor.CSharp.CSharpCodeParser"/>.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.CSharp.CSharpCodeParser.InheritsDirective">
+            <summary>
+            Parses the inherits statement.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.CSharp.CSharpCodeParser.ModelDirective">
+            <summary>
+            Parses the model statement.
+            </summary>
+        </member>
+        <member name="T:SharpRazor.IRazorizerLanguageProvider">
+            <summary>
+            Provides specific language parsing/compiling for <see cref="T:SharpRazor.Razorizer"/>
+            registered through the <see cref="P:SharpRazor.Razorizer.LanguageProviders"/>.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.IRazorizerLanguageProvider.CanHandle(System.String)">
+            <summary>
+            Determines whether this instance can handle the specified file extension.
+            </summary>
+            <param name="fileExtension">The file extension.</param>
+            <returns><c>true</c> if this instance can handle the specified file extension; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:SharpRazor.IRazorizerLanguageProvider.CreateCodeLanguage">
+            <summary>
+            Creates the code language.
+            </summary>
+            <returns>A new instance of a <see cref="T:System.Web.Razor.RazorCodeLanguage"/>.</returns>
+        </member>
+        <member name="M:SharpRazor.IRazorizerLanguageProvider.CreateCodeParser">
+            <summary>
+            Creates the code parser handled by this provider.
+            </summary>
+            <returns>A new instance of a <see cref="T:System.Web.Razor.Parser.ParserBase"/> used for parsing the code specific to this language.</returns>
+        </member>
+        <member name="M:SharpRazor.IRazorizerLanguageProvider.CreateCodeDomProvider">
+            <summary>
+            Creates the code DOM provider handled by this provider in order to compile the generated language.
+            </summary>
+            <returns>CodeDomProvider.</returns>
+        </member>
+        <member name="T:SharpRazor.PositionTagged`1">
+            <summary>
+            A tagged position.
+            </summary>
+            <typeparam name="T">Type of the tag</typeparam>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:SharpRazor.PositionTagged`1"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.#ctor(`0,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.PositionTagged`1"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="offset">The offset.</param>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.op_Implicit(SharpRazor.PositionTagged{`0})~`0">
+            <summary>
+            Performs an implicit conversion from <see cref="!:PositionTagged&lt;"/> to <see cref="!:`0"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.op_Implicit(System.Tuple{`0,System.Int32})~SharpRazor.PositionTagged{`0}">
+            <summary>
+            Performs an implicit conversion from <see cref="!:Tuple&lt;"/> to <see cref="!:PositionTagged&lt;`0&gt;"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.op_Equality(SharpRazor.PositionTagged{`0},SharpRazor.PositionTagged{`0})">
+            <summary>
+            Implements the ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>The result of the operator.</returns>
+        </member>
+        <member name="M:SharpRazor.PositionTagged`1.op_Inequality(SharpRazor.PositionTagged{`0},SharpRazor.PositionTagged{`0})">
+            <summary>
+            Implements the !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>The result of the operator.</returns>
+        </member>
+        <member name="P:SharpRazor.PositionTagged`1.Position">
+            <summary>
+            Gets the position.
+            </summary>
+            <value>The position.</value>
+        </member>
+        <member name="P:SharpRazor.PositionTagged`1.Value">
+            <summary>
+            Gets the value associated to this position.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:SharpRazor.RazorizerEngineHost">
+            <summary>
+            Defines the custom razor engine host used by <see cref="T:SharpRazor.Razorizer"/>.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.RazorizerEngineHost.#ctor(System.Web.Razor.RazorCodeLanguage,System.Func{System.Web.Razor.Parser.ParserBase},System.Func{System.Web.Razor.Generator.RazorCodeGenerator,System.Web.Razor.Generator.RazorCodeGenerator},System.Func{System.Web.Razor.Parser.ParserBase,System.Web.Razor.Parser.ParserBase})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.RazorizerEngineHost"/> class.
+            </summary>
+            <param name="language">The language.</param>
+            <param name="markupParserFactory">The markup parser factory.</param>
+            <param name="decorateCodeGenerator">The decorate code generator.</param>
+            <param name="decorateCodeParser">The code parser factory.</param>
+            <exception cref="T:System.ArgumentNullException">codeParser</exception>
+        </member>
+        <member name="M:SharpRazor.RazorizerEngineHost.DecorateCodeParser(System.Web.Razor.Parser.ParserBase)">
+            <summary>
+            Decorates the code parser.
+            </summary>
+            <param name="incomingCodeParser">The code parser.</param>
+            <returns>The decorated parser.</returns>
+        </member>
+        <member name="P:SharpRazor.RazorizerEngineHost.DefaultBaseTemplateType">
+            <summary>
+            Gets or sets the default template type.
+            </summary>
+        </member>
+        <member name="P:SharpRazor.RazorizerEngineHost.DefaultModelType">
+            <summary>
+            Gets or sets the default model type.
+            </summary>
+        </member>
+        <member name="T:SharpRazor.TemplateResolverDelegate">
+            <summary>
+            Resolves a template by its name.
+            </summary>
+            <param name="templateName">Name of the template.</param>
+            <returns>The template resolved or null if not resolved.</returns>
+        </member>
+        <member name="T:SharpRazor.Razorizer">
+            <summary>
+            Provides methods for templating text in-memory using Razor.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.Razorizer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.Razorizer"/> class.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SharpRazor.Razorizer.#ctor(System.Type)" -->
+        <member name="M:SharpRazor.Razorizer.FindLanguageProvider(System.String)">
+            <summary>
+            Finds a language provider for the specified file extension. Returns null if not found.
+            </summary>
+            <param name="fileExtension">The file extension.</param>
+            <returns>A registered <see cref="T:SharpRazor.IRazorizerLanguageProvider"/> or null if not found.</returns>
+            <exception cref="T:System.ArgumentNullException">fileExtension</exception>
+        </member>
+        <member name="M:SharpRazor.Razorizer.FindTemplate(System.String)">
+            <summary>
+            Finds a template already generated with the specified template name. See remarks.
+            </summary>
+            <param name="templateName">Name of the template.</param>
+            <returns>PageTemplate.</returns>
+            <remarks>
+            A template can be pre-compiled using the various <see cref="M:SharpRazor.Razorizer.Compile(System.String,System.String,System.Type)"/> methods that are accepting
+            a template name.
+            </remarks>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Parse(System.String)">
+            <summary>
+            Parses the specified template and returns the result of executing the template.
+            </summary>
+            <param name="templateContent">Content of the template.</param>
+            <returns>The result of executing the template.</returns>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Parse``1(System.String,``0,System.Object)">
+            <summary>
+            Parses the specified template and returns the result of executing the template.
+            </summary>
+            <typeparam name="T">Type of the model to use with the template</typeparam>
+            <param name="templateContent">Content of the template.</param>
+            <param name="model">The model instance.</param>
+            <param name="viewBag">The view bag used with layouts. May be null</param>
+            <returns>The result of executing the template.</returns>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Parse``1(System.String,``0,SharpRazor.PageTemplateContext)">
+            <summary>
+            Parses the specified template and returns the result of executing the template.
+            </summary>
+            <typeparam name="T">Type of the model to use with the template</typeparam>
+            <param name="templateContent">Content of the template.</param>
+            <param name="model">The model.</param>
+            <param name="pageContext">The page context.</param>
+            <returns>The result of executing the template.</returns>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Compile(System.String,System.Type)">
+            <summary>
+            Compiles a template with the specified content, name, filename and model type.
+            </summary>
+            <param name="templateContent">Content of the template.</param>
+            <param name="modelType">Type of the model.</param>
+            <returns>A new instance of a <see cref="T:SharpRazor.PageTemplate"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">templateContent</exception>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Compile(System.String,System.String,System.Type)">
+            <summary>
+            Compiles a template with the specified content, name, filename and model type.
+            </summary>
+            <param name="templateName">Name of the template.</param>
+            <param name="templateContent">Content of the template.</param>
+            <param name="modelType">Type of the model.</param>
+            <returns>A new instance of a <see cref="T:SharpRazor.PageTemplate"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">templateContent</exception>
+        </member>
+        <member name="M:SharpRazor.Razorizer.Compile(System.String,System.String,System.String,System.Type)">
+            <summary>
+            Compiles a template with the specified content, name, filename and model type.
+            </summary>
+            <param name="templateName">Name of the template.</param>
+            <param name="templateContent">Content of the template.</param>
+            <param name="templateFileName">Name of the template file.</param>
+            <param name="modelType">Type of the model.</param>
+            <returns>A new instance of a <see cref="T:SharpRazor.PageTemplate"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">templateContent</exception>
+        </member>
+        <member name="M:SharpRazor.Razorizer.DecorateCodeGenerator(System.Web.Razor.Generator.RazorCodeGenerator)">
+            <summary>
+            Decorates the razor code generator for the current page template to generate.
+            </summary>
+            <param name="incomingCodeGenerator">The incoming code generator.</param>
+            <returns>A modified version of the code generator.</returns>
+        </member>
+        <member name="M:SharpRazor.Razorizer.CreateMarkupParser">
+            <summary>
+            Creates the markup parser. Default is <see cref="T:System.Web.Razor.Parser.HtmlMarkupParser"/>.
+            </summary>
+            <returns>A markup parser.</returns>
+        </member>
+        <member name="M:SharpRazor.Razorizer.NewPageTemplate(System.String,System.Type)">
+            <summary>
+            Creates a new instance of <see cref="T:SharpRazor.PageTemplate"/> based on the type. Override this method to customize how to instantiate generated <see cref="T:SharpRazor.PageTemplate"/>.
+            </summary>
+            <param name="pageTemplateType">Type of the page template.</param>
+            <returns>A new instance of <see cref="T:SharpRazor.PageTemplate"/>.</returns>
+        </member>
+        <member name="P:SharpRazor.Razorizer.PageTemplateType">
+            <summary>
+            Gets the type of the page template.
+            </summary>
+            <value>The type of the page template.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.Assemblies">
+            <summary>
+            Gets the assemblies to load when compiling a <see cref="T:SharpRazor.PageTemplate"/>.
+            </summary>
+            <value>The assemblies.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.Namespaces">
+            <summary>
+            Gets the namespaces to use when compiling a <see cref="T:SharpRazor.PageTemplate"/>.
+            </summary>
+            <value>The name spaces.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.EnableDebug">
+            <summary>
+            Gets or sets a value indicating whether to enable debugging of page templates from a debugger.
+            </summary>
+            <value><c>true</c> to enable debugging of templates from a debugger; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.LanguageProviders">
+            <summary>
+            Gets the language providers registered.
+            </summary>
+            <value>The language providers.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.TemplateResolver">
+            <summary>
+            Gets or sets the template resolver. The template resolver takes 
+            </summary>
+            <value>The template resolver.</value>
+        </member>
+        <member name="P:SharpRazor.Razorizer.DefaultFileExtension">
+            <summary>
+            Gets or sets the default file extension. Default is: .cshtml
+            </summary>
+            <value>The default file extension.</value>
+            <exception cref="T:System.ArgumentNullException">value</exception>
+        </member>
+        <member name="T:SharpRazor.PageTemplate">
+            <summary>
+            Base class for rendering a page not intended for direct subclass. A client must subclass <see cref="T:SharpRazor.PageTemplate`1"/>
+            </summary>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.DefineSection(System.String,System.Action)">
+            <summary>
+            Defines a section.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="action">The action associated with this section.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.FindTemplate(System.String)">
+            <summary>
+            Finds a template or null if not found. This method is redirecting calls 
+            to <see cref="M:SharpRazor.Razorizer.FindTemplate(System.String)"/>
+            </summary>
+            <param name="templateName">Name of the template.</param>
+            <returns>A new page template instance of null if not found.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Execute">
+            <summary>
+            Executes this instance, used by Razor.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.RenderBody">
+            <summary>
+            Renders the body of a template.
+            </summary>
+            <returns>A <see cref="T:SharpRazor.LambdaWriter"/> containing the body to render.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.RenderSection(System.String,System.Boolean)">
+            <summary>
+            Renders a section.
+            </summary>
+            <param name="name">The name of the section to render.</param>
+            <param name="isRequired">if set to <c>true</c> [is required].</param>
+            <returns>A <see cref="T:SharpRazor.LambdaWriter"/> containing the section to render.</returns>
+            <exception cref="T:System.ArgumentNullException">name;Name of a section cannot be null</exception>
+            <exception cref="T:System.ArgumentException">No section has been defined with name ' + name + ';name</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Include(System.String,System.Object)">
+            <summary>
+            Includes the template with the specified name.
+            </summary>
+            <param name="cacheName">The name of the template type in cache.</param>
+            <param name="model">The model or NULL if there is no model for the template.</param>
+            <returns>The template writer helper.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Run">
+            <summary>
+            Runs the templating.
+            </summary>
+            <returns>The result of templating.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Run(System.Object)">
+            <summary>
+            Runs the templating.
+            </summary>
+            <param name="viewBag">The view bag.</param>
+            <returns>The result of templating.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Run(SharpRazor.PageTemplateContext)">
+            <summary>
+            Runs the templating.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>The result of templating.</returns>
+            <exception cref="T:System.InvalidOperationException">If a layout was not found</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Write(System.Object)">
+            <summary>
+            Writes the specified value to the current <see cref="P:SharpRazor.PageTemplate.Writer"/>.
+            </summary>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Write(SharpRazor.LambdaWriter)">
+            <summary>
+            Writes to the current <see cref="P:SharpRazor.PageTemplate.Writer"/> using the specified lambda writer.
+            </summary>
+            <param name="lambdaWriter">The lambda writer.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteLiteral(System.Object)">
+            <summary>
+            Writes the literal to the current <see cref="P:SharpRazor.PageTemplate.Writer"/>.
+            </summary>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteTo(System.IO.TextWriter,System.Object)">
+            <summary>
+            Writes a value to the specified <see cref="T:System.IO.TextWriter"/>.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="value">The value.</param>
+            <exception cref="T:System.ArgumentNullException">writer</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.Raw(System.String)">
+            <summary>
+            Converts a raw HTML to a <see cref="T:SharpRazor.HtmlRawString"/>.
+            </summary>
+            <param name="rawHtml">The raw HTML.</param>
+            <returns>An <see cref="T:SharpRazor.HtmlRawString"/>.</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteTo(System.IO.TextWriter,SharpRazor.LambdaWriter)">
+            <summary>
+            Writes a value to the specified <see cref="T:System.IO.TextWriter"/>.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="lambdaWriter">The lambda writer.</param>
+            <exception cref="T:System.ArgumentNullException">writer</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteLiteralTo(System.IO.TextWriter,System.Object)">
+            <summary>
+            Writes a literal to the specified <see cref="T:System.IO.TextWriter"/>.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="val">The value.</param>
+            <exception cref="T:System.ArgumentNullException">writer</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteAttribute(System.String,SharpRazor.PositionTagged{System.String},SharpRazor.PositionTagged{System.String},SharpRazor.AttributeValue[])">
+            <summary>
+            Writes an attribute to the current <see cref="P:SharpRazor.PageTemplate.Writer"/>.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="prefix">The prefix.</param>
+            <param name="suffix">The suffix.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WriteAttributeTo(System.IO.TextWriter,System.String,SharpRazor.PositionTagged{System.String},SharpRazor.PositionTagged{System.String},SharpRazor.AttributeValue[])">
+            <summary>
+            Writes an attribute to the current <see cref="P:SharpRazor.PageTemplate.Writer"/>.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="name">The name.</param>
+            <param name="prefix">The prefix.</param>
+            <param name="suffix">The suffix.</param>
+            <param name="values">The values.</param>
+            <exception cref="T:System.ArgumentNullException">writer</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WritePositionTaggedLiteral(System.IO.TextWriter,System.String,System.Int32)">
+            <summary>
+            Writes a position tagged literal.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="value">The value.</param>
+            <param name="position">The position.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplate.WritePositionTaggedLiteral(System.IO.TextWriter,SharpRazor.PositionTagged{System.String})">
+            <summary>
+            Writes a position tagged literal.
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.PageName">
+            <summary>
+            Gets the name of this page.
+            </summary>
+            <value>The name of the page.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.PageSourceCode">
+            <summary>
+            Gets the page source code. Only available when <see cref="P:SharpRazor.Razorizer.EnableDebug"/> is set to <c>true</c>.
+            </summary>
+            <value>The page source code.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.Layout">
+            <summary>
+            Gets or sets the currnt layout template.
+            </summary>
+            <value>The currnt layout template.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.Razorizer">
+            <summary>
+            Gets the <see cref="P:SharpRazor.PageTemplate.Razorizer"/> that creates this instance.
+            </summary>
+            <value>The razorizer.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.Context">
+            <summary>
+            Gets the current context when rendering this page.
+            </summary>
+            <value>The current context when rendering this page.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.Writer">
+            <summary>
+            Gets the current writer when rendering this page.
+            </summary>
+            <value>The writer.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.HasDynamicModel">
+            <summary>
+            This instance has a dynamic model. This is used internally.
+            </summary>
+        </member>
+        <member name="P:SharpRazor.PageTemplate.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="T:SharpRazor.PageTemplate`1">
+            <summary>
+            Default base class for page templating.
+            </summary>
+            <typeparam name="T">Type of the model.</typeparam>
+        </member>
+        <member name="P:SharpRazor.PageTemplate`1.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="T:SharpRazor.LambdaWriter">
+            <summary>
+            Defines a lambda writer used by template helpers (include...etc.)
+            </summary>
+        </member>
+        <member name="M:SharpRazor.LambdaWriter.#ctor(System.Action{System.IO.TextWriter})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.LambdaWriter"/> class.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="M:SharpRazor.LambdaWriter.WriteTo(System.IO.TextWriter)">
+            <summary>
+            Writes this lamda to the specified <see cref="T:System.IO.TextWriter"/>
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="M:SharpRazor.LambdaWriter.op_Implicit(SharpRazor.LambdaWriter)~System.String">
+            <summary>
+            Performs an implicit conversion from <see cref="T:SharpRazor.LambdaWriter"/> to <see cref="T:System.String"/>.
+            </summary>
+            <param name="writer">The writer.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:SharpRazor.PageTemplateContext">
+            <summary>
+            The context used when rendering a <see cref="T:SharpRazor.PageTemplate"/>. The creation of this context
+            can be overriden from <see cref="T:SharpRazor.Razorizer"/>.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.PageTemplateContext"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.PageTemplateContext"/> class.
+            </summary>
+            <param name="viewBag">The view bag.</param>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.DefineSection(System.String,System.Action)">
+            <summary>
+            Defines a section.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="action">The action to execute when using the section.</param>
+            <exception cref="T:System.ArgumentException">
+            Section cannot be null or empty;name
+            or
+            A section is already registered with name ' + name + ';name
+            </exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.GetSectionAction(System.String)">
+            <summary>
+            Gets the section action for the specified section name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>An action or null if not found</returns>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.IsSectionDefined(System.String)">
+            <summary>
+            Determines whether a section with the specified name is defined.
+            </summary>
+            <param name="name">The name.</param>
+            <returns><c>true</c> if a section with the specified name is defined; otherwise, <c>false</c>.</returns>
+            <exception cref="T:System.ArgumentNullException">name</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.PushBody(SharpRazor.LambdaWriter)">
+            <summary>
+            Pushes the body of a layout that will be rendered later (at <see cref="M:SharpRazor.PageTemplateContext.PopBody"/> time).
+            </summary>
+            <param name="writer">The writer.</param>
+            <exception cref="T:System.ArgumentNullException">writer</exception>
+        </member>
+        <member name="M:SharpRazor.PageTemplateContext.PopBody">
+            <summary>
+            Pops the body of a layout that is going to be rendered.
+            </summary>
+            <returns>LambdaWriter.</returns>
+        </member>
+        <member name="P:SharpRazor.PageTemplateContext.Writer">
+            <summary>
+            Gets the current writer.
+            </summary>
+            <value>The writer.</value>
+        </member>
+        <member name="P:SharpRazor.PageTemplateContext.ViewBag">
+            <summary>
+            Gets the view bag.
+            </summary>
+            <value>The view bag.</value>
+        </member>
+        <member name="T:SharpRazor.TemplateCompilationException">
+            <summary>
+            An exception occuring when compiling a razor template into target language.
+            </summary>
+        </member>
+        <member name="M:SharpRazor.TemplateCompilationException.#ctor(System.String,System.Collections.Generic.List{System.CodeDom.Compiler.CompilerError})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpRazor.TemplateCompilationException"/> class.
+            </summary>
+            <param name="sourceCode">The source code.</param>
+            <param name="errors">The errors.</param>
+        </member>
+        <member name="P:SharpRazor.TemplateCompilationException.SourceCode">
+            <summary>
+            Gets the source code used for compilation.
+            </summary>
+            <value>The source code.</value>
+        </member>
+        <member name="P:SharpRazor.TemplateCompilationException.Errors">
+            <summary>
+            Gets the errors.
+            </summary>
+            <value>The errors.</value>
+        </member>
+    </members>
+</doc>
