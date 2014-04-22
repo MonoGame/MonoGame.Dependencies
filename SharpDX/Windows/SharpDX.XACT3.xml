@@ -1205,6 +1205,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_BANKDATA']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_BANKDATA</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_BANKDATA</unmanaged-short>	
         </member>
@@ -1213,6 +1214,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_ENTRYMETADATA']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_ENTRYMETADATA</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_ENTRYMETADATA</unmanaged-short>	
         </member>
@@ -1221,6 +1223,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_SEEKTABLES']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_SEEKTABLES</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_SEEKTABLES</unmanaged-short>	
         </member>
@@ -1229,6 +1232,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_ENTRYNAMES']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_ENTRYNAMES</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_ENTRYNAMES</unmanaged-short>	
         </member>
@@ -1237,6 +1241,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_ENTRYWAVEDATA']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_ENTRYWAVEDATA</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_ENTRYWAVEDATA</unmanaged-short>	
         </member>
@@ -1245,6 +1250,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WAVEBANK_SEGIDX_COUNT']/*"/>	
+            <msdn-id>ee419069</msdn-id>	
             <unmanaged>WAVEBANK_SEGIDX_COUNT</unmanaged>	
             <unmanaged-short>WAVEBANK_SEGIDX_COUNT</unmanaged-short>	
         </member>
