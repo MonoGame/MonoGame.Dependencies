@@ -39,6 +39,14 @@
             <returns></returns>
             <unmanaged>unsigned int XInputGetCapabilities([In] XUSER_INDEX dwUserIndex,[In] XINPUT_DEVQUERYTYPE dwFlags,[Out] XINPUT_CAPABILITIES* pCapabilities)</unmanaged>	
         </member>
+        <member name="M:SharpDX.XInput.Controller.GetCapabilities(SharpDX.XInput.DeviceQueryType,SharpDX.XInput.Capabilities@)">
+            <summary>
+            Gets the capabilities.
+            </summary>
+            <param name="deviceQueryType">Type of the device query.</param>
+            <param name="capabilities">The capabilities of this controller.</param>
+            <returns><c>true</c> if the controller is connected, <c>false</c> otherwise.</returns>
+        </member>
         <member name="M:SharpDX.XInput.Controller.GetKeystroke(SharpDX.XInput.DeviceQueryType,SharpDX.XInput.Keystroke@)">
             <summary>
             Gets the keystroke.
@@ -87,16 +95,6 @@
             <value>
             	<c>true</c> if this instance is connected; otherwise, <c>false</c>.
             </value>
-        </member>
-        <member name="P:SharpDX.XInput.Controller.SoundRenderGuid">
-            <summary>
-            Gets the sound render GUID.
-            </summary>
-        </member>
-        <member name="P:SharpDX.XInput.Controller.SoundCaptureGuid">
-            <summary>
-            Gets the sound capture GUID.
-            </summary>
         </member>
         <member name="T:SharpDX.XInput.Gamepad">
             <summary>	
@@ -237,6 +235,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='BATTERY_LEVEL_EMPTY']/*"/>	
+            <msdn-id>ff561360</msdn-id>	
             <unmanaged>BATTERY_LEVEL_EMPTY</unmanaged>	
             <unmanaged-short>BATTERY_LEVEL_EMPTY</unmanaged-short>	
         </member>
@@ -245,6 +244,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='BATTERY_LEVEL_LOW']/*"/>	
+            <msdn-id>ff561360</msdn-id>	
             <unmanaged>BATTERY_LEVEL_LOW</unmanaged>	
             <unmanaged-short>BATTERY_LEVEL_LOW</unmanaged-short>	
         </member>
@@ -253,6 +253,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='BATTERY_LEVEL_MEDIUM']/*"/>	
+            <msdn-id>ff561360</msdn-id>	
             <unmanaged>BATTERY_LEVEL_MEDIUM</unmanaged>	
             <unmanaged-short>BATTERY_LEVEL_MEDIUM</unmanaged-short>	
         </member>
@@ -261,6 +262,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='BATTERY_LEVEL_FULL']/*"/>	
+            <msdn-id>ff561360</msdn-id>	
             <unmanaged>BATTERY_LEVEL_FULL</unmanaged>	
             <unmanaged-short>BATTERY_LEVEL_FULL</unmanaged-short>	
         </member>
@@ -328,6 +330,38 @@
             <unmanaged>XINPUT_CAPS_VOICE_SUPPORTED</unmanaged>	
             <unmanaged-short>XINPUT_CAPS_VOICE_SUPPORTED</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.XInput.CapabilityFlags.FfbSupported">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPS_FFB_SUPPORTED']/*"/>	
+            <unmanaged>XINPUT_CAPS_FFB_SUPPORTED</unmanaged>	
+            <unmanaged-short>XINPUT_CAPS_FFB_SUPPORTED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XInput.CapabilityFlags.Wireless">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPS_WIRELESS']/*"/>	
+            <unmanaged>XINPUT_CAPS_WIRELESS</unmanaged>	
+            <unmanaged-short>XINPUT_CAPS_WIRELESS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XInput.CapabilityFlags.PmdSupported">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPS_PMD_SUPPORTED']/*"/>	
+            <unmanaged>XINPUT_CAPS_PMD_SUPPORTED</unmanaged>	
+            <unmanaged-short>XINPUT_CAPS_PMD_SUPPORTED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XInput.CapabilityFlags.NoNavigation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPS_NO_NAVIGATION']/*"/>	
+            <unmanaged>XINPUT_CAPS_NO_NAVIGATION</unmanaged>	
+            <unmanaged-short>XINPUT_CAPS_NO_NAVIGATION</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.XInput.CapabilityFlags.None">
             <summary>	
             None.	
@@ -376,6 +410,14 @@
             <unmanaged>XINPUT_DEVSUBTYPE_GAMEPAD</unmanaged>	
             <unmanaged-short>XINPUT_DEVSUBTYPE_GAMEPAD</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.XInput.DeviceSubType.Unknown">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_UNKNOWN']/*"/>	
+            <unmanaged>XINPUT_DEVSUBTYPE_UNKNOWN</unmanaged>	
+            <unmanaged-short>XINPUT_DEVSUBTYPE_UNKNOWN</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.XInput.DeviceSubType.Wheel">
             <summary>	
             No documentation.	
@@ -392,13 +434,13 @@
             <unmanaged>XINPUT_DEVSUBTYPE_ARCADE_STICK</unmanaged>	
             <unmanaged-short>XINPUT_DEVSUBTYPE_ARCADE_STICK</unmanaged-short>	
         </member>
-        <member name="F:SharpDX.XInput.DeviceSubType.FlightSick">
+        <member name="F:SharpDX.XInput.DeviceSubType.FlightStick">
             <summary>	
             No documentation.	
             </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_FLIGHT_SICK']/*"/>	
-            <unmanaged>XINPUT_DEVSUBTYPE_FLIGHT_SICK</unmanaged>	
-            <unmanaged-short>XINPUT_DEVSUBTYPE_FLIGHT_SICK</unmanaged-short>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_FLIGHT_STICK']/*"/>	
+            <unmanaged>XINPUT_DEVSUBTYPE_FLIGHT_STICK</unmanaged>	
+            <unmanaged-short>XINPUT_DEVSUBTYPE_FLIGHT_STICK</unmanaged-short>	
         </member>
         <member name="F:SharpDX.XInput.DeviceSubType.DancePad">
             <summary>	
@@ -416,6 +458,14 @@
             <unmanaged>XINPUT_DEVSUBTYPE_GUITAR</unmanaged>	
             <unmanaged-short>XINPUT_DEVSUBTYPE_GUITAR</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.XInput.DeviceSubType.GuitarAlternate">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_GUITAR_ALTERNATE']/*"/>	
+            <unmanaged>XINPUT_DEVSUBTYPE_GUITAR_ALTERNATE</unmanaged>	
+            <unmanaged-short>XINPUT_DEVSUBTYPE_GUITAR_ALTERNATE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.XInput.DeviceSubType.DrumKit">
             <summary>	
             No documentation.	
@@ -423,6 +473,22 @@
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_DRUM_KIT']/*"/>	
             <unmanaged>XINPUT_DEVSUBTYPE_DRUM_KIT</unmanaged>	
             <unmanaged-short>XINPUT_DEVSUBTYPE_DRUM_KIT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XInput.DeviceSubType.GuitarBass">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_GUITAR_BASS']/*"/>	
+            <unmanaged>XINPUT_DEVSUBTYPE_GUITAR_BASS</unmanaged>	
+            <unmanaged-short>XINPUT_DEVSUBTYPE_GUITAR_BASS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XInput.DeviceSubType.ArcadePad">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_DEVSUBTYPE_ARCADE_PAD']/*"/>	
+            <unmanaged>XINPUT_DEVSUBTYPE_ARCADE_PAD</unmanaged>	
+            <unmanaged-short>XINPUT_DEVSUBTYPE_ARCADE_PAD</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XInput.DeviceType">
             <summary>	
@@ -962,22 +1028,6 @@
             <unmanaged>unsigned int XInputSetState([In] unsigned int dwUserIndex,[In] XINPUT_VIBRATION* pVibration)</unmanaged>	
             <unmanaged-short>XInputSetState</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.XInput.XInput.XInputGetDSoundAudioDeviceGuids(System.Int32,System.Guid@,System.Guid@)">
-            <summary>	
-            Gets the sound rendering and sound capture device GUIDs that are associated with the headset connected to the specified controller.	
-            </summary>	
-            <param name="dwUserIndex"><dd>[in]  Index of the user's controller. It can be a value in the range 0?3.  For information about how this value is determined and how the value maps to indicators  on the controller, see Multiple Controllers. </dd></param>	
-            <param name="dSoundRenderGuidRef"><dd>[out, optional]  Pointer that receives the <see cref="T:System.Guid"/> of the headset sound rendering device. </dd></param>	
-            <param name="dSoundCaptureGuidRef"><dd>[out, optional]  Pointer that receives the <see cref="T:System.Guid"/> of the headset sound capture device. </dd></param>	
-            <returns><p>If the function successfully retrieves the device IDs for render and capture,  the return code is <see cref="F:SharpDX.Win32.ErrorCode.Success"/>.</p> <p>If there is no headset connected to the controller, the function also retrieves <see cref="F:SharpDX.Win32.ErrorCode.Success"/> with GUID_NULL as the values for <strong>pDSoundRenderGuid</strong> and <strong>pDSoundCaptureGuid</strong>.</p> <p>If the controller port device is not physically connected, the function  returns <see cref="F:SharpDX.Win32.ErrorCode.DeviceNotConnected"/>.</p> <p>If the function fails, it returns a valid Win32 error code.</p></returns>	
-            <remarks>	
-            <p>Use of legacy DirectSound is not recommended, and DirectSound is not available for Modern applications.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XInputGetDSoundAudioDeviceGuids']/*"/>	
-            <msdn-id>microsoft.directx_sdk.reference.xinputgetdsoundaudiodeviceguids</msdn-id>	
-            <unmanaged>unsigned int XInputGetDSoundAudioDeviceGuids([In] unsigned int dwUserIndex,[Out] GUID* pDSoundRenderGuid,[Out] GUID* pDSoundCaptureGuid)</unmanaged>	
-            <unmanaged-short>XInputGetDSoundAudioDeviceGuids</unmanaged-short>	
-        </member>
         <member name="M:SharpDX.XInput.XInput.XInputGetState(System.Int32,SharpDX.XInput.State@)">
             <summary>	
             Retrieves the current state of the specified controller.	
@@ -1006,18 +1056,19 @@
             <unmanaged>unsigned int XInputGetCapabilities([In] unsigned int dwUserIndex,[In] XINPUT_DEVQUERYTYPE dwFlags,[Out] XINPUT_CAPABILITIES* pCapabilities)</unmanaged>	
             <unmanaged-short>XInputGetCapabilities</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.XInput.XInput.XInputGetBatteryInformation(System.Int32,SharpDX.XInput.BatteryDeviceType,SharpDX.XInput.BatteryInformation@)">
+        <member name="M:SharpDX.XInput.XInput.XInputGetAudioDeviceIds(System.Int32,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
             <summary>	
-            Retrieves the battery type and charge status of a wireless controller.	
+            No documentation.	
             </summary>	
-            <param name="dwUserIndex"><dd>[in]  Index of the signed-in gamer associated with the device. Can be a value in the range 0?XUSER_MAX_COUNT???1. </dd></param>	
-            <param name="devType"><dd>[in]  Specifies which device associated with this user index should be queried.   Must be <see cref="F:SharpDX.XInput.BatteryDeviceType.Gamepad"/> or <see cref="F:SharpDX.XInput.BatteryDeviceType.Headset"/>. </dd></param>	
-            <param name="batteryInformationRef"><dd>[out]  Pointer to an <see cref="T:SharpDX.XInput.BatteryInformation"/> structure that receives the battery information. </dd></param>	
-            <returns><p>If the function succeeds, the return value is <see cref="F:SharpDX.Win32.ErrorCode.Success"/>.</p></returns>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XInputGetBatteryInformation']/*"/>	
-            <msdn-id>ff729733</msdn-id>	
-            <unmanaged>unsigned int XInputGetBatteryInformation([In] unsigned int dwUserIndex,[In] BATTERY_DEVTYPE devType,[Out] XINPUT_BATTERY_INFORMATION* pBatteryInformation)</unmanaged>	
-            <unmanaged-short>XInputGetBatteryInformation</unmanaged-short>	
+            <param name="dwUserIndex">No documentation.</param>	
+            <param name="renderDeviceIdRef">No documentation.</param>	
+            <param name="renderCountRef">No documentation.</param>	
+            <param name="captureDeviceIdRef">No documentation.</param>	
+            <param name="captureCountRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XInputGetAudioDeviceIds']/*"/>	
+            <unmanaged>unsigned int XInputGetAudioDeviceIds([In] unsigned int dwUserIndex,[Out, Buffer, Optional] wchar_t* pRenderDeviceId,[InOut, Optional] unsigned int* pRenderCount,[Out, Buffer, Optional] wchar_t* pCaptureDeviceId,[InOut, Optional] unsigned int* pCaptureCount)</unmanaged>	
+            <unmanaged-short>XInputGetAudioDeviceIds</unmanaged-short>	
         </member>
         <member name="M:SharpDX.XInput.XInput.XInputEnable(SharpDX.Bool)">
             <summary>	
@@ -1031,6 +1082,19 @@
             <msdn-id>microsoft.directx_sdk.reference.xinputenable</msdn-id>	
             <unmanaged>void XInputEnable([In] BOOL enable)</unmanaged>	
             <unmanaged-short>XInputEnable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.XInput.XInput.XInputGetBatteryInformation(System.Int32,SharpDX.XInput.BatteryDeviceType,SharpDX.XInput.BatteryInformation@)">
+            <summary>	
+            Retrieves the battery type and charge status of a wireless controller.	
+            </summary>	
+            <param name="dwUserIndex"><dd>[in]  Index of the signed-in gamer associated with the device. Can be a value in the range 0?XUSER_MAX_COUNT???1. </dd></param>	
+            <param name="devType"><dd>[in]  Specifies which device associated with this user index should be queried.   Must be <see cref="F:SharpDX.XInput.BatteryDeviceType.Gamepad"/> or <see cref="F:SharpDX.XInput.BatteryDeviceType.Headset"/>. </dd></param>	
+            <param name="batteryInformationRef"><dd>[out]  Pointer to an <see cref="T:SharpDX.XInput.BatteryInformation"/> structure that receives the battery information. </dd></param>	
+            <returns><p>If the function succeeds, the return value is <see cref="F:SharpDX.Win32.ErrorCode.Success"/>.</p></returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XInputGetBatteryInformation']/*"/>	
+            <msdn-id>ff729733</msdn-id>	
+            <unmanaged>unsigned int XInputGetBatteryInformation([In] unsigned int dwUserIndex,[In] BATTERY_DEVTYPE devType,[Out] XINPUT_BATTERY_INFORMATION* pBatteryInformation)</unmanaged>	
+            <unmanaged-short>XInputGetBatteryInformation</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XInput.BatteryInformation">
             <summary>	
@@ -1076,6 +1140,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPABILITIES::Type']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_capabilities</msdn-id>	
             <unmanaged>XINPUT_DEVTYPE Type</unmanaged>	
             <unmanaged-short>XINPUT_DEVTYPE Type</unmanaged-short>	
         </member>
@@ -1084,6 +1149,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPABILITIES::SubType']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_capabilities</msdn-id>	
             <unmanaged>XINPUT_DEVSUBTYPE SubType</unmanaged>	
             <unmanaged-short>XINPUT_DEVSUBTYPE SubType</unmanaged-short>	
         </member>
@@ -1092,6 +1158,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPABILITIES::Flags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_capabilities</msdn-id>	
             <unmanaged>XINPUT_CAPS_FLAGS Flags</unmanaged>	
             <unmanaged-short>XINPUT_CAPS_FLAGS Flags</unmanaged-short>	
         </member>
@@ -1100,6 +1167,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPABILITIES::Gamepad']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_capabilities</msdn-id>	
             <unmanaged>XINPUT_GAMEPAD Gamepad</unmanaged>	
             <unmanaged-short>XINPUT_GAMEPAD Gamepad</unmanaged-short>	
         </member>
@@ -1108,6 +1176,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_CAPABILITIES::Vibration']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_capabilities</msdn-id>	
             <unmanaged>XINPUT_VIBRATION Vibration</unmanaged>	
             <unmanaged-short>XINPUT_VIBRATION Vibration</unmanaged-short>	
         </member>
@@ -1128,6 +1197,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_KEYSTROKE::VirtualKey']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_keystroke</msdn-id>	
             <unmanaged>XINPUT_GAMEPAD_KEY_CODE VirtualKey</unmanaged>	
             <unmanaged-short>XINPUT_GAMEPAD_KEY_CODE VirtualKey</unmanaged-short>	
         </member>
@@ -1136,6 +1206,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_KEYSTROKE::Unicode']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_keystroke</msdn-id>	
             <unmanaged>wchar_t Unicode</unmanaged>	
             <unmanaged-short>wchar_t Unicode</unmanaged-short>	
         </member>
@@ -1144,6 +1215,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_KEYSTROKE::Flags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_keystroke</msdn-id>	
             <unmanaged>XINPUT_KEYSTROKE_FLAGS Flags</unmanaged>	
             <unmanaged-short>XINPUT_KEYSTROKE_FLAGS Flags</unmanaged-short>	
         </member>
@@ -1152,6 +1224,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_KEYSTROKE::UserIndex']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_keystroke</msdn-id>	
             <unmanaged>XUSER_INDEX UserIndex</unmanaged>	
             <unmanaged-short>XUSER_INDEX UserIndex</unmanaged-short>	
         </member>
@@ -1160,6 +1233,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XINPUT_KEYSTROKE::HidCode']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.xinput_keystroke</msdn-id>	
             <unmanaged>unsigned char HidCode</unmanaged>	
             <unmanaged-short>unsigned char HidCode</unmanaged-short>	
         </member>
