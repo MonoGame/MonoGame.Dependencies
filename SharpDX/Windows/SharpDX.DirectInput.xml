@@ -34,6 +34,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -42,6 +43,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwFlags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>DIDC dwFlags</unmanaged>	
             <unmanaged-short>DIDC dwFlags</unmanaged-short>	
         </member>
@@ -50,6 +52,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwDevType']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwDevType</unmanaged>	
             <unmanaged-short>unsigned int dwDevType</unmanaged-short>	
         </member>
@@ -58,6 +61,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwAxes']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwAxes</unmanaged>	
             <unmanaged-short>unsigned int dwAxes</unmanaged-short>	
         </member>
@@ -66,6 +70,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwButtons']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwButtons</unmanaged>	
             <unmanaged-short>unsigned int dwButtons</unmanaged-short>	
         </member>
@@ -74,6 +79,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwPOVs']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwPOVs</unmanaged>	
             <unmanaged-short>unsigned int dwPOVs</unmanaged-short>	
         </member>
@@ -82,6 +88,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwFFSamplePeriod']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwFFSamplePeriod</unmanaged>	
             <unmanaged-short>unsigned int dwFFSamplePeriod</unmanaged-short>	
         </member>
@@ -90,6 +97,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwFFMinTimeResolution']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwFFMinTimeResolution</unmanaged>	
             <unmanaged-short>unsigned int dwFFMinTimeResolution</unmanaged-short>	
         </member>
@@ -98,6 +106,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwFirmwareRevision']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwFirmwareRevision</unmanaged>	
             <unmanaged-short>unsigned int dwFirmwareRevision</unmanaged-short>	
         </member>
@@ -106,6 +115,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwHardwareRevision']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwHardwareRevision</unmanaged>	
             <unmanaged-short>unsigned int dwHardwareRevision</unmanaged-short>	
         </member>
@@ -114,6 +124,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVCAPS::dwFFDriverVersion']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didevcaps</msdn-id>	
             <unmanaged>unsigned int dwFFDriverVersion</unmanaged>	
             <unmanaged-short>unsigned int dwFFDriverVersion</unmanaged-short>	
         </member>
@@ -464,20 +475,7 @@
             </summary>	
             <param name="arg0"><dd> Reference to (C++) or address of (C) the globally unique identifier (<see cref="T:System.Guid"/>) identifying the property to be retrieved. This can be one of the predefined values or a reference to a <see cref="T:System.Guid"/> that identifies the property. The following properties are predefined for an input device.  <dl> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Appdata"/></dt> <dd>Retrieves the application-defined value associated with an in-game action, as a  <see cref="T:SharpDX.DirectInput.PropertyPointer"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Autocenter"/></dt> <dd>Determines whether device objects are self centering. The value returned can be DIPROPAUTOCENTER_OFF or DIPROPAUTOCENTER_ON. See <see cref="M:SharpDX.DirectInput.Device.SetProperty(System.IntPtr,System.IntPtr)"/> for more information.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Axismode"/></dt> <dd>Retrieves the axis mode. The retrieved value can be <see cref="F:SharpDX.DirectInput.DeviceAxisMode.Absolute"/> or <see cref="F:SharpDX.DirectInput.DeviceAxisMode.Relative"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.BufferSize"/></dt> <dd>Retrieves the input buffer size. The buffer size determines the amount of data that the buffer can hold between calls to the <see cref="M:SharpDX.DirectInput.Device.GetDeviceData(System.Int32,System.IntPtr,System.Int32@,System.Int32)"/> method before data is lost. You can set this value to 0 to indicate that the application does not read buffered data from the device. If the buffer size in the dwData member of the <see cref="T:SharpDX.DirectInput.PropertyInt"/> structure is too large for the device to support it, then the largest possible buffer size is set.  However, this property always returns the buffer size set using the <see cref="M:SharpDX.DirectInput.Device.SetProperty(System.IntPtr,System.IntPtr)"/> method, even if the buffer cannot be supported because it is too large.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Calibration"/></dt> <dd><p>Predefined property that allows the application to access the information that DirectInput uses to manipulate axes that require calibration. This property exists primarily for applications of the control panel type. Normal applications should not need to deal with calibration information.</p> <p>You can access the calibration mode property for a particular axis by setting the dwHow member of the <see cref="T:SharpDX.DirectInput.PropertyHeader"/> structure to <see cref="F:SharpDX.DirectInput.PropertyHowType.Byid"/> or to <see cref="F:SharpDX.DirectInput.PropertyHowType.Byoffset"/> and setting the dwObj member to the object ID or offset, respectively. </p> <p>Control panel applications that set new calibration data must also invoke the IDirectInputJoyConfig::SendNotify method to notify other applications of the change in calibration. For more information about IDirectInputJoyConfig::SendNotify, see the DirectInput Driver Development Kit (DDK). </p></dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Calibrationmode"/></dt> <dd>For use by device drivers; not used by applications.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Cpoints"/></dt> <dd>This property is unsupported. Retrieves calibration points used for the adjustment of incoming raw data as a DIPROPCPOINTS structure.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Deadzone"/></dt> <dd>Retrieves a value for the dead zone of a joystick, in the range from 0 through 10,000, where 0 indicates that there is no dead zone, 5,000 indicates that the dead zone extends over 50 percent of the physical range of the axis on both sides of center, and 10,000 indicates that the entire physical range of the axis is dead. When the axis is within the dead zone, it is reported as being at the center of its range.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Ffgain"/></dt> <dd>Retrieves the gain of the device. This property always returns <see cref="F:SharpDX.DirectInput.ResultCode.Ok"/> even if the device does not support force feedback.  See <see cref="M:SharpDX.DirectInput.Device.SetProperty(System.IntPtr,System.IntPtr)"/> for more information.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Ffload"/></dt> <dd>Retrieves the memory load for the device. This setting applies to the entire device, rather than to any particular object, so the  dwHow member of the associated <see cref="T:SharpDX.DirectInput.PropertyInt"/> structure must be <see cref="F:SharpDX.DirectInput.PropertyHowType.Device"/>. The retrieved value is in the range from 0 through 100, indicating the percentage of device memory in use. The device must be acquired in exclusive mode. If it is not, the method will fail with a return value of <see cref="F:SharpDX.DirectInput.ResultCode.NotExclusiveAcquired"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.GetPortdisplayname"/></dt> <dd>Retrieves the human-readable display name of the port to which this device is connected. Not generally used by applications. </dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Granularity"/></dt> <dd>Retrieves the input granularity. Granularity represents the smallest distance over which the object reports movement. Most axis objects have a granularity of one; that is, all values are possible. Some axes have a larger granularity. For example, the wheel axis on a mouse can have a granularity of 20; that is, all reported changes in position are multiples of 20. In other words, when the user turns the wheel slowly, the device reports a position of 0, then 20, then 40, and so on. This is a read-only property.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Guidandpath"/></dt> <dd>Retrieves the class <see cref="T:System.Guid"/> and device interface (path) for the device. This property lets advanced applications perform operations on a human interface device that are not supported by DirectInput. For more information, see the <see cref="T:SharpDX.DirectInput.PropertyGuidAndPath"/> structure.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.InstanceName"/></dt> <dd>Retrieves the friendly instance name of the device. For more information, see <see cref="M:SharpDX.DirectInput.Device.SetProperty(System.IntPtr,System.IntPtr)"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Joystickid"/></dt> <dd>Retrieves the instance number of a joystick. This property is not implemented for the mouse or keyboard.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Keyname"/></dt> <dd>Retrieves the localized key name for a keyboard key, as a <see cref="T:SharpDX.DirectInput.PropertyString"/>. Using this property on devices other than a keyboard will return unexpected names. </dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.LogicalRange"/></dt> <dd>Retrieves the range of the raw data returned for axes on a human interface device. Devices can return negative values.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Physicalrange"/></dt> <dd>Retrieves the range of data for axes as suggested by the manufacturer of a human interface device. Values can be negative. Normally DirectInput returns values from 0 through 0xFFFF, but the range can be made to conform to the manufacturer's suggested range by using <see cref="F:SharpDX.DirectInput.PropertyGuids.Range"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Productname"/></dt> <dd>Retrieves the friendly product name of the device. For more information, see <see cref="M:SharpDX.DirectInput.Device.SetProperty(System.IntPtr,System.IntPtr)"/>.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Range"/></dt> <dd>Retrieves the range of values an object can possibly report. For some devices, this is a read-only property.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Saturation"/></dt> <dd>Retrieves a value for the saturation zones of a joystick, in the range from 0 through 10,000. The saturation level is the point at which the axis is considered to be at its most extreme position. For example, if the saturation level is set to 9,500, the axis reaches the extreme of its range when it has moved 95 percent of the physical distance from its center position (or from the dead zone).</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Scancode"/></dt> <dd>Retrieves the scan code for a keyboard key, as a <see cref="T:SharpDX.DirectInput.PropertyInt"/>. If successful, <see cref="F:SharpDX.Result.Ok"/> is returned.  E_FAIL is returned if the property cannot resolve specialized keys on USB keyboards because they do not exist in scan code form.   For all other failures, E_INVALIDARG is returned.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Typename"/></dt> <dd>Predefined property that retrieves the type name of a device. For most game controllers, this is the registry key name under REGSTR_PATH_JOYOEM from which static device settings can be retrieved, but predefined joystick types have special names consisting of a number sign (&amp;Sharp;) followed by a character dependent on the type. This value might not be available for all devices.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Username"/></dt> <dd>Retrieves the user name for a user currently assigned to a device, as a <see cref="T:SharpDX.DirectInput.PropertyString"/>. User names are set by calling <see cref="M:SharpDX.DirectInput.Device.SetActionMap(SharpDX.DirectInput.ActionFormat@,System.String,System.Int32)"/>. If no user name is set, the method returns S_FALSE.</dd> <dt><see cref="F:SharpDX.DirectInput.PropertyGuids.Vidpid"/></dt> <dd>Read-only device property that retrieves the vendor identity (ID) and product ID of a HID device. This property is of type <see cref="T:SharpDX.DirectInput.PropertyInt"/> and contains both values. These two WORD values are combined in the dwData member of the <see cref="T:SharpDX.DirectInput.PropertyInt"/> structure.  See Examples.  This property applies to the entire device, rather than to any particular object, so the dwHow member of the <see cref="T:SharpDX.DirectInput.PropertyHeader"/> structure must be set to <see cref="F:SharpDX.DirectInput.PropertyHowType.Device"/>.</dd> </dl> </dd></param>	
             <param name="arg1"><dd> Address of the <see cref="T:SharpDX.DirectInput.PropertyHeader"/> portion of a larger property-dependent structure that contains the <see cref="T:SharpDX.DirectInput.PropertyHeader"/> structure as a member. The following structures are used for properties: <ul> <li><p><see cref="T:SharpDX.DirectInput.PropertyInt"/> is used for properties represented by a single numerical value.</p></li> <li><p><see cref="T:SharpDX.DirectInput.PropertyGuidAndPath"/> is used for <see cref="F:SharpDX.DirectInput.PropertyGuids.Guidandpath"/>.</p></li> <li><p><see cref="T:SharpDX.DirectInput.PropertyRange"/> is used for properties represented by a pair of numerical values. Currently, the only such property is <see cref="F:SharpDX.DirectInput.PropertyGuids.Range"/>.</p></li> <li><p><see cref="T:SharpDX.DirectInput.PropertyString"/> is used for string properties.</p></li></ul> </dd></param>	
-            <returns><p>If the method succeeds, the return value is <see cref="F:SharpDX.DirectInput.ResultCode.Ok"/> or S_FALSE. If the method fails, the return value can be one of the following error values: <see cref="F:SharpDX.DirectInput.ResultCode.InvalidParam"/>, <see cref="F:SharpDX.DirectInput.ResultCode.NotExclusiveAcquired"/>, <see cref="F:SharpDX.DirectInput.ResultCode.NotInitialized"/>, <see cref="F:SharpDX.DirectInput.ResultCode.ObjectNotFound"/>, <see cref="F:SharpDX.DirectInput.ResultCode.Unsupported"/>.</p></returns>	
-            <remarks>	
-            <p>If rguidProp is set to <see cref="F:SharpDX.DirectInput.PropertyGuids.Appdata"/>, the dwHow member of the <see cref="T:SharpDX.DirectInput.PropertyHeader"/> structure should only be set to <see cref="F:SharpDX.DirectInput.PropertyHowType.Byusage"/> when getting information about input controls, such as buttons or axes. Setting <see cref="F:SharpDX.DirectInput.PropertyHowType.Byusage"/> for other device objects such as a physical interface device (PID) or LED devices can lead to unpredictable results.</p> <p>S_FALSE is always returned when <see cref="M:SharpDX.DirectInput.Device.GetProperty(System.IntPtr,System.IntPtr)"/> is called with rguidProp set to <see cref="F:SharpDX.DirectInput.PropertyGuids.GetPortdisplayname"/>, even if the method succeeds. </p> <p>The scan codes reported in Microsoft DirectX 8.1 are different from the ones reported in DirectX 8.0.  In DirectX 8.0, the property actually reported the single byte <see cref="F:SharpDX.DirectInput.Key.W"/>* constant associated with the key, not the scan code.  In DirectX 8.1 and later releases, the property reports the make scan code as would be reported by a PS/2 keyboard.  In some cases, scan codes are multiple bytes, in which case the scan code bytes are ordered with the first byte in the least significant byte of the DWORD retrieved by the property. </p>  Example <p>The following C example shows how to obtain the value of the <see cref="F:SharpDX.DirectInput.PropertyGuids.BufferSize"/> property.</p> <pre> <see cref="T:SharpDX.DirectInput.PropertyInt"/> dipdw;  // <see cref="T:SharpDX.DirectInput.PropertyInt"/> contains a <see cref="T:SharpDX.DirectInput.PropertyHeader"/> structure. 	
-            <see cref="T:SharpDX.Result"/> hr; 	
-            dipdw.diph.dwSize       = sizeof(<see cref="T:SharpDX.DirectInput.PropertyInt"/>); 	
-            dipdw.diph.dwHeaderSize = sizeof(<see cref="T:SharpDX.DirectInput.PropertyHeader"/>); 	
-            dipdw.diph.dwObj        = 0; // device property 	
-            dipdw.diph.dwHow        = <see cref="F:SharpDX.DirectInput.PropertyHowType.Device"/>;  hr = idirectinputdevice9_GetProperty(pdid, <see cref="F:SharpDX.DirectInput.PropertyGuids.BufferSize"/>, &amp;dipdw.diph); 	
-            if (SUCCEEDED(hr)) {  // The dipdw.dwData member contains the buffer size. 	
-            } 	
-            </pre> <p>The following example shows how to extract the two WORD values from the dwData member of the <see cref="T:SharpDX.DirectInput.PropertyInt"/> structure using the <see cref="F:SharpDX.DirectInput.PropertyGuids.Vidpid"/> property:</p> <pre> wVendorID  = LOWORD(<see cref="T:SharpDX.DirectInput.PropertyInt"/>.dwData);	
-            wProductID = HIWORD(<see cref="T:SharpDX.DirectInput.PropertyInt"/>.dwData);	
-            </pre>	
-            </remarks>	
+            <returns>No documentation.</returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDirectInputDevice8W::GetProperty']/*"/>	
             <msdn-id>microsoft.directx_sdk.idirectinputdevice8.idirectinputdevice8.getproperty</msdn-id>	
             <unmanaged>HRESULT IDirectInputDevice8W::GetProperty([In] const void&amp; arg0,[In] void* arg1)</unmanaged>	
@@ -564,21 +562,7 @@
             Specifies an event that is to be set when the device state changes. It is also used to turn off event notification.	
             </summary>	
             <param name="arg0"><dd> Handle to the event that is to be set when the device state changes. DirectInput uses the Microsoft Win32 SetEvent function on the handle when the state of the device changes. If the hEvent parameter is <c>null</c>, notification is disabled.  <p>The application can create the handle as either a manual-reset or autoreset event by using the Win32 CreateEvent function. If the event is created as an autoreset event, the operating system automatically resets the event when a wait has been satisfied. If the event is created as a manual-reset event, it is the application's responsibility to call the Win32 ResetEvent function to reset it. DirectInput does not call the Win32 ResetEvent function for event notification handles. Most applications create the event as an automatic-reset event.</p> </dd></param>	
-            <returns><p>If the method succeeds, the return value is <see cref="F:SharpDX.DirectInput.ResultCode.Ok"/> or <see cref="F:SharpDX.DirectInput.ResultCode.PolledDevice"/>. If the method fails, the return value can be one of the following error values: <see cref="F:SharpDX.DirectInput.ResultCode.Acquired"/>, <see cref="F:SharpDX.DirectInput.ResultCode.HandleExists"/>, <see cref="F:SharpDX.DirectInput.ResultCode.InvalidParam"/>, <see cref="F:SharpDX.DirectInput.ResultCode.NotInitialized"/>.</p></returns>	
-            <remarks>	
-            <p>A device state change is defined as any of the following: </p> <ul> <li><p>A change in the position of an axis </p></li> <li><p>A change in the state (pressed or released) of a button </p></li> <li><p>A change in the direction of a POV control </p></li> <li><p>Loss of acquisition </p></li> </ul> <p>Do not call the Win32 CloseHandle function on the event while it has been selected into a DirectInputDevice object. You must call this method with the hEvent parameter set to <c>null</c>   before closing the event handle.</p> <p>The event notification handle cannot be changed while the device is acquired. If the function is successful, the application can use the event handle like any other Win32 event handle.</p>  Examples <p>The following code example checks whether the handle is currently set without blocking:</p> <pre> dwResult = WaitForSingleObject(hEvent, 0); 	
-            if (dwResult == WAIT_OBJECT_0) {  // Event is set. If the event was created as  // autoreset, it has also been reset. 	
-            } 	
-            </pre> <p>The following code example illustrates blocking indefinitely until the event is set. This behavior is strongly discouraged because the thread does not respond to the system until the wait is satisfied. In particular, the thread does not respond to Microsoft Windows messages.</p> <pre> dwResult = WaitForSingleObject(hEvent, INFINITE); 	
-            if (dwResult == WAIT_OBJECT_0) {  // Event has been set. If the event was created  // as autoreset, it has also been reset. 	
-            }	
-            </pre> <p>The following code example illustrates a typical application loop for a non-message-based application that uses two events:</p> <pre> HANDLE ah[2] = { hEvent1, hEvent2 };  while (TRUE) {  dwResult = MsgWaitForMultipleObjects(2, ah, <see cref="F:SharpDX.Result.False"/>,  INFINITE, QS_ALLINPUT);  switch (dwResult) {  case WAIT_OBJECT_0:  // Event 1 has been set. If the event was created as // autoreset, it has also been reset.  ProcessInputEvent1();  break;  case WAIT_OBJECT_0 + 1:  // Event 2 has been set. If the event was created as // autoreset, it has also been reset.  ProcessInputEvent2();  break;  case WAIT_OBJECT_0 + 2:  // A Windows message has arrived. Process  // messages until there aren't any more.  while(PeekMessage(&amp;msg, <c>null</c>, 0, 0, PM_REMOVE)){  if (msg.message == WM_QUIT) {  goto exitapp;  }  TranslateMessage(&amp;msg);  DispatchMessage(&amp;msg);  }  break;  default:  // Unexpected error.  Panic();  break;  } 	
-            } 	
-            </pre> <p>The following code example illustrates a typical message loop for a message-based application that uses two events:</p> <pre> HANDLE ah[2] = { hEvent1, hEvent2 }; 	
-            DWORD dwWait = 0;  while (TRUE) {  dwResult = MsgWaitForMultipleObjects(2, ah, <see cref="F:SharpDX.Result.False"/>,  dwWait, QS_ALLINPUT);  dwWait = 0;  switch (dwResult) {  case WAIT_OBJECT_0:  // Event 1 has been set. If the event was  // created as autoreset, it has also  // been reset.  ProcessInputEvent1();  break;  case WAIT_OBJECT_0 + 1:  // Event 2 has been set. If the event was  // created as autoreset, it has also  // been reset.  ProcessInputEvent2();  break;  case WAIT_OBJECT_0 + 2:  // A Windows message has arrived. Process  // messages until there aren't any more.  while(PeekMessage(&amp;msg, <c>null</c>, 0, 0, PM_REMOVE)){  if (msg.message == WM_QUIT) {  goto exitapp;  }  TranslateMessage(&amp;msg);  DispatchMessage(&amp;msg);  }  break;  default:  // No input or messages waiting.  // Do a frame of the game.  // If the game is idle, tell the next wait  // to wait indefinitely for input or a message.  if (!DoGame()) {  dwWait = INFINITE;  }  break;  } 	
-            } 	
-            </pre>	
-            </remarks>	
+            <returns>No documentation.</returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDirectInputDevice8W::SetEventNotification']/*"/>	
             <msdn-id>microsoft.directx_sdk.idirectinputdevice8.idirectinputdevice8.seteventnotification</msdn-id>	
             <unmanaged>HRESULT IDirectInputDevice8W::SetEventNotification([In] void* arg0)</unmanaged>	
@@ -904,20 +888,6 @@ Requests the cooperative level for this instance of the inpute device. The coope
             <summary>	
             Specifies an event that is to be set when the device state changes. It is also used to turn off event notification.	
             </summary>	
-            <remarks>	
-            <p>A device state change is defined as any of the following: </p> <ul> <li><p>A change in the position of an axis </p></li> <li><p>A change in the state (pressed or released) of a button </p></li> <li><p>A change in the direction of a POV control </p></li> <li><p>Loss of acquisition </p></li> </ul> <p>Do not call the Win32 CloseHandle function on the event while it has been selected into a DirectInputDevice object. You must call this method with the hEvent parameter set to <c>null</c>   before closing the event handle.</p> <p>The event notification handle cannot be changed while the device is acquired. If the function is successful, the application can use the event handle like any other Win32 event handle.</p>  Examples <p>The following code example checks whether the handle is currently set without blocking:</p> <pre> dwResult = WaitForSingleObject(hEvent, 0); 	
-            if (dwResult == WAIT_OBJECT_0) {  // Event is set. If the event was created as  // autoreset, it has also been reset. 	
-            } 	
-            </pre> <p>The following code example illustrates blocking indefinitely until the event is set. This behavior is strongly discouraged because the thread does not respond to the system until the wait is satisfied. In particular, the thread does not respond to Microsoft Windows messages.</p> <pre> dwResult = WaitForSingleObject(hEvent, INFINITE); 	
-            if (dwResult == WAIT_OBJECT_0) {  // Event has been set. If the event was created  // as autoreset, it has also been reset. 	
-            }	
-            </pre> <p>The following code example illustrates a typical application loop for a non-message-based application that uses two events:</p> <pre> HANDLE ah[2] = { hEvent1, hEvent2 };  while (TRUE) {  dwResult = MsgWaitForMultipleObjects(2, ah, <see cref="F:SharpDX.Result.False"/>,  INFINITE, QS_ALLINPUT);  switch (dwResult) {  case WAIT_OBJECT_0:  // Event 1 has been set. If the event was created as // autoreset, it has also been reset.  ProcessInputEvent1();  break;  case WAIT_OBJECT_0 + 1:  // Event 2 has been set. If the event was created as // autoreset, it has also been reset.  ProcessInputEvent2();  break;  case WAIT_OBJECT_0 + 2:  // A Windows message has arrived. Process  // messages until there aren't any more.  while(PeekMessage(&amp;msg, <c>null</c>, 0, 0, PM_REMOVE)){  if (msg.message == WM_QUIT) {  goto exitapp;  }  TranslateMessage(&amp;msg);  DispatchMessage(&amp;msg);  }  break;  default:  // Unexpected error.  Panic();  break;  } 	
-            } 	
-            </pre> <p>The following code example illustrates a typical message loop for a message-based application that uses two events:</p> <pre> HANDLE ah[2] = { hEvent1, hEvent2 }; 	
-            DWORD dwWait = 0;  while (TRUE) {  dwResult = MsgWaitForMultipleObjects(2, ah, <see cref="F:SharpDX.Result.False"/>,  dwWait, QS_ALLINPUT);  dwWait = 0;  switch (dwResult) {  case WAIT_OBJECT_0:  // Event 1 has been set. If the event was  // created as autoreset, it has also  // been reset.  ProcessInputEvent1();  break;  case WAIT_OBJECT_0 + 1:  // Event 2 has been set. If the event was  // created as autoreset, it has also  // been reset.  ProcessInputEvent2();  break;  case WAIT_OBJECT_0 + 2:  // A Windows message has arrived. Process  // messages until there aren't any more.  while(PeekMessage(&amp;msg, <c>null</c>, 0, 0, PM_REMOVE)){  if (msg.message == WM_QUIT) {  goto exitapp;  }  TranslateMessage(&amp;msg);  DispatchMessage(&amp;msg);  }  break;  default:  // No input or messages waiting.  // Do a frame of the game.  // If the game is idle, tell the next wait  // to wait indefinitely for input or a message.  if (!DoGame()) {  dwWait = INFINITE;  }  break;  } 	
-            } 	
-            </pre>	
-            </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDirectInputDevice8W::SetEventNotification']/*"/>	
             <msdn-id>microsoft.directx_sdk.idirectinputdevice8.idirectinputdevice8.seteventnotification</msdn-id>	
             <unmanaged>SetEventNotification</unmanaged>	
@@ -1030,6 +1000,7 @@ Requests the cooperative level for this instance of the inpute device. The coope
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDATAFORMAT::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -1038,6 +1009,7 @@ Requests the cooperative level for this instance of the inpute device. The coope
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDATAFORMAT::dwObjSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>unsigned int dwObjSize</unmanaged>	
             <unmanaged-short>unsigned int dwObjSize</unmanaged-short>	
         </member>
@@ -1045,6 +1017,7 @@ Requests the cooperative level for this instance of the inpute device. The coope
             <summary>	
 Flags describing other attributes of the data format.
 </summary>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>DIDF dwFlags</unmanaged>	
             <unmanaged-short>DIDF dwFlags</unmanaged-short>	
         </member>
@@ -1053,6 +1026,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDATAFORMAT::dwDataSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>unsigned int dwDataSize</unmanaged>	
             <unmanaged-short>unsigned int dwDataSize</unmanaged-short>	
         </member>
@@ -1061,6 +1035,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDATAFORMAT::dwNumObjs']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>unsigned int dwNumObjs</unmanaged>	
             <unmanaged-short>unsigned int dwNumObjs</unmanaged-short>	
         </member>
@@ -1069,6 +1044,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDATAFORMAT::rgodf']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.didataformat</msdn-id>	
             <unmanaged>void* rgodf</unmanaged>	
             <unmanaged-short>void rgodf</unmanaged-short>	
         </member>
@@ -1150,6 +1126,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwSize']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -1158,6 +1135,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwSizeImageInfo']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwSizeImageInfo</unmanaged>	
             <unmanaged-short>unsigned int dwSizeImageInfo</unmanaged-short>	
         </member>
@@ -1166,6 +1144,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwcViews']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwcViews</unmanaged>	
             <unmanaged-short>unsigned int dwcViews</unmanaged-short>	
         </member>
@@ -1174,6 +1153,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwcButtons']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwcButtons</unmanaged>	
             <unmanaged-short>unsigned int dwcButtons</unmanaged-short>	
         </member>
@@ -1182,6 +1162,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwcAxes']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwcAxes</unmanaged>	
             <unmanaged-short>unsigned int dwcAxes</unmanaged-short>	
         </member>
@@ -1190,6 +1171,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwcPOVs']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwcPOVs</unmanaged>	
             <unmanaged-short>unsigned int dwcPOVs</unmanaged-short>	
         </member>
@@ -1198,6 +1180,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwBufferSize']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwBufferSize</unmanaged>	
             <unmanaged-short>unsigned int dwBufferSize</unmanaged-short>	
         </member>
@@ -1206,6 +1189,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::dwBufferUsed']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>unsigned int dwBufferUsed</unmanaged>	
             <unmanaged-short>unsigned int dwBufferUsed</unmanaged-short>	
         </member>
@@ -1214,6 +1198,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOHEADERW::lprgImageInfoArray']/*"/>	
+            <msdn-id>ee416609</msdn-id>	
             <unmanaged>DIDEVICEIMAGEINFOW* lprgImageInfoArray</unmanaged>	
             <unmanaged-short>DIDEVICEIMAGEINFOW lprgImageInfoArray</unmanaged-short>	
         </member>
@@ -1239,6 +1224,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -1247,6 +1233,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::guidInstance']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>GUID guidInstance</unmanaged>	
             <unmanaged-short>GUID guidInstance</unmanaged-short>	
         </member>
@@ -1255,6 +1242,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::guidProduct']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>GUID guidProduct</unmanaged>	
             <unmanaged-short>GUID guidProduct</unmanaged-short>	
         </member>
@@ -1263,6 +1251,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::dwDevType']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>unsigned int dwDevType</unmanaged>	
             <unmanaged-short>unsigned int dwDevType</unmanaged-short>	
         </member>
@@ -1271,6 +1260,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::tszInstanceName']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>wchar_t tszInstanceName[260]</unmanaged>	
             <unmanaged-short>wchar_t tszInstanceName</unmanaged-short>	
         </member>
@@ -1279,6 +1269,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::tszProductName']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>wchar_t tszProductName[260]</unmanaged>	
             <unmanaged-short>wchar_t tszProductName</unmanaged-short>	
         </member>
@@ -1287,6 +1278,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::guidFFDriver']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>GUID guidFFDriver</unmanaged>	
             <unmanaged-short>GUID guidFFDriver</unmanaged-short>	
         </member>
@@ -1295,6 +1287,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::wUsagePage']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>HID_USAGE_PAGE wUsagePage</unmanaged>	
             <unmanaged-short>HID_USAGE_PAGE wUsagePage</unmanaged-short>	
         </member>
@@ -1303,6 +1296,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEINSTANCEW::wUsage']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceinstance</msdn-id>	
             <unmanaged>HID_USAGE_ID wUsage</unmanaged>	
             <unmanaged-short>HID_USAGE_ID wUsage</unmanaged-short>	
         </member>
@@ -1343,6 +1337,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -1351,6 +1346,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::guidType']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>GUID guidType</unmanaged>	
             <unmanaged-short>GUID guidType</unmanaged-short>	
         </member>
@@ -1359,6 +1355,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwOfs']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned int dwOfs</unmanaged>	
             <unmanaged-short>unsigned int dwOfs</unmanaged-short>	
         </member>
@@ -1367,6 +1364,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwType']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>DIDFT dwType</unmanaged>	
             <unmanaged-short>DIDFT dwType</unmanaged-short>	
         </member>
@@ -1375,6 +1373,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwFlags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>DIDOI dwFlags</unmanaged>	
             <unmanaged-short>DIDOI dwFlags</unmanaged-short>	
         </member>
@@ -1383,6 +1382,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::tszName']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>wchar_t tszName[260]</unmanaged>	
             <unmanaged-short>wchar_t tszName</unmanaged-short>	
         </member>
@@ -1391,6 +1391,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwFFMaxForce']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned int dwFFMaxForce</unmanaged>	
             <unmanaged-short>unsigned int dwFFMaxForce</unmanaged-short>	
         </member>
@@ -1399,6 +1400,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwFFForceResolution']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned int dwFFForceResolution</unmanaged>	
             <unmanaged-short>unsigned int dwFFForceResolution</unmanaged-short>	
         </member>
@@ -1407,6 +1409,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wCollectionNumber']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wCollectionNumber</unmanaged>	
             <unmanaged-short>unsigned short wCollectionNumber</unmanaged-short>	
         </member>
@@ -1415,6 +1418,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wDesignatorIndex']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wDesignatorIndex</unmanaged>	
             <unmanaged-short>unsigned short wDesignatorIndex</unmanaged-short>	
         </member>
@@ -1423,6 +1427,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wUsagePage']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wUsagePage</unmanaged>	
             <unmanaged-short>unsigned short wUsagePage</unmanaged-short>	
         </member>
@@ -1431,6 +1436,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wUsage']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wUsage</unmanaged>	
             <unmanaged-short>unsigned short wUsage</unmanaged-short>	
         </member>
@@ -1439,6 +1445,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::dwDimension']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned int dwDimension</unmanaged>	
             <unmanaged-short>unsigned int dwDimension</unmanaged-short>	
         </member>
@@ -1447,6 +1454,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wExponent']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wExponent</unmanaged>	
             <unmanaged-short>unsigned short wExponent</unmanaged-short>	
         </member>
@@ -1455,6 +1463,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTINSTANCEW::wReportId']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectinstance</msdn-id>	
             <unmanaged>unsigned short wReportId</unmanaged>	
             <unmanaged-short>unsigned short wReportId</unmanaged-short>	
         </member>
@@ -1610,9 +1619,10 @@ Flags describing other attributes of the data format.
         </member>
         <member name="P:SharpDX.DirectInput.DeviceProperties.Range">
             <summary>
-            Gets the range of values an object can possibly report.
+            Gets or sets the range of values an object can possibly report.
             </summary>
             <value>The range.</value>
+            <remarks>For some devices, this is a read-only property.</remarks>
         </member>
         <member name="P:SharpDX.DirectInput.DeviceProperties.Saturation">
             <summary>
@@ -2016,6 +2026,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIFILEEFFECT::dwSize']/*"/>	
+            <msdn-id>ee416626</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -2024,6 +2035,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIFILEEFFECT::GuidEffect']/*"/>	
+            <msdn-id>ee416626</msdn-id>	
             <unmanaged>GUID GuidEffect</unmanaged>	
             <unmanaged-short>GUID GuidEffect</unmanaged-short>	
         </member>
@@ -2032,6 +2044,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIFILEEFFECT::lpDiEffect']/*"/>	
+            <msdn-id>ee416626</msdn-id>	
             <unmanaged>const DIEFFECT* lpDiEffect</unmanaged>	
             <unmanaged-short>DIEFFECT lpDiEffect</unmanaged-short>	
         </member>
@@ -2040,6 +2053,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIFILEEFFECT::szFriendlyName']/*"/>	
+            <msdn-id>ee416626</msdn-id>	
             <unmanaged>char szFriendlyName[260]</unmanaged>	
             <unmanaged-short>char szFriendlyName</unmanaged-short>	
         </member>
@@ -2146,6 +2160,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwSize']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -2154,6 +2169,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwFlags']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF dwFlags</unmanaged>	
             <unmanaged-short>DIEFF dwFlags</unmanaged-short>	
         </member>
@@ -2162,6 +2178,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwDuration']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwDuration</unmanaged>	
             <unmanaged-short>unsigned int dwDuration</unmanaged-short>	
         </member>
@@ -2170,6 +2187,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwSamplePeriod']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwSamplePeriod</unmanaged>	
             <unmanaged-short>unsigned int dwSamplePeriod</unmanaged-short>	
         </member>
@@ -2178,6 +2196,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwGain']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwGain</unmanaged>	
             <unmanaged-short>unsigned int dwGain</unmanaged-short>	
         </member>
@@ -2186,6 +2205,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwTriggerButton']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwTriggerButton</unmanaged>	
             <unmanaged-short>unsigned int dwTriggerButton</unmanaged-short>	
         </member>
@@ -2194,6 +2214,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwTriggerRepeatInterval']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwTriggerRepeatInterval</unmanaged>	
             <unmanaged-short>unsigned int dwTriggerRepeatInterval</unmanaged-short>	
         </member>
@@ -2202,6 +2223,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::cAxes']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int cAxes</unmanaged>	
             <unmanaged-short>unsigned int cAxes</unmanaged-short>	
         </member>
@@ -2210,6 +2232,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::rgdwAxes']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int* rgdwAxes</unmanaged>	
             <unmanaged-short>unsigned int rgdwAxes</unmanaged-short>	
         </member>
@@ -2218,6 +2241,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::rglDirection']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>int* rglDirection</unmanaged>	
             <unmanaged-short>int rglDirection</unmanaged-short>	
         </member>
@@ -2226,6 +2250,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::lpEnvelope']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIENVELOPE* lpEnvelope</unmanaged>	
             <unmanaged-short>DIENVELOPE lpEnvelope</unmanaged-short>	
         </member>
@@ -2234,6 +2259,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::cbTypeSpecificParams']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int cbTypeSpecificParams</unmanaged>	
             <unmanaged-short>unsigned int cbTypeSpecificParams</unmanaged-short>	
         </member>
@@ -2242,6 +2268,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::lpvTypeSpecificParams']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>void* lpvTypeSpecificParams</unmanaged>	
             <unmanaged-short>void lpvTypeSpecificParams</unmanaged-short>	
         </member>
@@ -2250,6 +2277,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFECT::dwStartDelay']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>unsigned int dwStartDelay</unmanaged>	
             <unmanaged-short>unsigned int dwStartDelay</unmanaged-short>	
         </member>
@@ -2414,6 +2442,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIENVELOPE::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dienvelope</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -2422,6 +2451,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIENVELOPE::dwAttackLevel']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dienvelope</msdn-id>	
             <unmanaged>unsigned int dwAttackLevel</unmanaged>	
             <unmanaged-short>unsigned int dwAttackLevel</unmanaged-short>	
         </member>
@@ -2430,6 +2460,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIENVELOPE::dwAttackTime']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dienvelope</msdn-id>	
             <unmanaged>unsigned int dwAttackTime</unmanaged>	
             <unmanaged-short>unsigned int dwAttackTime</unmanaged-short>	
         </member>
@@ -2438,6 +2469,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIENVELOPE::dwFadeLevel']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dienvelope</msdn-id>	
             <unmanaged>unsigned int dwFadeLevel</unmanaged>	
             <unmanaged-short>unsigned int dwFadeLevel</unmanaged-short>	
         </member>
@@ -2446,6 +2478,7 @@ Flags describing other attributes of the data format.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIENVELOPE::dwFadeTime']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dienvelope</msdn-id>	
             <unmanaged>unsigned int dwFadeTime</unmanaged>	
             <unmanaged-short>unsigned int dwFadeTime</unmanaged-short>	
         </member>
@@ -3025,6 +3058,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFF_OBJECTIDS']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF_OBJECTIDS</unmanaged>	
             <unmanaged-short>DIEFF_OBJECTIDS</unmanaged-short>	
         </member>
@@ -3033,6 +3067,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFF_OBJECTOFFSETS']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF_OBJECTOFFSETS</unmanaged>	
             <unmanaged-short>DIEFF_OBJECTOFFSETS</unmanaged-short>	
         </member>
@@ -3041,6 +3076,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFF_CARTESIAN']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF_CARTESIAN</unmanaged>	
             <unmanaged-short>DIEFF_CARTESIAN</unmanaged-short>	
         </member>
@@ -3049,6 +3085,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFF_POLAR']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF_POLAR</unmanaged>	
             <unmanaged-short>DIEFF_POLAR</unmanaged-short>	
         </member>
@@ -3057,6 +3094,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFF_SPHERICAL']/*"/>	
+            <msdn-id>ee416616</msdn-id>	
             <unmanaged>DIEFF_SPHERICAL</unmanaged>	
             <unmanaged-short>DIEFF_SPHERICAL</unmanaged-short>	
         </member>
@@ -6508,10 +6546,6 @@ First-person action game device. The following subtypes are defined.
             <summary>Constant RemoteUnknown.</summary>
             <unmanaged>DI8DEVTYPEREMOTE_UNKNOWN</unmanaged>
         </member>
-        <member name="F:SharpDX.DirectInput.DeviceSubtype.DeviceControlCommsselection">
-            <summary>Constant DeviceControlCommsselection.</summary>
-            <unmanaged>DI8DEVTYPEDEVICECTRL_COMMSSELECTION</unmanaged>
-        </member>
         <member name="F:SharpDX.DirectInput.DeviceSubtype.DeviceControlUnknown">
             <summary>Constant DeviceControlUnknown.</summary>
             <unmanaged>DI8DEVTYPEDEVICECTRL_UNKNOWN</unmanaged>
@@ -6519,6 +6553,10 @@ First-person action game device. The following subtypes are defined.
         <member name="F:SharpDX.DirectInput.DeviceSubtype.DeviceControlCommsselectionHardwired">
             <summary>Constant DeviceControlCommsselectionHardwired.</summary>
             <unmanaged>DI8DEVTYPEDEVICECTRL_COMMSSELECTION_HARDWIRED</unmanaged>
+        </member>
+        <member name="F:SharpDX.DirectInput.DeviceSubtype.DeviceControlCommsselection">
+            <summary>Constant DeviceControlCommsselection.</summary>
+            <unmanaged>DI8DEVTYPEDEVICECTRL_COMMSSELECTION</unmanaged>
         </member>
         <member name="F:SharpDX.DirectInput.DeviceSubtype.SupplementalHandtracker">
             <summary>Constant SupplementalHandtracker.</summary>
@@ -7132,13 +7170,13 @@ First-person action game device. The following subtypes are defined.
             <summary>Constant Menu.</summary>
             <unmanaged>DIBUTTON_FIGHTINGH_MENU</unmanaged>
         </member>
-        <member name="F:SharpDX.DirectInput.HandToHandControls.Kick">
-            <summary>Constant Kick.</summary>
-            <unmanaged>DIBUTTON_FIGHTINGH_KICK</unmanaged>
-        </member>
         <member name="F:SharpDX.DirectInput.HandToHandControls.Punch">
             <summary>Constant Punch.</summary>
             <unmanaged>DIBUTTON_FIGHTINGH_PUNCH</unmanaged>
+        </member>
+        <member name="F:SharpDX.DirectInput.HandToHandControls.Kick">
+            <summary>Constant Kick.</summary>
+            <unmanaged>DIBUTTON_FIGHTINGH_KICK</unmanaged>
         </member>
         <member name="F:SharpDX.DirectInput.HandToHandControls.Special1">
             <summary>Constant Special1.</summary>
@@ -8296,10 +8334,6 @@ First-person action game device. The following subtypes are defined.
             <summary>Constant Physicalrange.</summary>
             <unmanaged>DIPROP_PHYSICALRANGE</unmanaged>
         </member>
-        <member name="F:SharpDX.DirectInput.PropertyGuids.Autocenter">
-            <summary>Constant Autocenter.</summary>
-            <unmanaged>DIPROP_AUTOCENTER</unmanaged>
-        </member>
         <member name="F:SharpDX.DirectInput.PropertyGuids.Scancode">
             <summary>Constant Scancode.</summary>
             <unmanaged>DIPROP_SCANCODE</unmanaged>
@@ -8359,6 +8393,10 @@ First-person action game device. The following subtypes are defined.
         <member name="F:SharpDX.DirectInput.PropertyGuids.Guidandpath">
             <summary>Constant Guidandpath.</summary>
             <unmanaged>DIPROP_GUIDANDPATH</unmanaged>
+        </member>
+        <member name="F:SharpDX.DirectInput.PropertyGuids.Autocenter">
+            <summary>Constant Autocenter.</summary>
+            <unmanaged>DIPROP_AUTOCENTER</unmanaged>
         </member>
         <member name="F:SharpDX.DirectInput.PropertyGuids.Axismode">
             <summary>Constant Axismode.</summary>
@@ -10171,6 +10209,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -10179,6 +10218,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwActionSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwActionSize</unmanaged>	
             <unmanaged-short>unsigned int dwActionSize</unmanaged-short>	
         </member>
@@ -10187,6 +10227,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwDataSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwDataSize</unmanaged>	
             <unmanaged-short>unsigned int dwDataSize</unmanaged-short>	
         </member>
@@ -10195,6 +10236,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwNumActions']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwNumActions</unmanaged>	
             <unmanaged-short>unsigned int dwNumActions</unmanaged-short>	
         </member>
@@ -10203,6 +10245,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::rgoAction']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>DIACTIONW* rgoAction</unmanaged>	
             <unmanaged-short>DIACTIONW rgoAction</unmanaged-short>	
         </member>
@@ -10211,6 +10254,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::guidActionMap']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>GUID guidActionMap</unmanaged>	
             <unmanaged-short>GUID guidActionMap</unmanaged-short>	
         </member>
@@ -10219,6 +10263,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwGenre']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwGenre</unmanaged>	
             <unmanaged-short>unsigned int dwGenre</unmanaged-short>	
         </member>
@@ -10227,6 +10272,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwBufferSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwBufferSize</unmanaged>	
             <unmanaged-short>unsigned int dwBufferSize</unmanaged-short>	
         </member>
@@ -10235,6 +10281,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::lAxisMin']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>int lAxisMin</unmanaged>	
             <unmanaged-short>int lAxisMin</unmanaged-short>	
         </member>
@@ -10243,6 +10290,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::lAxisMax']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>int lAxisMax</unmanaged>	
             <unmanaged-short>int lAxisMax</unmanaged-short>	
         </member>
@@ -10251,6 +10299,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::hInstString']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>HINSTANCE hInstString</unmanaged>	
             <unmanaged-short>HINSTANCE hInstString</unmanaged-short>	
         </member>
@@ -10259,6 +10308,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::ftTimeStamp']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>FILETIME ftTimeStamp</unmanaged>	
             <unmanaged-short>FILETIME ftTimeStamp</unmanaged-short>	
         </member>
@@ -10267,6 +10317,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::dwCRC']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>unsigned int dwCRC</unmanaged>	
             <unmanaged-short>unsigned int dwCRC</unmanaged-short>	
         </member>
@@ -10275,6 +10326,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIACTIONFORMATW::tszActionMap']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diactionformat</msdn-id>	
             <unmanaged>wchar_t tszActionMap[260]</unmanaged>	
             <unmanaged-short>wchar_t tszActionMap</unmanaged-short>	
         </member>
@@ -10295,6 +10347,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::lOffset']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>int lOffset</unmanaged>	
             <unmanaged-short>int lOffset</unmanaged-short>	
         </member>
@@ -10303,6 +10356,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::lPositiveCoefficient']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>int lPositiveCoefficient</unmanaged>	
             <unmanaged-short>int lPositiveCoefficient</unmanaged-short>	
         </member>
@@ -10311,6 +10365,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::lNegativeCoefficient']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>int lNegativeCoefficient</unmanaged>	
             <unmanaged-short>int lNegativeCoefficient</unmanaged-short>	
         </member>
@@ -10319,6 +10374,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::dwPositiveSaturation']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>unsigned int dwPositiveSaturation</unmanaged>	
             <unmanaged-short>unsigned int dwPositiveSaturation</unmanaged-short>	
         </member>
@@ -10327,6 +10383,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::dwNegativeSaturation']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>unsigned int dwNegativeSaturation</unmanaged>	
             <unmanaged-short>unsigned int dwNegativeSaturation</unmanaged-short>	
         </member>
@@ -10335,6 +10392,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONDITION::lDeadBand']/*"/>	
+            <msdn-id>ee416601</msdn-id>	
             <unmanaged>int lDeadBand</unmanaged>	
             <unmanaged-short>int lDeadBand</unmanaged-short>	
         </member>
@@ -10352,6 +10410,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::tszImagePath']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>wchar_t tszImagePath[260]</unmanaged>	
             <unmanaged-short>wchar_t tszImagePath</unmanaged-short>	
         </member>
@@ -10360,6 +10419,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::dwFlags']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>unsigned int dwFlags</unmanaged>	
             <unmanaged-short>unsigned int dwFlags</unmanaged-short>	
         </member>
@@ -10368,6 +10428,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::dwViewID']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>unsigned int dwViewID</unmanaged>	
             <unmanaged-short>unsigned int dwViewID</unmanaged-short>	
         </member>
@@ -10376,6 +10437,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::rcOverlay']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>RECT rcOverlay</unmanaged>	
             <unmanaged-short>RECT rcOverlay</unmanaged-short>	
         </member>
@@ -10384,6 +10446,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::dwObjID']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>unsigned int dwObjID</unmanaged>	
             <unmanaged-short>unsigned int dwObjID</unmanaged-short>	
         </member>
@@ -10392,6 +10455,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::dwcValidPts']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>unsigned int dwcValidPts</unmanaged>	
             <unmanaged-short>unsigned int dwcValidPts</unmanaged-short>	
         </member>
@@ -10400,6 +10464,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::rcCalloutRect']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>RECT rcCalloutRect</unmanaged>	
             <unmanaged-short>RECT rcCalloutRect</unmanaged-short>	
         </member>
@@ -10408,6 +10473,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::dwTextAlign']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>unsigned int dwTextAlign</unmanaged>	
             <unmanaged-short>unsigned int dwTextAlign</unmanaged-short>	
         </member>
@@ -10416,6 +10482,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEIMAGEINFOW::rgptCalloutLine']/*"/>	
+            <msdn-id>ee416608</msdn-id>	
             <unmanaged>POINT rgptCalloutLine[5]</unmanaged>	
             <unmanaged-short>POINT rgptCalloutLine</unmanaged-short>	
         </member>
@@ -10436,6 +10503,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::dwSize']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -10444,6 +10512,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::dwCommand']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>unsigned int dwCommand</unmanaged>	
             <unmanaged-short>unsigned int dwCommand</unmanaged-short>	
         </member>
@@ -10452,6 +10521,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::lpvInBuffer']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>void* lpvInBuffer</unmanaged>	
             <unmanaged-short>void lpvInBuffer</unmanaged-short>	
         </member>
@@ -10460,6 +10530,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::cbInBuffer']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>unsigned int cbInBuffer</unmanaged>	
             <unmanaged-short>unsigned int cbInBuffer</unmanaged-short>	
         </member>
@@ -10468,6 +10539,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::lpvOutBuffer']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>void* lpvOutBuffer</unmanaged>	
             <unmanaged-short>void lpvOutBuffer</unmanaged-short>	
         </member>
@@ -10476,6 +10548,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIEFFESCAPE::cbOutBuffer']/*"/>	
+            <msdn-id>ee416618</msdn-id>	
             <unmanaged>unsigned int cbOutBuffer</unmanaged>	
             <unmanaged-short>unsigned int cbOutBuffer</unmanaged-short>	
         </member>
@@ -10496,6 +10569,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTDATA::dwOfs']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectdata</msdn-id>	
             <unmanaged>unsigned int dwOfs</unmanaged>	
             <unmanaged-short>unsigned int dwOfs</unmanaged-short>	
         </member>
@@ -10504,6 +10578,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTDATA::dwData']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectdata</msdn-id>	
             <unmanaged>unsigned int dwData</unmanaged>	
             <unmanaged-short>unsigned int dwData</unmanaged-short>	
         </member>
@@ -10512,6 +10587,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTDATA::dwTimeStamp']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectdata</msdn-id>	
             <unmanaged>unsigned int dwTimeStamp</unmanaged>	
             <unmanaged-short>unsigned int dwTimeStamp</unmanaged-short>	
         </member>
@@ -10520,6 +10596,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTDATA::dwSequence']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectdata</msdn-id>	
             <unmanaged>unsigned int dwSequence</unmanaged>	
             <unmanaged-short>unsigned int dwSequence</unmanaged-short>	
         </member>
@@ -10528,6 +10605,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIDEVICEOBJECTDATA::uAppData']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dideviceobjectdata</msdn-id>	
             <unmanaged>UINT_PTR uAppData</unmanaged>	
             <unmanaged-short>UINT_PTR uAppData</unmanaged-short>	
         </member>
@@ -10770,6 +10848,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPROPRANGE::diph']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diproprange</msdn-id>	
             <unmanaged>DIPROPHEADER diph</unmanaged>	
             <unmanaged-short>DIPROPHEADER diph</unmanaged-short>	
         </member>
@@ -10778,6 +10857,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPROPRANGE::lMin']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diproprange</msdn-id>	
             <unmanaged>int lMin</unmanaged>	
             <unmanaged-short>int lMin</unmanaged-short>	
         </member>
@@ -10786,6 +10866,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPROPRANGE::lMax']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diproprange</msdn-id>	
             <unmanaged>int lMax</unmanaged>	
             <unmanaged-short>int lMax</unmanaged-short>	
         </member>
@@ -10842,6 +10923,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICONSTANTFORCE::lMagnitude']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.diconstantforce</msdn-id>	
             <unmanaged>int lMagnitude</unmanaged>	
             <unmanaged-short>int lMagnitude</unmanaged-short>	
         </member>
@@ -10859,6 +10941,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICUSTOMFORCE::cChannels']/*"/>	
+            <msdn-id>ee416605</msdn-id>	
             <unmanaged>unsigned int cChannels</unmanaged>	
             <unmanaged-short>unsigned int cChannels</unmanaged-short>	
         </member>
@@ -10867,6 +10950,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICUSTOMFORCE::dwSamplePeriod']/*"/>	
+            <msdn-id>ee416605</msdn-id>	
             <unmanaged>unsigned int dwSamplePeriod</unmanaged>	
             <unmanaged-short>unsigned int dwSamplePeriod</unmanaged-short>	
         </member>
@@ -10875,6 +10959,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICUSTOMFORCE::cSamples']/*"/>	
+            <msdn-id>ee416605</msdn-id>	
             <unmanaged>unsigned int cSamples</unmanaged>	
             <unmanaged-short>unsigned int cSamples</unmanaged-short>	
         </member>
@@ -10883,6 +10968,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DICUSTOMFORCE::rglForceData']/*"/>	
+            <msdn-id>ee416605</msdn-id>	
             <unmanaged>int* rglForceData</unmanaged>	
             <unmanaged-short>int rglForceData</unmanaged-short>	
         </member>
@@ -10903,6 +10989,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPERIODIC::dwMagnitude']/*"/>	
+            <msdn-id>ee416634</msdn-id>	
             <unmanaged>unsigned int dwMagnitude</unmanaged>	
             <unmanaged-short>unsigned int dwMagnitude</unmanaged-short>	
         </member>
@@ -10911,6 +10998,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPERIODIC::lOffset']/*"/>	
+            <msdn-id>ee416634</msdn-id>	
             <unmanaged>int lOffset</unmanaged>	
             <unmanaged-short>int lOffset</unmanaged-short>	
         </member>
@@ -10919,6 +11007,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPERIODIC::dwPhase']/*"/>	
+            <msdn-id>ee416634</msdn-id>	
             <unmanaged>unsigned int dwPhase</unmanaged>	
             <unmanaged-short>unsigned int dwPhase</unmanaged-short>	
         </member>
@@ -10927,6 +11016,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIPERIODIC::dwPeriod']/*"/>	
+            <msdn-id>ee416634</msdn-id>	
             <unmanaged>unsigned int dwPeriod</unmanaged>	
             <unmanaged-short>unsigned int dwPeriod</unmanaged-short>	
         </member>
@@ -10947,6 +11037,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRAMPFORCE::lStart']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dirampforce</msdn-id>	
             <unmanaged>int lStart</unmanaged>	
             <unmanaged-short>int lStart</unmanaged-short>	
         </member>
@@ -10955,6 +11046,7 @@ First-person action game device. The following subtypes are defined.
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRAMPFORCE::lEnd']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dirampforce</msdn-id>	
             <unmanaged>int lEnd</unmanaged>	
             <unmanaged-short>int lEnd</unmanaged-short>	
         </member>

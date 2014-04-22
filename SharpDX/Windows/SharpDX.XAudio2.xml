@@ -192,7 +192,7 @@
         </member>
         <member name="T:SharpDX.XAudio2.EngineCallback">
             <summary>	
-            The IXAudio2EngineCallback interface contains methods that notify the client when certain events happen in the <see cref="T:SharpDX.XAudio2.XAudio2"/> engine. This interface should be implemented by the XAudio2 client. XAudio2 calls these methods via an interface pointer provided by the client, using either the {{XAudio2Create}} or <see cref="!:SharpDX.XAudio2.XAudio2.Initialize"/> method. Methods in this interface return void, rather than an HRESULT.	
+            The IXAudio2EngineCallback interface contains methods that notify the client when certain events happen in the <see cref="T:SharpDX.XAudio2.XAudio2"/> engine. This interface should be implemented by the XAudio2 client. XAudio2 calls these methods via an interface pointer provided by the client, using either the {{XAudio2Create}} or <see cref="M:SharpDX.XAudio2.XAudio2.Initialize(System.Int32,SharpDX.XAudio2.ProcessorSpecifier)"/> method. Methods in this interface return void, rather than an HRESULT.	
             </summary>	
             <unmanaged>IXAudio2EngineCallback</unmanaged>
             <summary>	
@@ -620,15 +620,6 @@
             <unmanaged>float RoomSize</unmanaged>	
             <unmanaged-short>float RoomSize</unmanaged-short>	
         </member>
-        <member name="F:SharpDX.XAudio2.Fx.ReverbParameters.DisableLateField">
-            <summary>	
-            <dd> If set to TRUE, disables late field reflection calculations.  Disabling late field reflection calculations results in a significant CPU time savings. </dd>	
-            </summary>	
-            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2FX_REVERB_PARAMETERS::DisableLateField']/*"/>	
-            <msdn-id>ee419224</msdn-id>	
-            <unmanaged>BOOL DisableLateField</unmanaged>	
-            <unmanaged-short>BOOL DisableLateField</unmanaged-short>	
-        </member>
         <member name="T:SharpDX.XAudio2.Fx.XAudio2FxContants">
             <summary>
             XAudio2FxContants Functions.
@@ -669,6 +660,81 @@
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='']/*"/>	
             <unmanaged>None</unmanaged>	
             <unmanaged-short>None</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.XAudio2.DeviceRole">
+            <summary>	
+            <p>Used in the <see cref="T:SharpDX.XAudio2.DeviceDetails"/> structure to describe the role assigned to the device by the user.</p>	
+            </summary>	
+            <remarks>	
+            <p>The role represents the audio scenarios?such as voice communications or media playback?that use this device as the default device on which to play.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_ROLE']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>XAUDIO2_DEVICE_ROLE</unmanaged>	
+            <unmanaged-short>XAUDIO2_DEVICE_ROLE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.NotDefaultDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='NotDefaultDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>NotDefaultDevice</unmanaged>	
+            <unmanaged-short>NotDefaultDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.DefaultConsoleDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DefaultConsoleDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>DefaultConsoleDevice</unmanaged>	
+            <unmanaged-short>DefaultConsoleDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.DefaultMultimediaDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DefaultMultimediaDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>DefaultMultimediaDevice</unmanaged>	
+            <unmanaged-short>DefaultMultimediaDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.DefaultCommunicationsDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DefaultCommunicationsDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>DefaultCommunicationsDevice</unmanaged>	
+            <unmanaged-short>DefaultCommunicationsDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.DefaultGameDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DefaultGameDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>DefaultGameDevice</unmanaged>	
+            <unmanaged-short>DefaultGameDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.GlobalDefaultDevice">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='GlobalDefaultDevice']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>GlobalDefaultDevice</unmanaged>	
+            <unmanaged-short>GlobalDefaultDevice</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceRole.InvalidDeviceRole">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='InvalidDeviceRole']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_device_role</msdn-id>	
+            <unmanaged>InvalidDeviceRole</unmanaged>	
+            <unmanaged-short>InvalidDeviceRole</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAudio2.FilterType">
             <summary>	
@@ -714,24 +780,6 @@
             <msdn-id>ee419238</msdn-id>	
             <unmanaged>NotchFilter</unmanaged>	
             <unmanaged-short>NotchFilter</unmanaged-short>	
-        </member>
-        <member name="F:SharpDX.XAudio2.FilterType.LowPassOnePoleFilter">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='LowPassOnePoleFilter']/*"/>	
-            <msdn-id>ee419238</msdn-id>	
-            <unmanaged>LowPassOnePoleFilter</unmanaged>	
-            <unmanaged-short>LowPassOnePoleFilter</unmanaged-short>	
-        </member>
-        <member name="F:SharpDX.XAudio2.FilterType.HighPassOnePoleFilter">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HighPassOnePoleFilter']/*"/>	
-            <msdn-id>ee419238</msdn-id>	
-            <unmanaged>HighPassOnePoleFilter</unmanaged>	
-            <unmanaged-short>HighPassOnePoleFilter</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAudio2.LogType">
             <summary>	
@@ -1208,13 +1256,13 @@
             <unmanaged>XAUDIO2_VOICE_NOSRC</unmanaged>	
             <unmanaged-short>XAUDIO2_VOICE_NOSRC</unmanaged-short>	
         </member>
-        <member name="F:SharpDX.XAudio2.VoiceFlags.Nosamplesplayed">
+        <member name="F:SharpDX.XAudio2.VoiceFlags.Music">
             <summary>	
             No documentation.	
             </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_VOICE_NOSAMPLESPLAYED']/*"/>	
-            <unmanaged>XAUDIO2_VOICE_NOSAMPLESPLAYED</unmanaged>	
-            <unmanaged-short>XAUDIO2_VOICE_NOSAMPLESPLAYED</unmanaged-short>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_VOICE_MUSIC']/*"/>	
+            <unmanaged>XAUDIO2_VOICE_MUSIC</unmanaged>	
+            <unmanaged-short>XAUDIO2_VOICE_MUSIC</unmanaged-short>	
         </member>
         <member name="F:SharpDX.XAudio2.VoiceFlags.None">
             <summary>	
@@ -1256,6 +1304,14 @@
             <unmanaged>XAUDIO2_FLAGS</unmanaged>	
             <unmanaged-short>XAUDIO2_FLAGS</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.XAudio2.XAudio2Flags.DebugEngine">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEBUG_ENGINE']/*"/>	
+            <unmanaged>XAUDIO2_DEBUG_ENGINE</unmanaged>	
+            <unmanaged-short>XAUDIO2_DEBUG_ENGINE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.XAudio2.XAudio2Flags.None">
             <summary>	
             None.	
@@ -1291,38 +1347,6 @@
             Functions	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAudio2.XAudio2Functions']/*"/>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <param name="xAudio2Out">No documentation.</param>	
-            <param name="flags">No documentation.</param>	
-            <param name="xAudio2Processor">No documentation.</param>	
-            <returns>No documentation.</returns>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAudio2Create']/*"/>	
-            <unmanaged>HRESULT XAudio2Create([Out, Fast] IXAudio2** ppXAudio2,[In] unsigned int Flags,[In] unsigned int XAudio2Processor)</unmanaged>	
-            <unmanaged-short>XAudio2Create</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.CreateAudioReverb(SharpDX.ComObject)">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <param name="apoOut">No documentation.</param>	
-            <returns>No documentation.</returns>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioReverb']/*"/>	
-            <unmanaged>HRESULT CreateAudioReverb([Out, Fast] IUnknown** ppApo)</unmanaged>	
-            <unmanaged-short>CreateAudioReverb</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.CreateAudioVolumeMeter(SharpDX.ComObject)">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <param name="apoOut">No documentation.</param>	
-            <returns>No documentation.</returns>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioVolumeMeter']/*"/>	
-            <unmanaged>HRESULT CreateAudioVolumeMeter([Out, Fast] IUnknown** ppApo)</unmanaged>	
-            <unmanaged-short>CreateAudioVolumeMeter</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAudio2.Fx.Reverb">
             <summary>	
@@ -2501,17 +2525,7 @@
             The result of the conversion.
             </returns>
         </member>
-        <member name="M:SharpDX.XAudio2.MasteringVoice.GetChannelMask(System.Int32@)">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <param name="channelmaskRef">No documentation.</param>	
-            <returns>No documentation.</returns>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2MasteringVoice::GetChannelMask']/*"/>	
-            <unmanaged>HRESULT IXAudio2MasteringVoice::GetChannelMask([Out] unsigned int* pChannelmask)</unmanaged>	
-            <unmanaged-short>IXAudio2MasteringVoice::GetChannelMask</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.XAudio2.MasteringVoice.#ctor(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32,System.String)">
+        <member name="M:SharpDX.XAudio2.MasteringVoice.#ctor(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32,System.Int32)">
             <summary>	
             Creates and configures a mastering voice.	
             </summary>	
@@ -2520,15 +2534,6 @@
             <param name="inputSampleRate">[in]  Sample rate of the input audio data of the mastering voice. This rate must be a multiple of XAUDIO2_QUANTUM_DENOMINATOR. InputSampleRate must be between XAUDIO2_MIN_SAMPLE_RATE and XAUDIO2_MAX_SAMPLE_RATE. InputSampleRate can be set to XAUDIO2_DEFAULT_SAMPLERATE, with the default being determined by the current platform. Windows  Windows XP defaults to 44100. Windows Vista and Windows 7 default to the setting specified in the Sound Control Panel. The default for this setting is 44100 (or 48000 if required by the driver).  Xbox 360  Defaults to 48000.  </param>
             <param name="deviceId">[in]  Index of the output device that will be sent input by the mastering voice. Specifying the default value of 0 causes XAudio2 to select the global default audio device. </param>
             <unmanaged>HRESULT IXAudio2::CreateMasteringVoice([Out] IXAudio2MasteringVoice** ppMasteringVoice,[None] UINT32 InputChannels,[None] UINT32 InputSampleRate,[None] UINT32 Flags,[None] UINT32 DeviceIndex,[In, Optional] const XAUDIO2_EFFECT_CHAIN* pEffectChain)</unmanaged>
-        </member>
-        <member name="P:SharpDX.XAudio2.MasteringVoice.ChannelMask">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2MasteringVoice::GetChannelMask']/*"/>	
-            <unmanaged>GetChannelMask</unmanaged>	
-            <unmanaged-short>GetChannelMask</unmanaged-short>	
-            <unmanaged>HRESULT IXAudio2MasteringVoice::GetChannelMask([Out] unsigned int* pChannelmask)</unmanaged>
         </member>
         <member name="T:SharpDX.XAudio2.SourceVoice">
             <summary>	
@@ -2605,7 +2610,7 @@
             </summary>	
             <returns>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise.</returns>	
             <remarks>	
-            <p>If the voice is started, the buffer that is currently playing is not removed from the queue.</p> <p><strong>FlushSourceBuffers</strong> can be called regardless of whether the voice is currently started or stopped.</p> <p>For every buffer removed, an OnBufferEnd callback will be made,  but none of the other per-buffer callbacks  (OnBufferStart, OnStreamEnd or OnLoopEnd) will be made.</p> <p><strong>FlushSourceBuffers</strong> does not change a the voice's running state, so if the voice was playing a buffer prior to the call, it will continue to do so,  and will deliver all the callbacks for the buffer normally. This means that the OnBufferEnd callback for this buffer will take place after the OnBufferEnd callbacks  for the buffers that were removed.  Thus, an XAudio2 client that calls FlushSourceBuffers cannot expect to receive OnBufferEnd callbacks in the order  in which the buffers were submitted.</p> <p>No warnings for starvation of the buffer queue will be emitted when the currently playing buffer completes; it is assumed that the client has  intentionally removed the buffers that followed it. However, there may be an audio pop if this buffer does not end at a zero crossing.  If the application  must ensure that the flush operation takes place while a specific buffer is playing?perhaps because the buffer ends with a  zero crossing?it must call <strong>FlushSourceBuffers</strong> from a callback, so that it executes synchronously.</p> <p>Calling <strong>FlushSourceBuffers</strong> after a voice is stopped and then submitting new data to the voice resets all of the voice's internal counters.</p> <p>A voice's state is not considered reset after calling <strong>FlushSourceBuffers</strong> until  the OnBufferEnd callback  occurs (if a buffer was previously submitted) or  <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)"/> returns with <see cref="T:SharpDX.XAudio2.VoiceState"/>.<strong>BuffersQueued</strong> == 0.   For example, if you stop a voice and call <strong>FlushSourceBuffers</strong>, it's still not legal to immediately call <see cref="M:SharpDX.XAudio2.SourceVoice.SetSourceSampleRate(System.Int32)"/> (which requires the voice to not have any buffers currently queued), until either of the previously mentioned conditions are met.	
+            <p>If the voice is started, the buffer that is currently playing is not removed from the queue.</p> <p><strong>FlushSourceBuffers</strong> can be called regardless of whether the voice is currently started or stopped.</p> <p>For every buffer removed, an OnBufferEnd callback will be made,  but none of the other per-buffer callbacks  (OnBufferStart, OnStreamEnd or OnLoopEnd) will be made.</p> <p><strong>FlushSourceBuffers</strong> does not change a the voice's running state, so if the voice was playing a buffer prior to the call, it will continue to do so,  and will deliver all the callbacks for the buffer normally. This means that the OnBufferEnd callback for this buffer will take place after the OnBufferEnd callbacks  for the buffers that were removed.  Thus, an XAudio2 client that calls FlushSourceBuffers cannot expect to receive OnBufferEnd callbacks in the order  in which the buffers were submitted.</p> <p>No warnings for starvation of the buffer queue will be emitted when the currently playing buffer completes; it is assumed that the client has  intentionally removed the buffers that followed it. However, there may be an audio pop if this buffer does not end at a zero crossing.  If the application  must ensure that the flush operation takes place while a specific buffer is playing?perhaps because the buffer ends with a  zero crossing?it must call <strong>FlushSourceBuffers</strong> from a callback, so that it executes synchronously.</p> <p>Calling <strong>FlushSourceBuffers</strong> after a voice is stopped and then submitting new data to the voice resets all of the voice's internal counters.</p> <p>A voice's state is not considered reset after calling <strong>FlushSourceBuffers</strong> until  the OnBufferEnd callback  occurs (if a buffer was previously submitted) or  <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)"/> returns with <see cref="T:SharpDX.XAudio2.VoiceState"/>.<strong>BuffersQueued</strong> == 0.   For example, if you stop a voice and call <strong>FlushSourceBuffers</strong>, it's still not legal to immediately call <see cref="M:SharpDX.XAudio2.SourceVoice.SetSourceSampleRate(System.Int32)"/> (which requires the voice to not have any buffers currently queued), until either of the previously mentioned conditions are met.	
             </p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2SourceVoice::FlushSourceBuffers']/*"/>	
@@ -2640,17 +2645,17 @@
             <unmanaged>HRESULT IXAudio2SourceVoice::ExitLoop([In] unsigned int OperationSet)</unmanaged>	
             <unmanaged-short>IXAudio2SourceVoice::ExitLoop</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)">
+        <member name="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)">
             <summary>	
             <p>Returns the voice's current cursor position data.</p>	
             </summary>	
-            <param name="flags">No documentation.</param>	
+            <param name="voiceStateRef"><dd> Pointer to an <see cref="T:SharpDX.XAudio2.VoiceState"/> structure containing the state of the voice. </dd></param>	
             <remarks>	
             <p>If a client needs to obtain the correlated positions of several voices (i.e. to know exactly  which sample of a given voice is playing when a given sample of another voice is playing) it must  make <strong>GetState</strong> calls in an XAudio2 engine callback, to ensure that none of the voices advance while  the calls are being made. See the XAudio2 Callbacks overview for  information about using XAudio2 callbacks.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2SourceVoice::GetState']/*"/>	
             <msdn-id>microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.getstate</msdn-id>	
-            <unmanaged>void IXAudio2SourceVoice::GetState([Out] XAUDIO2_VOICE_STATE* pVoiceState,[In] unsigned int Flags)</unmanaged>	
+            <unmanaged>void IXAudio2SourceVoice::GetState([Out] XAUDIO2_VOICE_STATE* pVoiceState)</unmanaged>	
             <unmanaged-short>IXAudio2SourceVoice::GetState</unmanaged-short>	
         </member>
         <member name="M:SharpDX.XAudio2.SourceVoice.SetFrequencyRatio(System.Single,System.Int32)">
@@ -2802,6 +2807,19 @@
             <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2SourceVoice::SubmitSourceBuffer']/*"/>	
             <unmanaged>HRESULT IXAudio2SourceVoice::SubmitSourceBuffer([In] const XAUDIO2_BUFFER* pBuffer,[In, Optional] const XAUDIO2_BUFFER_WMA* pBufferWMA)</unmanaged>	
         </member>
+        <member name="P:SharpDX.XAudio2.SourceVoice.State">
+            <summary>	
+            <p>Returns the voice's current cursor position data.</p>	
+            </summary>	
+            <remarks>	
+            <p>If a client needs to obtain the correlated positions of several voices (i.e. to know exactly  which sample of a given voice is playing when a given sample of another voice is playing) it must  make <strong>GetState</strong> calls in an XAudio2 engine callback, to ensure that none of the voices advance while  the calls are being made. See the XAudio2 Callbacks overview for  information about using XAudio2 callbacks.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2SourceVoice::GetState']/*"/>	
+            <msdn-id>microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.getstate</msdn-id>	
+            <unmanaged>GetState</unmanaged>	
+            <unmanaged-short>GetState</unmanaged-short>	
+            <unmanaged>void IXAudio2SourceVoice::GetState([Out] XAUDIO2_VOICE_STATE* pVoiceState)</unmanaged>
+        </member>
         <member name="P:SharpDX.XAudio2.SourceVoice.FrequencyRatio">
             <summary>	
             Returns the frequency adjustment ratio of the voice.	
@@ -2827,11 +2845,6 @@
             <unmanaged>SetSourceSampleRate</unmanaged>	
             <unmanaged-short>SetSourceSampleRate</unmanaged-short>	
             <unmanaged>HRESULT IXAudio2SourceVoice::SetSourceSampleRate([In] unsigned int NewSourceSampleRate)</unmanaged>
-        </member>
-        <member name="P:SharpDX.XAudio2.SourceVoice.State">
-            <summary>
-            Gets the state.
-            </summary>
         </member>
         <member name="E:SharpDX.XAudio2.SourceVoice.ProcessingPassStart">
             <summary>
@@ -3098,6 +3111,54 @@
             The result of the conversion.
             </returns>
         </member>
+        <member name="F:SharpDX.XAudio2.XAudio2.CLSID_XAudio2_Debug">
+            <summary>Constant CLSID_XAudio2_Debug.</summary>
+            <unmanaged>CLSID_XAudio2_Debug</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAudio2.XAudio2.CLSID_XAudio2">
+            <summary>Constant CLSID_XAudio2.</summary>
+            <unmanaged>CLSID_XAudio2</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAudio2.XAudio2.IID_IXAudio2">
+            <summary>Constant IID_IXAudio2.</summary>
+            <unmanaged>IID_IXAudio2</unmanaged>
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio2.GetDeviceCount(System.Int32@)">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <param name="countRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::GetDeviceCount']/*"/>	
+            <unmanaged>HRESULT IXAudio2::GetDeviceCount([Out] unsigned int* pCount)</unmanaged>	
+            <unmanaged-short>IXAudio2::GetDeviceCount</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio2.GetDeviceDetails(System.Int32,SharpDX.XAudio2.DeviceDetails@)">
+            <summary>	
+            <p>Returns information about an audio output device.</p>	
+            </summary>	
+            <param name="index"><dd>[in]  Index of the device to be queried. This value must be less than the count returned by <see cref="M:SharpDX.XAudio2.XAudio2.GetDeviceCount(System.Int32@)"/>. </dd></param>	
+            <param name="deviceDetailsRef"><dd>[out]  On success, reference to an <see cref="T:SharpDX.XAudio2.DeviceDetails"/> structure that is returned. </dd></param>	
+            <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise. See XAudio2 Error Codes for descriptions of XAudio2 specific error codes.</p></returns>	
+            <remarks>	
+            <p><strong>GetDeviceDetails</strong> and <see cref="M:SharpDX.XAudio2.XAudio2.GetDeviceCount(System.Int32@)"/> are the only <see cref="T:SharpDX.XAudio2.XAudio2"/> methods that may be called before calling <see cref="M:SharpDX.XAudio2.XAudio2.Initialize(System.Int32,SharpDX.XAudio2.ProcessorSpecifier)"/>.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::GetDeviceDetails']/*"/>	
+            <msdn-id>microsoft.directx_sdk.ixaudio2.ixaudio2.getdevicedetails</msdn-id>	
+            <unmanaged>HRESULT IXAudio2::GetDeviceDetails([In] unsigned int Index,[Out] XAUDIO2_DEVICE_DETAILS* pDeviceDetails)</unmanaged>	
+            <unmanaged-short>IXAudio2::GetDeviceDetails</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio2.Initialize(System.Int32,SharpDX.XAudio2.ProcessorSpecifier)">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <param name="flags">No documentation.</param>	
+            <param name="xAudio2Processor">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::Initialize']/*"/>	
+            <unmanaged>HRESULT IXAudio2::Initialize([In] unsigned int Flags,[In] XAUDIO2_WINDOWS_PROCESSOR_SPECIFIER XAudio2Processor)</unmanaged>	
+            <unmanaged-short>IXAudio2::Initialize</unmanaged-short>	
+        </member>
         <member name="M:SharpDX.XAudio2.XAudio2.RegisterForCallbacks_(System.IntPtr)">
             <summary>	
             Adds anIXAudio2EngineCallbackreference to theXAudio2engine callback list.	
@@ -3165,7 +3226,7 @@
             <unmanaged>HRESULT IXAudio2::CreateSubmixVoice([Out, Fast] IXAudio2SubmixVoice** ppSubmixVoice,[In] unsigned int InputChannels,[In] unsigned int InputSampleRate,[In] XAUDIO2_SUBMIX_VOICE_FLAGS Flags,[In] unsigned int ProcessingStage,[In, Optional] const XAUDIO2_VOICE_SENDS* pSendList,[In, Optional] const XAUDIO2_EFFECT_CHAIN* pEffectChain)</unmanaged>	
             <unmanaged-short>IXAudio2::CreateSubmixVoice</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.XAudio2.XAudio2.CreateMasteringVoice(SharpDX.XAudio2.MasteringVoice,System.Int32,System.Int32,System.Int32,System.String,System.Nullable{SharpDX.XAudio2.EffectChain},SharpDX.Multimedia.AudioStreamCategory)">
+        <member name="M:SharpDX.XAudio2.XAudio2.CreateMasteringVoice(SharpDX.XAudio2.MasteringVoice,System.Int32,System.Int32,System.Int32,System.Int32,System.Nullable{SharpDX.XAudio2.EffectChain})">
             <summary>	
             <p>Creates and configures a mastering voice.</p>	
             </summary>	
@@ -3173,16 +3234,15 @@
             <param name="inputChannels"><dd>[in]  Number of channels the mastering voice expects in its input audio. <p><em>InputChannels</em> must be less than or equal to <see cref="F:SharpDX.XAudio2.XAudio2.MaximumAudioChannels"/>.</p> <p><em>InputChannels</em> can be set to <see cref="F:SharpDX.XAudio2.XAudio2.DefaultChannels"/>, with the default being determined by the current platform.</p> <table><tr><th>Windows </th></tr><tr><td> <p>Attempts to detect the system speaker configuration setup.</p> </td></tr></table> <table><tr><th>Xbox 360 </th></tr><tr><td> <p>Defaults to 5.1 surround.</p> </td></tr></table> </dd></param>	
             <param name="inputSampleRate"><dd>[in]  Sample rate of the input audio data of the mastering voice. This rate must be a multiple of XAUDIO2_QUANTUM_DENOMINATOR. <p><em>InputSampleRate</em> must be between <see cref="F:SharpDX.XAudio2.XAudio2.MinimumSampleRate"/> and <see cref="F:SharpDX.XAudio2.XAudio2.MaximumSampleRate"/>.</p> <p><em>InputSampleRate</em> can be set to <see cref="F:SharpDX.XAudio2.XAudio2.DefaultSampleRate"/>, with the default being determined by the current platform.</p> <table><tr><th>Windows </th></tr><tr><td> <p>Windows XP defaults to 44100.</p> <p>Windows Vista and Windows 7 default to the setting specified in the Sound Control Panel. The default for this setting is 44100 (or 48000 if required by the driver).</p> </td></tr></table> <table><tr><th>Xbox 360 </th></tr><tr><td> <p>Defaults to 48000.</p> </td></tr></table> </dd></param>	
             <param name="flags"><dd>[in]  Flags that specify the behavior of the mastering voice. Must be 0. </dd></param>	
-            <param name="szDeviceId"><dd>[in]  Index of the output device that will be sent input by the mastering voice. Specifying the default value of 0 causes XAudio2 to select the global default audio device. </dd></param>	
+            <param name="deviceIndex"><dd>[in]  Index of the output device that will be sent input by the mastering voice. Specifying the default value of 0 causes XAudio2 to select the global default audio device. </dd></param>	
             <param name="effectChainRef"><dd>[in, optional]  Pointer to an <see cref="T:SharpDX.XAudio2.EffectChain"/> structure that describe an effect chain to use in the mastering voice, or <c>null</c> to use no effects. </dd></param>	
-            <param name="streamCategory">No documentation.</param>	
             <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise. See XAudio2 Error Codes for descriptions of XAudio2 specific error codes.</p></returns>	
             <remarks>	
-            <p>Mastering voices receive the output of one or more source or submix voices. They process the data and send it to the audio output device.</p> <p>Typically, a mastering voice should be created with an input sample rate that will be used by the majority of the title's audio content. The mastering voice performs a sample rate conversion from this input sample rate to the actual device output rate. Alternatively, IXAudio2::GetDeviceDetails can be used to find the native audio rate, and that can be used throughout the majority of the title's audio graph.</p> <p>No source or submix voices can be created until a mastering voice exists, and a mastering voice cannot be destroyed if any source or submix voices still exist.</p> <p>Mastering voices are always processed after all source and submix voices. This means that you need not specify a <em>ProcessingStage</em> parameter to control the processing order.</p> <p>Several mastering voices can exist at once, but only one of them can be started. Only one device can be used by XAudio2 at a time.</p> <p>When first created, mastering voices are in the started state.</p> <p>It is illegal to call <strong>CreateMasteringVoice</strong> from within a callback. If <strong>CreateMasteringVoice</strong> is called within a callback <see cref="F:SharpDX.XAudio2.ResultCode.InvalidCall"/> will be returned.</p>	
+            <p>Mastering voices receive the output of one or more source or submix voices. They process the data and send it to the audio output device.</p> <p>Typically, a mastering voice should be created with an input sample rate that will be used by the majority of the title's audio content. The mastering voice performs a sample rate conversion from this input sample rate to the actual device output rate. Alternatively, <see cref="M:SharpDX.XAudio2.XAudio2.GetDeviceDetails(System.Int32,SharpDX.XAudio2.DeviceDetails@)"/> can be used to find the native audio rate, and that can be used throughout the majority of the title's audio graph.</p> <p>No source or submix voices can be created until a mastering voice exists, and a mastering voice cannot be destroyed if any source or submix voices still exist.</p> <p>Mastering voices are always processed after all source and submix voices. This means that you need not specify a <em>ProcessingStage</em> parameter to control the processing order.</p> <p>Several mastering voices can exist at once, but only one of them can be started. Only one device can be used by XAudio2 at a time.</p> <p>When first created, mastering voices are in the started state.</p> <p>It is illegal to call <strong>CreateMasteringVoice</strong> from within a callback. If <strong>CreateMasteringVoice</strong> is called within a callback <see cref="F:SharpDX.XAudio2.ResultCode.InvalidCall"/> will be returned.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::CreateMasteringVoice']/*"/>	
             <msdn-id>ee418605</msdn-id>	
-            <unmanaged>HRESULT IXAudio2::CreateMasteringVoice([Out, Fast] IXAudio2MasteringVoice** ppMasteringVoice,[In] unsigned int InputChannels,[In] unsigned int InputSampleRate,[In] unsigned int Flags,[In, Optional] const wchar_t* szDeviceId,[In, Optional] const XAUDIO2_EFFECT_CHAIN* pEffectChain,[In] AUDIO_STREAM_CATEGORY StreamCategory)</unmanaged>	
+            <unmanaged>HRESULT IXAudio2::CreateMasteringVoice([Out, Fast] IXAudio2MasteringVoice** ppMasteringVoice,[In] unsigned int InputChannels,[In] unsigned int InputSampleRate,[In] unsigned int Flags,[In] unsigned int DeviceIndex,[In, Optional] const XAUDIO2_EFFECT_CHAIN* pEffectChain)</unmanaged>	
             <unmanaged-short>IXAudio2::CreateMasteringVoice</unmanaged-short>	
         </member>
         <member name="M:SharpDX.XAudio2.XAudio2.StartEngine">
@@ -3248,7 +3308,7 @@
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::SetDebugConfiguration']/*"/>	
             <msdn-id>ee418624</msdn-id>	
-            <unmanaged>void IXAudio2::SetDebugConfiguration([In, Value] const XAUDIO2_DEBUG_CONFIGURATION* pDebugConfiguration,[In] void* pReserved)</unmanaged>	
+            <unmanaged>void IXAudio2::SetDebugConfiguration([In, Value] const XAUDIO2_DEBUG_CONFIGURATION* pDebugConfiguration,[In, Optional] void* pReserved)</unmanaged>	
             <unmanaged-short>IXAudio2::SetDebugConfiguration</unmanaged-short>	
         </member>
         <member name="M:SharpDX.XAudio2.XAudio2.#ctor">
@@ -3262,6 +3322,14 @@
             </summary>
             <param name="flags">Specify a Debug or Normal XAudio2 instance.</param>
             <param name="processorSpecifier">The processor specifier.</param>
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio2.GetDeviceDetails(System.Int32)">
+            <summary>	
+            Returns information about an audio output device.	
+            </summary>	
+            <param name="index">[in]  Index of the device to be queried. This value must be less than the count returned by <see cref="M:SharpDX.XAudio2.XAudio2.GetDeviceCount(System.Int32@)"/>. </param>
+            <returns>On success, pointer to an <see cref="T:SharpDX.XAudio2.DeviceDetails"/> structure that is returned. </returns>
+            <unmanaged>HRESULT IXAudio2::GetDeviceDetails([None] UINT32 Index,[Out] XAUDIO2_DEVICE_DETAILS* pDeviceDetails)</unmanaged>
         </member>
         <member name="M:SharpDX.XAudio2.XAudio2.AmplitudeRatioToDecibels(System.Single)">
             <summary>
@@ -3312,6 +3380,15 @@
             Atomically applies a set of operations for all pending operations.
             </summary>	
             <unmanaged>HRESULT IXAudio2::CommitChanges([None] UINT32 OperationSet)</unmanaged>
+        </member>
+        <member name="P:SharpDX.XAudio2.XAudio2.DeviceCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2::GetDeviceCount']/*"/>	
+            <unmanaged>GetDeviceCount</unmanaged>	
+            <unmanaged-short>GetDeviceCount</unmanaged-short>	
+            <unmanaged>HRESULT IXAudio2::GetDeviceCount([Out] unsigned int* pCount)</unmanaged>
         </member>
         <member name="P:SharpDX.XAudio2.XAudio2.PerformanceData">
             <summary>	
@@ -3436,6 +3513,51 @@
             <msdn-id>ee419231</msdn-id>	
             <unmanaged>BOOL LogTiming</unmanaged>	
             <unmanaged-short>BOOL LogTiming</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.XAudio2.DeviceDetails">
+            <summary>	
+            <p>Provides information about an audio device.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_DETAILS']/*"/>	
+            <msdn-id>ee419232</msdn-id>	
+            <unmanaged>XAUDIO2_DEVICE_DETAILS</unmanaged>	
+            <unmanaged-short>XAUDIO2_DEVICE_DETAILS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceDetails.DeviceID">
+            <summary>	
+            <dd> String identifier for the audio device. </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_DETAILS::DeviceID']/*"/>	
+            <msdn-id>ee419232</msdn-id>	
+            <unmanaged>wchar_t DeviceID[256]</unmanaged>	
+            <unmanaged-short>wchar_t DeviceID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceDetails.DisplayName">
+            <summary>	
+            <dd> Friendly name, which is suitable for display to the user. </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_DETAILS::DisplayName']/*"/>	
+            <msdn-id>ee419232</msdn-id>	
+            <unmanaged>wchar_t DisplayName[256]</unmanaged>	
+            <unmanaged-short>wchar_t DisplayName</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceDetails.Role">
+            <summary>	
+            <dd> Roles are assigned by the user, and specify which audio scenarios use the device as a default device. See the <see cref="T:SharpDX.XAudio2.DeviceRole"/> enumeration for details. </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_DETAILS::Role']/*"/>	
+            <msdn-id>ee419232</msdn-id>	
+            <unmanaged>XAUDIO2_DEVICE_ROLE Role</unmanaged>	
+            <unmanaged-short>XAUDIO2_DEVICE_ROLE Role</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.DeviceDetails.OutputFormat">
+            <summary>	
+            <dd> <see cref="T:SharpDX.Multimedia.WaveFormatExtensible"/> structure that describes the device's native PCM audio format. </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEVICE_DETAILS::OutputFormat']/*"/>	
+            <msdn-id>ee419232</msdn-id>	
+            <unmanaged>WAVEFORMATEXTENSIBLE OutputFormat</unmanaged>	
+            <unmanaged-short>WAVEFORMATEXTENSIBLE OutputFormat</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAudio2.EffectChain">
             <summary>	
@@ -3669,15 +3791,6 @@
             <unmanaged>XAUDIO2_VOICE_FLAGS CreationFlags</unmanaged>	
             <unmanaged-short>XAUDIO2_VOICE_FLAGS CreationFlags</unmanaged-short>	
         </member>
-        <member name="F:SharpDX.XAudio2.VoiceDetails.ActiveFlags">
-            <summary>	
-            <dd> Flags that are currently set on the voice. </dd>	
-            </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_VOICE_DETAILS::ActiveFlags']/*"/>	
-            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2_voice_details</msdn-id>	
-            <unmanaged>unsigned int ActiveFlags</unmanaged>	
-            <unmanaged-short>unsigned int ActiveFlags</unmanaged-short>	
-        </member>
         <member name="F:SharpDX.XAudio2.VoiceDetails.InputChannelCount">
             <summary>	
             <dd> The number of input channels the voice expects. </dd>	
@@ -3777,7 +3890,7 @@
             Returns the voice's current state and cursor position data.	
             </summary>	
             <remarks>	
-            <p>For all encoded formats, including constant bit rate (CBR) formats  such as adaptive differential pulse code modulation (ADPCM), <strong>SamplesPlayed</strong> is expressed  in terms of decoded samples. For pulse code modulation (PCM) formats, <strong>SamplesPlayed</strong> is expressed in terms of either input or output samples.  There is a one-to-one mapping from input to output for PCM formats.</p> <p>If a client needs to get the correlated positions of several voices?that is, to know exactly which sample of a particular voice is playing when a specified sample  of another voice is playing?it must make the <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)"/> calls in an XAudio2 engine callback. Doing this ensures that none of the voices advance while the calls are made.</p>	
+            <p>For all encoded formats, including constant bit rate (CBR) formats  such as adaptive differential pulse code modulation (ADPCM), <strong>SamplesPlayed</strong> is expressed  in terms of decoded samples. For pulse code modulation (PCM) formats, <strong>SamplesPlayed</strong> is expressed in terms of either input or output samples.  There is a one-to-one mapping from input to output for PCM formats.</p> <p>If a client needs to get the correlated positions of several voices?that is, to know exactly which sample of a particular voice is playing when a specified sample  of another voice is playing?it must make the <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)"/> calls in an XAudio2 engine callback. Doing this ensures that none of the voices advance while the calls are made.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_VOICE_STATE']/*"/>	
             <msdn-id>ee419247</msdn-id>	
@@ -3804,7 +3917,7 @@
         </member>
         <member name="F:SharpDX.XAudio2.VoiceState.SamplesPlayed">
             <summary>	
-            <dd> Total number of samples processed by this voice since it last started,  or since the last audio stream ended (as marked with the <see cref="F:SharpDX.XAudio2.BufferFlags.EndOfStream"/> flag).  This total includes samples played multiple times due to looping. Theoretically, if all audio emitted by the voice up to this time is captured, this parameter would be the length of the audio stream in samples.  If you specify <strong><see cref="F:SharpDX.XAudio2.VoiceFlags.Nosamplesplayed"/></strong> when you call <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)"/>, this member won't be calculated, and its value is unspecified on return from  <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)"/>. <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(System.Int32)"/> takes about one-third as much time to complete when you specify <strong><see cref="F:SharpDX.XAudio2.VoiceFlags.Nosamplesplayed"/></strong>. </dd>	
+            <dd> Total number of samples processed by this voice since it last started,  or since the last audio stream ended (as marked with the <see cref="F:SharpDX.XAudio2.BufferFlags.EndOfStream"/> flag).  This total includes samples played multiple times due to looping. Theoretically, if all audio emitted by the voice up to this time is captured, this parameter would be the length of the audio stream in samples.  If you specify <strong>XAUDIO2_VOICE_NOSAMPLESPLAYED</strong> when you call <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)"/>, this member won't be calculated, and its value is unspecified on return from  <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)"/>. <see cref="M:SharpDX.XAudio2.SourceVoice.GetState(SharpDX.XAudio2.VoiceState@)"/> takes about one-third as much time to complete when you specify <strong>XAUDIO2_VOICE_NOSAMPLESPLAYED</strong>. </dd>	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_VOICE_STATE::SamplesPlayed']/*"/>	
             <msdn-id>ee419247</msdn-id>	
@@ -3928,10 +4041,9 @@
             <param name="speakerChannelMask"><dd>[in]  Assignment of channels to speaker positions. This value must not be zero. The only permissible value on Xbox 360 is SPEAKER_XBOX. </dd></param>	
             <param name="speedOfSound"><dd>[in]  Speed of sound, in user-defined world units per second. Use this value only for doppler calculations.  It must be greater than or equal to FLT_MIN. </dd></param>	
             <param name="instance"><dd>[out]  3D audio instance handle. Use this handle when you call <see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/>. </dd></param>	
-            <returns>None.</returns>	
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
             <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
-            <unmanaged>HRESULT X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
+            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
             <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
         </member>
         <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers)">
@@ -4625,13 +4737,13 @@
             An Echo XAPO AudioProcessor
             </summary>
         </member>
+        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumFeedback">
+            <summary>Constant MinimumFeedback.</summary>
+            <unmanaged>FXECHO_MIN_FEEDBACK</unmanaged>
+        </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.MaximumFeedback">
             <summary>Constant MaximumFeedback.</summary>
             <unmanaged>FXECHO_MAX_FEEDBACK</unmanaged>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.Echo.DefaultDelay">
-            <summary>Constant DefaultDelay.</summary>
-            <unmanaged>FXECHO_DEFAULT_DELAY</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.MinimumDelay">
             <summary>Constant MinimumDelay.</summary>
@@ -4653,9 +4765,9 @@
             <summary>Constant MinimumWetdrymix.</summary>
             <unmanaged>FXECHO_MIN_WETDRYMIX</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumFeedback">
-            <summary>Constant MinimumFeedback.</summary>
-            <unmanaged>FXECHO_MIN_FEEDBACK</unmanaged>
+        <member name="F:SharpDX.XAPO.Fx.Echo.DefaultDelay">
+            <summary>Constant DefaultDelay.</summary>
+            <unmanaged>FXECHO_DEFAULT_DELAY</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.DefaultFeedback">
             <summary>Constant DefaultFeedback.</summary>
@@ -4691,10 +4803,6 @@
             <summary>Constant MinimumFrameRate.</summary>
             <unmanaged>FXEQ_MIN_FRAMERATE</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter3">
-            <summary>Constant DefaultFrequencyCenter3.</summary>
-            <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_3</unmanaged>
-        </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumGain">
             <summary>Constant MaximumGain.</summary>
             <unmanaged>FXEQ_MAX_GAIN</unmanaged>
@@ -4711,6 +4819,10 @@
             <summary>Constant DefaultGain.</summary>
             <unmanaged>FXEQ_DEFAULT_GAIN</unmanaged>
         </member>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultBandwidth">
+            <summary>Constant DefaultBandwidth.</summary>
+            <unmanaged>FXEQ_DEFAULT_BANDWIDTH</unmanaged>
+        </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter1">
             <summary>Constant DefaultFrequencyCenter1.</summary>
             <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_1</unmanaged>
@@ -4719,9 +4831,9 @@
             <summary>Constant MaximumFrequencyCenter.</summary>
             <unmanaged>FXEQ_MAX_FREQUENCY_CENTER</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultBandwidth">
-            <summary>Constant DefaultBandwidth.</summary>
-            <unmanaged>FXEQ_DEFAULT_BANDWIDTH</unmanaged>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter3">
+            <summary>Constant DefaultFrequencyCenter3.</summary>
+            <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_3</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter0">
             <summary>Constant DefaultFrequencyCenter0.</summary>
@@ -4757,10 +4869,6 @@
             <summary>Constant DefaultLoudness.</summary>
             <unmanaged>FXMASTERINGLIMITER_DEFAULT_LOUDNESS</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.MinimumRelease">
-            <summary>Constant MinimumRelease.</summary>
-            <unmanaged>FXMASTERINGLIMITER_MIN_RELEASE</unmanaged>
-        </member>
         <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.MaximumRelease">
             <summary>Constant MaximumRelease.</summary>
             <unmanaged>FXMASTERINGLIMITER_MAX_RELEASE</unmanaged>
@@ -4768,6 +4876,10 @@
         <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.DefaultRelease">
             <summary>Constant DefaultRelease.</summary>
             <unmanaged>FXMASTERINGLIMITER_DEFAULT_RELEASE</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.MinimumRelease">
+            <summary>Constant MinimumRelease.</summary>
+            <unmanaged>FXMASTERINGLIMITER_MIN_RELEASE</unmanaged>
         </member>
         <member name="M:SharpDX.XAPO.Fx.MasteringLimiter.#ctor">
             <summary>
@@ -4818,38 +4930,36 @@
             </summary>	
             <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAPO.Fx.XAPOFx']/*"/>	
         </member>
-        <member name="M:SharpDX.XAPO.Fx.XAPOFx.CreateFX(System.Guid,SharpDX.ComObject,System.IntPtr,System.Int32)">
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEQ">
+            <summary>Constant CLSID_FXEQ.</summary>
+            <unmanaged>CLSID_FXEQ</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXMasteringLimiter">
+            <summary>Constant CLSID_FXMasteringLimiter.</summary>
+            <unmanaged>CLSID_FXMasteringLimiter</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXReverb">
+            <summary>Constant CLSID_FXReverb.</summary>
+            <unmanaged>CLSID_FXReverb</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEcho">
+            <summary>Constant CLSID_FXEcho.</summary>
+            <unmanaged>CLSID_FXEcho</unmanaged>
+        </member>
+        <member name="M:SharpDX.XAPO.Fx.XAPOFx.CreateFX(System.Guid,SharpDX.ComObject)">
             <summary>	
             Creates an instance of the requested XAPOFX effect.	
             </summary>	
             <param name="clsid"><dd> ID of the effect to create. Use the <strong>__uuidof</strong> on the effect class name  to get the CLSID for an effect. For example, <strong>__uuidof(FXReverb)</strong> would provide  the CLSID for the FXReverb effect. For a list of effects provided by XAPOFX, see XAPOFX Overview. For an example  of retrieving the CLSID for an effect, see How to: Use XAPOFX in XAudio2. </dd></param>	
             <param name="effectRef"><dd> Receives a reference to the created XAPO instance. If <strong>CreateFX</strong> fails, <em>pEffect</em> is untouched. </dd></param>	
-            <param name="initDataRef"><dd>[optional]  Effect-specific initialization parameters. This may be <c>null</c>  if <em>InitDataByteSize</em> is zero. </dd></param>	
-            <param name="initDataByteSize"><dd>[optional]  Size of <em>pInitData</em> in bytes. This may be zero if <em>pInitData</em> is <c>null</c>. </dd></param>	
             <returns>Returns <see cref="F:SharpDX.Result.Ok"/> if successful; otherwise, an error code.</returns>	
             <remarks>	
             <p>The created XAPO will have a reference count of 1. Client code should call <strong>IUnknown::Release</strong> after passing the XAPO to XAudio2 to allow XAudio2 to dispose of the XAPO when it is no longer needed.  Use <see cref="M:SharpDX.XAudio2.XAudio2.CreateSourceVoice_(SharpDX.XAudio2.SourceVoice,System.IntPtr,SharpDX.XAudio2.VoiceFlags,System.Single,System.IntPtr,System.Nullable{SharpDX.XAudio2.VoiceSendDescriptors},System.Nullable{SharpDX.XAudio2.EffectChain})"/> or <see cref="M:SharpDX.XAudio2.Voice.SetEffectChain(System.Nullable{SharpDX.XAudio2.EffectChain})"/> to pass an XAPO to XAudio2.</p>	
             </remarks>	
             <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateFX']/*"/>	
             <msdn-id>hh405044</msdn-id>	
-            <unmanaged>HRESULT CreateFX([In] const GUID&amp; clsid,[Out, Fast] IUnknown** pEffect,[In, Buffer, Optional] const void* pInitData,[In] unsigned int InitDataByteSize)</unmanaged>	
+            <unmanaged>HRESULT CreateFX([In] const GUID&amp; clsid,[Out, Fast] IUnknown** pEffect)</unmanaged>	
             <unmanaged-short>CreateFX</unmanaged-short>	
-        </member>
-        <member name="T:SharpDX.XAPO.Fx.EchoInitdata">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FXECHO_INITDATA']/*"/>	
-            <unmanaged>FXECHO_INITDATA</unmanaged>	
-            <unmanaged-short>FXECHO_INITDATA</unmanaged-short>	
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.EchoInitdata.MaxDelay">
-            <summary>	
-            No documentation.	
-            </summary>	
-            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FXECHO_INITDATA::MaxDelay']/*"/>	
-            <unmanaged>float MaxDelay</unmanaged>	
-            <unmanaged-short>float MaxDelay</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAPO.Fx.EchoParameters">
             <summary>	
@@ -4883,7 +4993,7 @@
         </member>
         <member name="F:SharpDX.XAPO.Fx.EchoParameters.Delay">
             <summary>	
-            <dd> Delay to all channels in milliseconds. This value must be between <strong><see cref="F:SharpDX.XAPO.Fx.Echo.MinimumDelay"/></strong> and <strong><see cref="T:SharpDX.XAPO.Fx.EchoInitdata"/>.MaxDelay</strong>. </dd>	
+            <dd> Delay to all channels in milliseconds. This value must be between <strong><see cref="F:SharpDX.XAPO.Fx.Echo.MinimumDelay"/></strong> and <strong>FXECHO_INITDATA.MaxDelay</strong>. </dd>	
             </summary>	
             <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FXECHO_PARAMETERS::Delay']/*"/>	
             <msdn-id>ee417667</msdn-id>	

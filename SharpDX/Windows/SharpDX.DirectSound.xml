@@ -31,6 +31,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::dwSize']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -39,6 +40,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::vPosition']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>D3DVECTOR vPosition</unmanaged>	
             <unmanaged-short>D3DVECTOR vPosition</unmanaged-short>	
         </member>
@@ -47,6 +49,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::vVelocity']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>D3DVECTOR vVelocity</unmanaged>	
             <unmanaged-short>D3DVECTOR vVelocity</unmanaged-short>	
         </member>
@@ -55,6 +58,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::dwInsideConeAngle']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>unsigned int dwInsideConeAngle</unmanaged>	
             <unmanaged-short>unsigned int dwInsideConeAngle</unmanaged-short>	
         </member>
@@ -63,6 +67,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::dwOutsideConeAngle']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>unsigned int dwOutsideConeAngle</unmanaged>	
             <unmanaged-short>unsigned int dwOutsideConeAngle</unmanaged-short>	
         </member>
@@ -71,6 +76,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::vConeOrientation']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>D3DVECTOR vConeOrientation</unmanaged>	
             <unmanaged-short>D3DVECTOR vConeOrientation</unmanaged-short>	
         </member>
@@ -79,6 +85,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::lConeOutsideVolume']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>int lConeOutsideVolume</unmanaged>	
             <unmanaged-short>int lConeOutsideVolume</unmanaged-short>	
         </member>
@@ -87,6 +94,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::flMinDistance']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>float flMinDistance</unmanaged>	
             <unmanaged-short>float flMinDistance</unmanaged-short>	
         </member>
@@ -95,6 +103,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::flMaxDistance']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>float flMaxDistance</unmanaged>	
             <unmanaged-short>float flMaxDistance</unmanaged-short>	
         </member>
@@ -103,6 +112,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DBUFFER::dwMode']/*"/>	
+            <msdn-id>ee416816</msdn-id>	
             <unmanaged>unsigned int dwMode</unmanaged>	
             <unmanaged-short>unsigned int dwMode</unmanaged-short>	
         </member>
@@ -753,6 +763,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSCCAPS::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsccaps</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -761,6 +772,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSCCAPS::dwFlags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsccaps</msdn-id>	
             <unmanaged>unsigned int dwFlags</unmanaged>	
             <unmanaged-short>unsigned int dwFlags</unmanaged-short>	
         </member>
@@ -769,6 +781,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSCCAPS::dwFormats']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsccaps</msdn-id>	
             <unmanaged>unsigned int dwFormats</unmanaged>	
             <unmanaged-short>unsigned int dwFormats</unmanaged-short>	
         </member>
@@ -777,6 +790,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSCCAPS::dwChannels']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsccaps</msdn-id>	
             <unmanaged>unsigned int dwChannels</unmanaged>	
             <unmanaged-short>unsigned int dwChannels</unmanaged-short>	
         </member>
@@ -1344,42 +1358,7 @@
             The<strong>SetSpeakerConfig</strong>method specifies the speaker configuration of the device.	
             </summary>	
             <param name="speakerConfig"><dd> The speaker configuration. See the following remarks. </dd></param>	
-            <returns><p>If the method succeeds, the return value is DS_OK. If the method fails, the return value may be one of the error values shown in the following table.</p> <table> <tr><th>Return code</th></tr> <tr><td>DSERR_INVALIDPARAM </td></tr> <tr><td>DSERR_UNINITIALIZED </td></tr> </table></returns>	
-            <remarks>	
-            <p>In Windows Vista and later versions of Windows, <strong>SetSpeakerConfig</strong> is a NOP.  For Windows Vista and later versions, the speaker  configuration is a system setting that should not be modified by an application. End users can set the speaker configuration  through control panels.</p>  Speaker Configurations <p>These tables contain the possible speaker configurations.</p> <table> <tr><th>Value	
-            </th><th>Description	
-            </th></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.FivePointOneBack"/>	
-            </td><td>The audio is played through a speaker arrangement of five surround speakers with a subwoofer. (<see cref="F:SharpDX.DirectSound.SpeakerConfiguration.FivePointOne"/> is still defined, but is obsolete as of Windows Vista. Use <see cref="F:SharpDX.DirectSound.SpeakerConfiguration.FivePointOneBack"/> instead.)	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.FivePointOneSurround"/>	
-            </td><td>The audio is played through a home theater speaker arrangement of five surround speakers with a subwoofer. This value applies to Windows Vista or later.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.DirectOut"/>	
-            </td><td>The audio is passed through directly, without being configured for speakers.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Headphone"/>	
-            </td><td>The audio is played through headphones.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Mono"/>	
-            </td><td>The audio is played through a single speaker.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Quadrophonic"/>	
-            </td><td>The audio is played through quadraphonic speakers.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Stereo"/>	
-            </td><td>The audio is played through stereo speakers (default value).	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Surround"/>	
-            </td><td>The audio is played through surround speakers.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.SevenPointOneWide"/>	
-            </td><td>The audio is played through a wide speaker arrangement of seven surround speakers with a subwoofer. (<see cref="F:SharpDX.DirectSound.SpeakerConfiguration.SevenPointOne"/> is still defined, but is obsolete as of Windows XP SP 2. Use <see cref="F:SharpDX.DirectSound.SpeakerConfiguration.SevenPointOneWide"/> instead.)	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.SevenPointOneSurround"/>	
-            </td><td>The audio is played through a home theater speaker arrangement of seven surround speakers with a subwoofer. This value applies to Windows XP SP2 or later.	
-            </td></tr> </table> <p><see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Stereo"/> can be combined with one of the values shown in the following table.</p> <table> <tr><th>Value	
-            </th><th>Description	
-            </th></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerGeometry.Wide"/>	
-            </td><td>The speakers are directed over an arc of 20 degrees.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerGeometry.Narrow"/>	
-            </td><td>The speakers are directed over an arc of 10 degrees.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerGeometry.Minimum"/>	
-            </td><td>The speakers are directed over an arc of 5 degrees.	
-            </td></tr> <tr><td><see cref="F:SharpDX.DirectSound.SpeakerGeometry.Maximum"/>	
-            </td><td>The speakers are directed over an arc of 180 degrees.	
-            </td></tr> </table>  <p>If a geometry value is to be used, it must be packed in a DWORD along with the <see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Stereo"/> flag. This can be done by using the DSSPEAKER_COMBINED macro, as in the following C++ example:</p> <pre> lpds-&gt;SetSpeakerConfig(DSSPEAKER_COMBINED( <see cref="F:SharpDX.DirectSound.SpeakerConfiguration.Stereo"/>, <see cref="F:SharpDX.DirectSound.SpeakerGeometry.Wide"/>)); </pre> <p>To use #defines implemented in Windows Vista, set the DIRECTSOUND_VERSION to 0x1000 before including dsound.h.</p>	
-            </remarks>	
+            <returns>No documentation.</returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDirectSound::SetSpeakerConfig']/*"/>	
             <msdn-id>ee418050</msdn-id>	
             <unmanaged>HRESULT IDirectSound::SetSpeakerConfig([In] unsigned int dwSpeakerConfig)</unmanaged>	
@@ -6135,6 +6114,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::dwSize']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -6143,6 +6123,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::vPosition']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>D3DVECTOR vPosition</unmanaged>	
             <unmanaged-short>D3DVECTOR vPosition</unmanaged-short>	
         </member>
@@ -6151,6 +6132,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::vVelocity']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>D3DVECTOR vVelocity</unmanaged>	
             <unmanaged-short>D3DVECTOR vVelocity</unmanaged-short>	
         </member>
@@ -6159,6 +6141,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::vOrientFront']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>D3DVECTOR vOrientFront</unmanaged>	
             <unmanaged-short>D3DVECTOR vOrientFront</unmanaged-short>	
         </member>
@@ -6167,6 +6150,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::vOrientTop']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>D3DVECTOR vOrientTop</unmanaged>	
             <unmanaged-short>D3DVECTOR vOrientTop</unmanaged-short>	
         </member>
@@ -6175,6 +6159,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::flDistanceFactor']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>float flDistanceFactor</unmanaged>	
             <unmanaged-short>float flDistanceFactor</unmanaged-short>	
         </member>
@@ -6183,6 +6168,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::flRolloffFactor']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>float flRolloffFactor</unmanaged>	
             <unmanaged-short>float flRolloffFactor</unmanaged-short>	
         </member>
@@ -6191,6 +6177,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DS3DLISTENER::flDopplerFactor']/*"/>	
+            <msdn-id>ee416817</msdn-id>	
             <unmanaged>float flDopplerFactor</unmanaged>	
             <unmanaged-short>float flDopplerFactor</unmanaged-short>	
         </member>
@@ -6306,6 +6293,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::dwSize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>unsigned int dwSize</unmanaged>	
             <unmanaged-short>unsigned int dwSize</unmanaged-short>	
         </member>
@@ -6314,6 +6302,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::dwFlags']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>DSBCAPS_FLAGS dwFlags</unmanaged>	
             <unmanaged-short>DSBCAPS_FLAGS dwFlags</unmanaged-short>	
         </member>
@@ -6322,6 +6311,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::dwBufferBytes']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>unsigned int dwBufferBytes</unmanaged>	
             <unmanaged-short>unsigned int dwBufferBytes</unmanaged-short>	
         </member>
@@ -6330,6 +6320,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::dwReserved']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>unsigned int dwReserved</unmanaged>	
             <unmanaged-short>unsigned int dwReserved</unmanaged-short>	
         </member>
@@ -6338,6 +6329,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::lpwfxFormat']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>WAVEFORMATEX* lpwfxFormat</unmanaged>	
             <unmanaged-short>WAVEFORMATEX lpwfxFormat</unmanaged-short>	
         </member>
@@ -6346,6 +6338,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DSBUFFERDESC::guid3DAlgorithm']/*"/>	
+            <msdn-id>microsoft.directx_sdk.reference.dsbufferdesc</msdn-id>	
             <unmanaged>GUID guid3DAlgorithm</unmanaged>	
             <unmanaged-short>GUID guid3DAlgorithm</unmanaged-short>	
         </member>

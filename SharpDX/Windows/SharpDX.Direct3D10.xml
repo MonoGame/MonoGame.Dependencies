@@ -804,6 +804,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_DESC::ByteWidth']/*"/>	
+            <msdn-id>bb204896</msdn-id>	
             <unmanaged>unsigned int ByteWidth</unmanaged>	
             <unmanaged-short>unsigned int ByteWidth</unmanaged-short>	
         </member>
@@ -812,6 +813,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_DESC::Usage']/*"/>	
+            <msdn-id>bb204896</msdn-id>	
             <unmanaged>D3D10_USAGE Usage</unmanaged>	
             <unmanaged-short>D3D10_USAGE Usage</unmanaged-short>	
         </member>
@@ -820,6 +822,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_DESC::BindFlags']/*"/>	
+            <msdn-id>bb204896</msdn-id>	
             <unmanaged>D3D10_BIND_FLAG BindFlags</unmanaged>	
             <unmanaged-short>D3D10_BIND_FLAG BindFlags</unmanaged-short>	
         </member>
@@ -828,6 +831,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_DESC::CPUAccessFlags']/*"/>	
+            <msdn-id>bb204896</msdn-id>	
             <unmanaged>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged>	
             <unmanaged-short>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged-short>	
         </member>
@@ -836,6 +840,7 @@
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_DESC::MiscFlags']/*"/>	
+            <msdn-id>bb204896</msdn-id>	
             <unmanaged>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged-short>	
         </member>
@@ -6298,7 +6303,7 @@
             <summary>	
             <p>Retrieve font characteristics.</p>	
             </summary>	
-            <param name="textMetricsRef"><dd>  <p>Pointer to a <see cref="T:SharpDX.Win32Native.TextMetric"/> structure, which contains font properties. If Unicode is defined, the function returns a <see cref="T:SharpDX.Win32Native.TextMetric"/> structure. Otherwise, the function returns a <see cref="T:SharpDX.Win32Native.TextMetricA"/> structure.</p> </dd></param>	
+            <param name="textMetricsRef"><dd>  <p>Pointer to a <see cref="T:SharpDX.Win32Native.TextMetric"/> structure, which contains font properties. If Unicode is defined, the function returns a <see cref="T:SharpDX.Win32Native.TextMetric"/> structure. Otherwise, the function returns a <see cref="!:SharpDX.Win32Native.TextMetricA"/> structure.</p> </dd></param>	
             <returns><p>Nonzero if the function is successful; otherwise 0.</p></returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ID3DX10Font::GetTextMetricsW']/*"/>	
             <msdn-id>bb173893</msdn-id>	
@@ -6842,6 +6847,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_ASYNC_GETDATA_DONOTFLUSH']/*"/>	
+            <msdn-id>bb204887</msdn-id>	
             <unmanaged>D3D10_ASYNC_GETDATA_DONOTFLUSH</unmanaged>	
             <unmanaged-short>D3D10_ASYNC_GETDATA_DONOTFLUSH</unmanaged-short>	
         </member>
@@ -7238,6 +7244,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_COLOR_WRITE_ENABLE_RED']/*"/>	
+            <msdn-id>bb204901</msdn-id>	
             <unmanaged>D3D10_COLOR_WRITE_ENABLE_RED</unmanaged>	
             <unmanaged-short>D3D10_COLOR_WRITE_ENABLE_RED</unmanaged-short>	
         </member>
@@ -7246,6 +7253,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_COLOR_WRITE_ENABLE_GREEN']/*"/>	
+            <msdn-id>bb204901</msdn-id>	
             <unmanaged>D3D10_COLOR_WRITE_ENABLE_GREEN</unmanaged>	
             <unmanaged-short>D3D10_COLOR_WRITE_ENABLE_GREEN</unmanaged-short>	
         </member>
@@ -7254,6 +7262,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_COLOR_WRITE_ENABLE_BLUE']/*"/>	
+            <msdn-id>bb204901</msdn-id>	
             <unmanaged>D3D10_COLOR_WRITE_ENABLE_BLUE</unmanaged>	
             <unmanaged-short>D3D10_COLOR_WRITE_ENABLE_BLUE</unmanaged-short>	
         </member>
@@ -7262,6 +7271,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_COLOR_WRITE_ENABLE_ALPHA']/*"/>	
+            <msdn-id>bb204901</msdn-id>	
             <unmanaged>D3D10_COLOR_WRITE_ENABLE_ALPHA</unmanaged>	
             <unmanaged-short>D3D10_COLOR_WRITE_ENABLE_ALPHA</unmanaged-short>	
         </member>
@@ -7270,6 +7280,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_COLOR_WRITE_ENABLE_ALL']/*"/>	
+            <msdn-id>bb204901</msdn-id>	
             <unmanaged>D3D10_COLOR_WRITE_ENABLE_ALL</unmanaged>	
             <unmanaged-short>D3D10_COLOR_WRITE_ENABLE_ALL</unmanaged-short>	
         </member>
@@ -7714,6 +7725,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_CLEAR_DEPTH']/*"/>	
+            <msdn-id>bb204900</msdn-id>	
             <unmanaged>D3D10_CLEAR_DEPTH</unmanaged>	
             <unmanaged-short>D3D10_CLEAR_DEPTH</unmanaged-short>	
         </member>
@@ -7722,6 +7734,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_CLEAR_STENCIL']/*"/>	
+            <msdn-id>bb204900</msdn-id>	
             <unmanaged>D3D10_CLEAR_STENCIL</unmanaged>	
             <unmanaged-short>D3D10_CLEAR_STENCIL</unmanaged-short>	
         </member>
@@ -7742,6 +7755,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_UNKNOWN']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_UNKNOWN</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_UNKNOWN</unmanaged-short>	
         </member>
@@ -7750,6 +7764,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE1D']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE1D</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE1D</unmanaged-short>	
         </member>
@@ -7758,6 +7773,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE1DARRAY']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE1DARRAY</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE1DARRAY</unmanaged-short>	
         </member>
@@ -7766,6 +7782,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE2D']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE2D</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE2D</unmanaged-short>	
         </member>
@@ -7774,6 +7791,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE2DARRAY']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE2DARRAY</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE2DARRAY</unmanaged-short>	
         </member>
@@ -7782,6 +7800,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE2DMS']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE2DMS</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE2DMS</unmanaged-short>	
         </member>
@@ -7790,6 +7809,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DSV_DIMENSION_TEXTURE2DMSARRAY']/*"/>	
+            <msdn-id>bb205043</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION_TEXTURE2DMSARRAY</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION_TEXTURE2DMSARRAY</unmanaged-short>	
         </member>
@@ -7807,6 +7827,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_WRITE_MASK_ZERO']/*"/>	
+            <msdn-id>bb205038</msdn-id>	
             <unmanaged>D3D10_DEPTH_WRITE_MASK_ZERO</unmanaged>	
             <unmanaged-short>D3D10_DEPTH_WRITE_MASK_ZERO</unmanaged-short>	
         </member>
@@ -7815,6 +7836,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_WRITE_MASK_ALL']/*"/>	
+            <msdn-id>bb205038</msdn-id>	
             <unmanaged>D3D10_DEPTH_WRITE_MASK_ALL</unmanaged>	
             <unmanaged-short>D3D10_DEPTH_WRITE_MASK_ALL</unmanaged-short>	
         </member>
@@ -8447,6 +8469,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_BUFFER']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_BUFFER</unmanaged-short>	
         </member>
@@ -8455,6 +8478,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_IA_VERTEX_BUFFER']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_IA_VERTEX_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_IA_VERTEX_BUFFER</unmanaged-short>	
         </member>
@@ -8463,6 +8487,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_IA_INDEX_BUFFER']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_IA_INDEX_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_IA_INDEX_BUFFER</unmanaged-short>	
         </member>
@@ -8471,6 +8496,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SO_BUFFER']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SO_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SO_BUFFER</unmanaged-short>	
         </member>
@@ -8479,6 +8505,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_TEXTURE1D']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_TEXTURE1D</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_TEXTURE1D</unmanaged-short>	
         </member>
@@ -8487,6 +8514,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_TEXTURE2D']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_TEXTURE2D</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_TEXTURE2D</unmanaged-short>	
         </member>
@@ -8495,6 +8523,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_TEXTURE3D']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_TEXTURE3D</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_TEXTURE3D</unmanaged-short>	
         </member>
@@ -8503,6 +8532,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_TEXTURECUBE']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_TEXTURECUBE</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_TEXTURECUBE</unmanaged-short>	
         </member>
@@ -8511,6 +8541,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SHADER_LOAD']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SHADER_LOAD</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SHADER_LOAD</unmanaged-short>	
         </member>
@@ -8519,6 +8550,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SHADER_SAMPLE']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE</unmanaged-short>	
         </member>
@@ -8527,6 +8559,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_COMPARISON']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_COMPARISON</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_COMPARISON</unmanaged-short>	
         </member>
@@ -8535,6 +8568,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_MONO_TEXT']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_MONO_TEXT</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SHADER_SAMPLE_MONO_TEXT</unmanaged-short>	
         </member>
@@ -8543,6 +8577,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_MIP']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_MIP</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_MIP</unmanaged-short>	
         </member>
@@ -8551,6 +8586,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_MIP_AUTOGEN']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_MIP_AUTOGEN</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_MIP_AUTOGEN</unmanaged-short>	
         </member>
@@ -8559,6 +8595,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_RENDER_TARGET']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_RENDER_TARGET</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_RENDER_TARGET</unmanaged-short>	
         </member>
@@ -8567,6 +8604,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_BLENDABLE']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_BLENDABLE</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_BLENDABLE</unmanaged-short>	
         </member>
@@ -8575,6 +8613,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_DEPTH_STENCIL']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_DEPTH_STENCIL</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_DEPTH_STENCIL</unmanaged-short>	
         </member>
@@ -8583,6 +8622,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_CPU_LOCKABLE']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_CPU_LOCKABLE</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_CPU_LOCKABLE</unmanaged-short>	
         </member>
@@ -8591,6 +8631,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_MULTISAMPLE_RESOLVE']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_MULTISAMPLE_RESOLVE</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_MULTISAMPLE_RESOLVE</unmanaged-short>	
         </member>
@@ -8599,6 +8640,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_DISPLAY']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_DISPLAY</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_DISPLAY</unmanaged-short>	
         </member>
@@ -8607,6 +8649,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_CAST_WITHIN_BIT_LAYOUT']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_CAST_WITHIN_BIT_LAYOUT</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_CAST_WITHIN_BIT_LAYOUT</unmanaged-short>	
         </member>
@@ -8615,6 +8658,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET</unmanaged-short>	
         </member>
@@ -8623,6 +8667,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_MULTISAMPLE_LOAD']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_MULTISAMPLE_LOAD</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_MULTISAMPLE_LOAD</unmanaged-short>	
         </member>
@@ -8631,6 +8676,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_SHADER_GATHER']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_SHADER_GATHER</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_SHADER_GATHER</unmanaged-short>	
         </member>
@@ -8639,6 +8685,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_FORMAT_SUPPORT_BACK_BUFFER_CAST']/*"/>	
+            <msdn-id>bb205063</msdn-id>	
             <unmanaged>D3D10_FORMAT_SUPPORT_BACK_BUFFER_CAST</unmanaged>	
             <unmanaged-short>D3D10_FORMAT_SUPPORT_BACK_BUFFER_CAST</unmanaged-short>	
         </member>
@@ -8856,6 +8903,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_MESH_DISCARD_ATTRIBUTE_BUFFER']/*"/>	
+            <msdn-id>bb172700</msdn-id>	
             <unmanaged>D3DX10_MESH_DISCARD_ATTRIBUTE_BUFFER</unmanaged>	
             <unmanaged-short>D3DX10_MESH_DISCARD_ATTRIBUTE_BUFFER</unmanaged-short>	
         </member>
@@ -8864,6 +8912,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_MESH_DISCARD_ATTRIBUTE_TABLE']/*"/>	
+            <msdn-id>bb172700</msdn-id>	
             <unmanaged>D3DX10_MESH_DISCARD_ATTRIBUTE_TABLE</unmanaged>	
             <unmanaged-short>D3DX10_MESH_DISCARD_ATTRIBUTE_TABLE</unmanaged-short>	
         </member>
@@ -8872,6 +8921,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_MESH_DISCARD_POINTREPS']/*"/>	
+            <msdn-id>bb172700</msdn-id>	
             <unmanaged>D3DX10_MESH_DISCARD_POINTREPS</unmanaged>	
             <unmanaged-short>D3DX10_MESH_DISCARD_POINTREPS</unmanaged-short>	
         </member>
@@ -8880,6 +8930,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_MESH_DISCARD_ADJACENCY']/*"/>	
+            <msdn-id>bb172700</msdn-id>	
             <unmanaged>D3DX10_MESH_DISCARD_ADJACENCY</unmanaged>	
             <unmanaged-short>D3DX10_MESH_DISCARD_ADJACENCY</unmanaged-short>	
         </member>
@@ -8888,6 +8939,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_MESH_DISCARD_DEVICE_BUFFERS']/*"/>	
+            <msdn-id>bb172700</msdn-id>	
             <unmanaged>D3DX10_MESH_DISCARD_DEVICE_BUFFERS</unmanaged>	
             <unmanaged-short>D3DX10_MESH_DISCARD_DEVICE_BUFFERS</unmanaged-short>	
         </member>
@@ -9021,6 +9073,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_APPLICATION_DEFINED']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_APPLICATION_DEFINED</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_APPLICATION_DEFINED</unmanaged-short>	
         </member>
@@ -9029,6 +9082,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_MISCELLANEOUS']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_MISCELLANEOUS</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_MISCELLANEOUS</unmanaged-short>	
         </member>
@@ -9037,6 +9091,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_INITIALIZATION']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_INITIALIZATION</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_INITIALIZATION</unmanaged-short>	
         </member>
@@ -9045,6 +9100,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_CLEANUP']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_CLEANUP</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_CLEANUP</unmanaged-short>	
         </member>
@@ -9053,6 +9109,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_COMPILATION']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_COMPILATION</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_COMPILATION</unmanaged-short>	
         </member>
@@ -9061,6 +9118,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_STATE_CREATION']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_STATE_CREATION</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_STATE_CREATION</unmanaged-short>	
         </member>
@@ -9069,6 +9127,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_STATE_SETTING']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_STATE_SETTING</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_STATE_SETTING</unmanaged-short>	
         </member>
@@ -9077,6 +9136,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_STATE_GETTING']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_STATE_GETTING</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_STATE_GETTING</unmanaged-short>	
         </member>
@@ -9085,6 +9145,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_RESOURCE_MANIPULATION']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_RESOURCE_MANIPULATION</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_RESOURCE_MANIPULATION</unmanaged-short>	
         </member>
@@ -9093,6 +9154,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE_CATEGORY_EXECUTION']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY_EXECUTION</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY_EXECUTION</unmanaged-short>	
         </member>
@@ -13046,6 +13108,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_NORMALMAP_MIRROR_U']/*"/>	
+            <msdn-id>bb172701</msdn-id>	
             <unmanaged>D3DX10_NORMALMAP_MIRROR_U</unmanaged>	
             <unmanaged-short>D3DX10_NORMALMAP_MIRROR_U</unmanaged-short>	
         </member>
@@ -13054,6 +13117,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_NORMALMAP_MIRROR_V']/*"/>	
+            <msdn-id>bb172701</msdn-id>	
             <unmanaged>D3DX10_NORMALMAP_MIRROR_V</unmanaged>	
             <unmanaged-short>D3DX10_NORMALMAP_MIRROR_V</unmanaged-short>	
         </member>
@@ -13062,6 +13126,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_NORMALMAP_MIRROR']/*"/>	
+            <msdn-id>bb172701</msdn-id>	
             <unmanaged>D3DX10_NORMALMAP_MIRROR</unmanaged>	
             <unmanaged-short>D3DX10_NORMALMAP_MIRROR</unmanaged-short>	
         </member>
@@ -13070,6 +13135,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_NORMALMAP_INVERTSIGN']/*"/>	
+            <msdn-id>bb172701</msdn-id>	
             <unmanaged>D3DX10_NORMALMAP_INVERTSIGN</unmanaged>	
             <unmanaged-short>D3DX10_NORMALMAP_INVERTSIGN</unmanaged-short>	
         </member>
@@ -13078,6 +13144,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_NORMALMAP_COMPUTE_OCCLUSION']/*"/>	
+            <msdn-id>bb172701</msdn-id>	
             <unmanaged>D3DX10_NORMALMAP_COMPUTE_OCCLUSION</unmanaged>	
             <unmanaged-short>D3DX10_NORMALMAP_COMPUTE_OCCLUSION</unmanaged-short>	
         </member>
@@ -13208,6 +13275,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_UNKNOWN']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_UNKNOWN</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_UNKNOWN</unmanaged-short>	
         </member>
@@ -13216,6 +13284,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_BUFFER']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_BUFFER</unmanaged-short>	
         </member>
@@ -13224,6 +13293,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE1D']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE1D</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE1D</unmanaged-short>	
         </member>
@@ -13232,6 +13302,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE1DARRAY']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE1DARRAY</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE1DARRAY</unmanaged-short>	
         </member>
@@ -13240,6 +13311,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE2D']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE2D</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE2D</unmanaged-short>	
         </member>
@@ -13248,6 +13320,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE2DARRAY']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE2DARRAY</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE2DARRAY</unmanaged-short>	
         </member>
@@ -13256,6 +13329,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE2DMS']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE2DMS</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE2DMS</unmanaged-short>	
         </member>
@@ -13264,6 +13338,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE2DMSARRAY']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE2DMSARRAY</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE2DMSARRAY</unmanaged-short>	
         </member>
@@ -13272,6 +13347,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RTV_DIMENSION_TEXTURE3D']/*"/>	
+            <msdn-id>bb172414</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION_TEXTURE3D</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION_TEXTURE3D</unmanaged-short>	
         </member>
@@ -13292,6 +13368,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RESOURCE_DIMENSION_UNKNOWN']/*"/>	
+            <msdn-id>bb172411</msdn-id>	
             <unmanaged>D3D10_RESOURCE_DIMENSION_UNKNOWN</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_DIMENSION_UNKNOWN</unmanaged-short>	
         </member>
@@ -13300,6 +13377,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RESOURCE_DIMENSION_BUFFER']/*"/>	
+            <msdn-id>bb172411</msdn-id>	
             <unmanaged>D3D10_RESOURCE_DIMENSION_BUFFER</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_DIMENSION_BUFFER</unmanaged-short>	
         </member>
@@ -13308,6 +13386,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RESOURCE_DIMENSION_TEXTURE1D']/*"/>	
+            <msdn-id>bb172411</msdn-id>	
             <unmanaged>D3D10_RESOURCE_DIMENSION_TEXTURE1D</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_DIMENSION_TEXTURE1D</unmanaged-short>	
         </member>
@@ -13316,6 +13395,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RESOURCE_DIMENSION_TEXTURE2D']/*"/>	
+            <msdn-id>bb172411</msdn-id>	
             <unmanaged>D3D10_RESOURCE_DIMENSION_TEXTURE2D</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_DIMENSION_TEXTURE2D</unmanaged-short>	
         </member>
@@ -13324,6 +13404,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RESOURCE_DIMENSION_TEXTURE3D']/*"/>	
+            <msdn-id>bb172411</msdn-id>	
             <unmanaged>D3D10_RESOURCE_DIMENSION_TEXTURE3D</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_DIMENSION_TEXTURE3D</unmanaged-short>	
         </member>
@@ -13457,6 +13538,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SPRITE_SORT_TEXTURE']/*"/>	
+            <msdn-id>bb172704</msdn-id>	
             <unmanaged>D3DX10_SPRITE_SORT_TEXTURE</unmanaged>	
             <unmanaged-short>D3DX10_SPRITE_SORT_TEXTURE</unmanaged-short>	
         </member>
@@ -13465,6 +13547,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SPRITE_SORT_DEPTH_BACK_TO_FRONT']/*"/>	
+            <msdn-id>bb172704</msdn-id>	
             <unmanaged>D3DX10_SPRITE_SORT_DEPTH_BACK_TO_FRONT</unmanaged>	
             <unmanaged-short>D3DX10_SPRITE_SORT_DEPTH_BACK_TO_FRONT</unmanaged-short>	
         </member>
@@ -13473,6 +13556,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SPRITE_SORT_DEPTH_FRONT_TO_BACK']/*"/>	
+            <msdn-id>bb172704</msdn-id>	
             <unmanaged>D3DX10_SPRITE_SORT_DEPTH_FRONT_TO_BACK</unmanaged>	
             <unmanaged-short>D3DX10_SPRITE_SORT_DEPTH_FRONT_TO_BACK</unmanaged-short>	
         </member>
@@ -13481,6 +13565,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SPRITE_SAVE_STATE']/*"/>	
+            <msdn-id>bb172704</msdn-id>	
             <unmanaged>D3DX10_SPRITE_SAVE_STATE</unmanaged>	
             <unmanaged-short>D3DX10_SPRITE_SAVE_STATE</unmanaged-short>	
         </member>
@@ -13489,6 +13574,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SPRITE_ADDREF_TEXTURES']/*"/>	
+            <msdn-id>bb172704</msdn-id>	
             <unmanaged>D3DX10_SPRITE_ADDREF_TEXTURES</unmanaged>	
             <unmanaged-short>D3DX10_SPRITE_ADDREF_TEXTURES</unmanaged-short>	
         </member>
@@ -13538,6 +13624,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_KEEP']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_KEEP</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_KEEP</unmanaged-short>	
         </member>
@@ -13546,6 +13633,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_ZERO']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_ZERO</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_ZERO</unmanaged-short>	
         </member>
@@ -13554,6 +13642,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_REPLACE']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_REPLACE</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_REPLACE</unmanaged-short>	
         </member>
@@ -13562,6 +13651,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_INCR_SAT']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_INCR_SAT</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_INCR_SAT</unmanaged-short>	
         </member>
@@ -13570,6 +13660,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_DECR_SAT']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_DECR_SAT</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_DECR_SAT</unmanaged-short>	
         </member>
@@ -13578,6 +13669,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_INVERT']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_INVERT</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_INVERT</unmanaged-short>	
         </member>
@@ -13586,6 +13678,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_INCR']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_INCR</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_INCR</unmanaged-short>	
         </member>
@@ -13594,6 +13687,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_STENCIL_OP_DECR']/*"/>	
+            <msdn-id>bb172455</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP_DECR</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP_DECR</unmanaged-short>	
         </member>
@@ -18601,6 +18695,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCILOP_DESC::StencilFailOp']/*"/>	
+            <msdn-id>bb205035</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP StencilFailOp</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP StencilFailOp</unmanaged-short>	
         </member>
@@ -18609,6 +18704,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCILOP_DESC::StencilDepthFailOp']/*"/>	
+            <msdn-id>bb205035</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP StencilDepthFailOp</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP StencilDepthFailOp</unmanaged-short>	
         </member>
@@ -18617,6 +18713,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCILOP_DESC::StencilPassOp']/*"/>	
+            <msdn-id>bb205035</msdn-id>	
             <unmanaged>D3D10_STENCIL_OP StencilPassOp</unmanaged>	
             <unmanaged-short>D3D10_STENCIL_OP StencilPassOp</unmanaged-short>	
         </member>
@@ -18625,6 +18722,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCILOP_DESC::StencilFunc']/*"/>	
+            <msdn-id>bb205035</msdn-id>	
             <unmanaged>D3D10_COMPARISON_FUNC StencilFunc</unmanaged>	
             <unmanaged-short>D3D10_COMPARISON_FUNC StencilFunc</unmanaged-short>	
         </member>
@@ -18729,6 +18827,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Format']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -18737,6 +18836,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::ViewDimension']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_DSV_DIMENSION ViewDimension</unmanaged>	
             <unmanaged-short>D3D10_DSV_DIMENSION ViewDimension</unmanaged-short>	
         </member>
@@ -18745,6 +18845,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture1D']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX1D_DSV Texture1D</unmanaged>	
             <unmanaged-short>D3D10_TEX1D_DSV Texture1D</unmanaged-short>	
         </member>
@@ -18753,6 +18854,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture1DArray']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX1D_ARRAY_DSV Texture1DArray</unmanaged>	
             <unmanaged-short>D3D10_TEX1D_ARRAY_DSV Texture1DArray</unmanaged-short>	
         </member>
@@ -18761,6 +18863,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture2D']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX2D_DSV Texture2D</unmanaged>	
             <unmanaged-short>D3D10_TEX2D_DSV Texture2D</unmanaged-short>	
         </member>
@@ -18769,6 +18872,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture2DArray']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX2D_ARRAY_DSV Texture2DArray</unmanaged>	
             <unmanaged-short>D3D10_TEX2D_ARRAY_DSV Texture2DArray</unmanaged-short>	
         </member>
@@ -18777,6 +18881,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture2DMS']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX2DMS_DSV Texture2DMS</unmanaged>	
             <unmanaged-short>D3D10_TEX2DMS_DSV Texture2DMS</unmanaged-short>	
         </member>
@@ -18785,6 +18890,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_DEPTH_STENCIL_VIEW_DESC::Texture2DMSArray']/*"/>	
+            <msdn-id>bb205037</msdn-id>	
             <unmanaged>D3D10_TEX2DMS_ARRAY_DSV Texture2DMSArray</unmanaged>	
             <unmanaged-short>D3D10_TEX2DMS_ARRAY_DSV Texture2DMSArray</unmanaged-short>	
         </member>
@@ -18805,6 +18911,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_DSV::MipSlice']/*"/>	
+            <msdn-id>bb172470</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -18813,6 +18920,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_DSV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172470</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -18821,6 +18929,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_DSV::ArraySize']/*"/>	
+            <msdn-id>bb172470</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -18841,6 +18950,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_DSV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172464</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -18849,6 +18959,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_DSV::ArraySize']/*"/>	
+            <msdn-id>bb172464</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -18869,6 +18980,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_DSV::MipSlice']/*"/>	
+            <msdn-id>bb172458</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -18877,6 +18989,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_DSV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172458</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -18885,6 +18998,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_DSV::ArraySize']/*"/>	
+            <msdn-id>bb172458</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -18905,6 +19019,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_DSV::MipSlice']/*"/>	
+            <msdn-id>bb172461</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -18925,6 +19040,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_DSV::UnusedField_NothingToDefine']/*"/>	
+            <msdn-id>bb172467</msdn-id>	
             <unmanaged>unsigned int UnusedField_NothingToDefine</unmanaged>	
             <unmanaged-short>unsigned int UnusedField_NothingToDefine</unmanaged-short>	
         </member>
@@ -18945,6 +19061,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_DSV::MipSlice']/*"/>	
+            <msdn-id>bb172473</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -19706,6 +19823,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::SemanticName']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>const char* SemanticName</unmanaged>	
             <unmanaged-short>char SemanticName</unmanaged-short>	
         </member>
@@ -19714,6 +19832,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::SemanticIndex']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>unsigned int SemanticIndex</unmanaged>	
             <unmanaged-short>unsigned int SemanticIndex</unmanaged-short>	
         </member>
@@ -19722,6 +19841,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::Format']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -19730,6 +19850,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::InputSlot']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>unsigned int InputSlot</unmanaged>	
             <unmanaged-short>unsigned int InputSlot</unmanaged-short>	
         </member>
@@ -19738,6 +19859,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::AlignedByteOffset']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>unsigned int AlignedByteOffset</unmanaged>	
             <unmanaged-short>unsigned int AlignedByteOffset</unmanaged-short>	
         </member>
@@ -19746,6 +19868,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::InputSlotClass']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>D3D10_INPUT_CLASSIFICATION InputSlotClass</unmanaged>	
             <unmanaged-short>D3D10_INPUT_CLASSIFICATION InputSlotClass</unmanaged-short>	
         </member>
@@ -19754,6 +19877,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_INPUT_ELEMENT_DESC::InstanceDataStepRate']/*"/>	
+            <msdn-id>bb205316</msdn-id>	
             <unmanaged>unsigned int InstanceDataStepRate</unmanaged>	
             <unmanaged-short>unsigned int InstanceDataStepRate</unmanaged-short>	
         </member>
@@ -19991,6 +20115,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE::Category']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_CATEGORY Category</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_CATEGORY Category</unmanaged-short>	
         </member>
@@ -19999,6 +20124,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE::Severity']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_SEVERITY Severity</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_SEVERITY Severity</unmanaged-short>	
         </member>
@@ -20007,6 +20133,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE::ID']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>D3D10_MESSAGE_ID ID</unmanaged>	
             <unmanaged-short>D3D10_MESSAGE_ID ID</unmanaged-short>	
         </member>
@@ -20015,6 +20142,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE::pDescription']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>const char* pDescription</unmanaged>	
             <unmanaged-short>char pDescription</unmanaged-short>	
         </member>
@@ -20023,6 +20151,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_MESSAGE::DescriptionByteLength']/*"/>	
+            <msdn-id>bb205323</msdn-id>	
             <unmanaged>SIZE_T DescriptionByteLength</unmanaged>	
             <unmanaged-short>SIZE_T DescriptionByteLength</unmanaged-short>	
         </member>
@@ -20040,6 +20169,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::IAVertices']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong IAVertices</unmanaged>	
             <unmanaged-short>unsigned longlong IAVertices</unmanaged-short>	
         </member>
@@ -20048,6 +20178,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::IAPrimitives']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong IAPrimitives</unmanaged>	
             <unmanaged-short>unsigned longlong IAPrimitives</unmanaged-short>	
         </member>
@@ -20056,6 +20187,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::VSInvocations']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong VSInvocations</unmanaged>	
             <unmanaged-short>unsigned longlong VSInvocations</unmanaged-short>	
         </member>
@@ -20064,6 +20196,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::GSInvocations']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong GSInvocations</unmanaged>	
             <unmanaged-short>unsigned longlong GSInvocations</unmanaged-short>	
         </member>
@@ -20072,6 +20205,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::GSPrimitives']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong GSPrimitives</unmanaged>	
             <unmanaged-short>unsigned longlong GSPrimitives</unmanaged-short>	
         </member>
@@ -20080,6 +20214,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::CInvocations']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong CInvocations</unmanaged>	
             <unmanaged-short>unsigned longlong CInvocations</unmanaged-short>	
         </member>
@@ -20088,6 +20223,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::CPrimitives']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong CPrimitives</unmanaged>	
             <unmanaged-short>unsigned longlong CPrimitives</unmanaged-short>	
         </member>
@@ -20096,6 +20232,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_PIPELINE_STATISTICS::PSInvocations']/*"/>	
+            <msdn-id>bb172402</msdn-id>	
             <unmanaged>unsigned longlong PSInvocations</unmanaged>	
             <unmanaged-short>unsigned longlong PSInvocations</unmanaged-short>	
         </member>
@@ -20365,6 +20502,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Format']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -20373,6 +20511,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::ViewDimension']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_RTV_DIMENSION ViewDimension</unmanaged>	
             <unmanaged-short>D3D10_RTV_DIMENSION ViewDimension</unmanaged-short>	
         </member>
@@ -20381,6 +20520,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Buffer']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_BUFFER_RTV Buffer</unmanaged>	
             <unmanaged-short>D3D10_BUFFER_RTV Buffer</unmanaged-short>	
         </member>
@@ -20389,6 +20529,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture1D']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX1D_RTV Texture1D</unmanaged>	
             <unmanaged-short>D3D10_TEX1D_RTV Texture1D</unmanaged-short>	
         </member>
@@ -20397,6 +20538,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture1DArray']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX1D_ARRAY_RTV Texture1DArray</unmanaged>	
             <unmanaged-short>D3D10_TEX1D_ARRAY_RTV Texture1DArray</unmanaged-short>	
         </member>
@@ -20405,6 +20547,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture2D']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX2D_RTV Texture2D</unmanaged>	
             <unmanaged-short>D3D10_TEX2D_RTV Texture2D</unmanaged-short>	
         </member>
@@ -20413,6 +20556,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture2DArray']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX2D_ARRAY_RTV Texture2DArray</unmanaged>	
             <unmanaged-short>D3D10_TEX2D_ARRAY_RTV Texture2DArray</unmanaged-short>	
         </member>
@@ -20421,6 +20565,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture2DMS']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX2DMS_RTV Texture2DMS</unmanaged>	
             <unmanaged-short>D3D10_TEX2DMS_RTV Texture2DMS</unmanaged-short>	
         </member>
@@ -20429,6 +20574,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture2DMSArray']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX2DMS_ARRAY_RTV Texture2DMSArray</unmanaged>	
             <unmanaged-short>D3D10_TEX2DMS_ARRAY_RTV Texture2DMSArray</unmanaged-short>	
         </member>
@@ -20437,6 +20583,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_RENDER_TARGET_VIEW_DESC::Texture3D']/*"/>	
+            <msdn-id>bb172410</msdn-id>	
             <unmanaged>D3D10_TEX3D_RTV Texture3D</unmanaged>	
             <unmanaged-short>D3D10_TEX3D_RTV Texture3D</unmanaged-short>	
         </member>
@@ -20457,6 +20604,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX3D_RTV::MipSlice']/*"/>	
+            <msdn-id>Bb172476</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -20465,6 +20613,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX3D_RTV::FirstWSlice']/*"/>	
+            <msdn-id>Bb172476</msdn-id>	
             <unmanaged>unsigned int FirstWSlice</unmanaged>	
             <unmanaged-short>unsigned int FirstWSlice</unmanaged-short>	
         </member>
@@ -20473,6 +20622,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX3D_RTV::WSize']/*"/>	
+            <msdn-id>Bb172476</msdn-id>	
             <unmanaged>unsigned int WSize</unmanaged>	
             <unmanaged-short>unsigned int WSize</unmanaged-short>	
         </member>
@@ -20493,6 +20643,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_RTV::MipSlice']/*"/>	
+            <msdn-id>bb172471</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -20501,6 +20652,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_RTV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172471</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -20509,6 +20661,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_RTV::ArraySize']/*"/>	
+            <msdn-id>bb172471</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -20529,6 +20682,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_RTV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172465</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -20537,6 +20691,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_RTV::ArraySize']/*"/>	
+            <msdn-id>bb172465</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -20557,6 +20712,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_RTV::FirstElement']/*"/>	
+            <msdn-id>bb204897</msdn-id>	
             <unmanaged>unsigned int FirstElement</unmanaged>	
             <unmanaged-short>unsigned int FirstElement</unmanaged-short>	
         </member>
@@ -20565,6 +20721,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_RTV::ElementOffset']/*"/>	
+            <msdn-id>bb204897</msdn-id>	
             <unmanaged>unsigned int ElementOffset</unmanaged>	
             <unmanaged-short>unsigned int ElementOffset</unmanaged-short>	
         </member>
@@ -20573,6 +20730,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_RTV::NumElements']/*"/>	
+            <msdn-id>bb204897</msdn-id>	
             <unmanaged>unsigned int NumElements</unmanaged>	
             <unmanaged-short>unsigned int NumElements</unmanaged-short>	
         </member>
@@ -20581,6 +20739,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_RTV::ElementWidth']/*"/>	
+            <msdn-id>bb204897</msdn-id>	
             <unmanaged>unsigned int ElementWidth</unmanaged>	
             <unmanaged-short>unsigned int ElementWidth</unmanaged-short>	
         </member>
@@ -20601,6 +20760,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_RTV::MipSlice']/*"/>	
+            <msdn-id>bb172462</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -20621,6 +20781,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_RTV::MipSlice']/*"/>	
+            <msdn-id>Bb172459</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -20629,6 +20790,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_RTV::FirstArraySlice']/*"/>	
+            <msdn-id>Bb172459</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -20637,6 +20799,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_RTV::ArraySize']/*"/>	
+            <msdn-id>Bb172459</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -20657,6 +20820,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_RTV::MipSlice']/*"/>	
+            <msdn-id>bb172474</msdn-id>	
             <unmanaged>unsigned int MipSlice</unmanaged>	
             <unmanaged-short>unsigned int MipSlice</unmanaged-short>	
         </member>
@@ -20677,6 +20841,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_RTV::UnusedField_NothingToDefine']/*"/>	
+            <msdn-id>bb172468</msdn-id>	
             <unmanaged>unsigned int UnusedField_NothingToDefine</unmanaged>	
             <unmanaged-short>unsigned int UnusedField_NothingToDefine</unmanaged-short>	
         </member>
@@ -21108,6 +21273,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_SRV::FirstElement']/*"/>	
+            <msdn-id>bb204898</msdn-id>	
             <unmanaged>unsigned int FirstElement</unmanaged>	
             <unmanaged-short>unsigned int FirstElement</unmanaged-short>	
         </member>
@@ -21116,6 +21282,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_SRV::ElementOffset']/*"/>	
+            <msdn-id>bb204898</msdn-id>	
             <unmanaged>unsigned int ElementOffset</unmanaged>	
             <unmanaged-short>unsigned int ElementOffset</unmanaged-short>	
         </member>
@@ -21124,6 +21291,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_SRV::NumElements']/*"/>	
+            <msdn-id>bb204898</msdn-id>	
             <unmanaged>unsigned int NumElements</unmanaged>	
             <unmanaged-short>unsigned int NumElements</unmanaged-short>	
         </member>
@@ -21132,6 +21300,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_BUFFER_SRV::ElementWidth']/*"/>	
+            <msdn-id>bb204898</msdn-id>	
             <unmanaged>unsigned int ElementWidth</unmanaged>	
             <unmanaged-short>unsigned int ElementWidth</unmanaged-short>	
         </member>
@@ -21152,6 +21321,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>bb172463</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21160,6 +21330,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_SRV::MipLevels']/*"/>	
+            <msdn-id>bb172463</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21180,6 +21351,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>Bb172460</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21188,6 +21360,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_SRV::MipLevels']/*"/>	
+            <msdn-id>Bb172460</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21196,6 +21369,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_SRV::FirstArraySlice']/*"/>	
+            <msdn-id>Bb172460</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -21204,6 +21378,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX1D_ARRAY_SRV::ArraySize']/*"/>	
+            <msdn-id>Bb172460</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -21224,6 +21399,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>bb172475</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21232,6 +21408,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_SRV::MipLevels']/*"/>	
+            <msdn-id>bb172475</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21252,6 +21429,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>bb172472</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21260,6 +21438,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_SRV::MipLevels']/*"/>	
+            <msdn-id>bb172472</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21268,6 +21447,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_SRV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172472</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -21276,6 +21456,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2D_ARRAY_SRV::ArraySize']/*"/>	
+            <msdn-id>bb172472</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -21296,6 +21477,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_SRV::UnusedField_NothingToDefine']/*"/>	
+            <msdn-id>bb172469</msdn-id>	
             <unmanaged>unsigned int UnusedField_NothingToDefine</unmanaged>	
             <unmanaged-short>unsigned int UnusedField_NothingToDefine</unmanaged-short>	
         </member>
@@ -21316,6 +21498,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_SRV::FirstArraySlice']/*"/>	
+            <msdn-id>bb172466</msdn-id>	
             <unmanaged>unsigned int FirstArraySlice</unmanaged>	
             <unmanaged-short>unsigned int FirstArraySlice</unmanaged-short>	
         </member>
@@ -21324,6 +21507,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX2DMS_ARRAY_SRV::ArraySize']/*"/>	
+            <msdn-id>bb172466</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -21344,6 +21528,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX3D_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>Bb172477</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21352,6 +21537,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEX3D_SRV::MipLevels']/*"/>	
+            <msdn-id>Bb172477</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21372,6 +21558,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_SRV::MostDetailedMip']/*"/>	
+            <msdn-id>bb172478</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21380,6 +21567,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_SRV::MipLevels']/*"/>	
+            <msdn-id>bb172478</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21520,6 +21708,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_ARRAY_SRV1::MostDetailedMip']/*"/>	
+            <msdn-id>bb694536</msdn-id>	
             <unmanaged>unsigned int MostDetailedMip</unmanaged>	
             <unmanaged-short>unsigned int MostDetailedMip</unmanaged-short>	
         </member>
@@ -21528,6 +21717,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_ARRAY_SRV1::MipLevels']/*"/>	
+            <msdn-id>bb694536</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21536,6 +21726,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_ARRAY_SRV1::First2DArrayFace']/*"/>	
+            <msdn-id>bb694536</msdn-id>	
             <unmanaged>unsigned int First2DArrayFace</unmanaged>	
             <unmanaged-short>unsigned int First2DArrayFace</unmanaged-short>	
         </member>
@@ -21544,6 +21735,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXCUBE_ARRAY_SRV1::NumCubes']/*"/>	
+            <msdn-id>bb694536</msdn-id>	
             <unmanaged>unsigned int NumCubes</unmanaged>	
             <unmanaged-short>unsigned int NumCubes</unmanaged-short>	
         </member>
@@ -21561,6 +21753,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SKINNING_CHANNEL::SrcOffset']/*"/>	
+            <msdn-id>bb172702</msdn-id>	
             <unmanaged>unsigned int SrcOffset</unmanaged>	
             <unmanaged-short>unsigned int SrcOffset</unmanaged-short>	
         </member>
@@ -21569,6 +21762,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SKINNING_CHANNEL::DestOffset']/*"/>	
+            <msdn-id>bb172702</msdn-id>	
             <unmanaged>unsigned int DestOffset</unmanaged>	
             <unmanaged-short>unsigned int DestOffset</unmanaged-short>	
         </member>
@@ -21577,6 +21771,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DX10_SKINNING_CHANNEL::IsNormal']/*"/>	
+            <msdn-id>bb172702</msdn-id>	
             <unmanaged>BOOL IsNormal</unmanaged>	
             <unmanaged-short>BOOL IsNormal</unmanaged-short>	
         </member>
@@ -21955,6 +22150,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_SO_STATISTICS::NumPrimitivesWritten']/*"/>	
+            <msdn-id>bb172403</msdn-id>	
             <unmanaged>unsigned longlong NumPrimitivesWritten</unmanaged>	
             <unmanaged-short>unsigned longlong NumPrimitivesWritten</unmanaged-short>	
         </member>
@@ -21963,6 +22159,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_QUERY_DATA_SO_STATISTICS::PrimitivesStorageNeeded']/*"/>	
+            <msdn-id>bb172403</msdn-id>	
             <unmanaged>unsigned longlong PrimitivesStorageNeeded</unmanaged>	
             <unmanaged-short>unsigned longlong PrimitivesStorageNeeded</unmanaged-short>	
         </member>
@@ -21983,6 +22180,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::Width']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>unsigned int Width</unmanaged>	
             <unmanaged-short>unsigned int Width</unmanaged-short>	
         </member>
@@ -21991,6 +22189,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::MipLevels']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -21999,6 +22198,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::ArraySize']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -22007,6 +22207,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::Format']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -22015,6 +22216,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::Usage']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>D3D10_USAGE Usage</unmanaged>	
             <unmanaged-short>D3D10_USAGE Usage</unmanaged-short>	
         </member>
@@ -22023,6 +22225,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::BindFlags']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>D3D10_BIND_FLAG BindFlags</unmanaged>	
             <unmanaged-short>D3D10_BIND_FLAG BindFlags</unmanaged-short>	
         </member>
@@ -22031,6 +22234,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::CPUAccessFlags']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged>	
             <unmanaged-short>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged-short>	
         </member>
@@ -22039,6 +22243,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE1D_DESC::MiscFlags']/*"/>	
+            <msdn-id>bb172479</msdn-id>	
             <unmanaged>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged-short>	
         </member>
@@ -22059,6 +22264,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::Width']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>unsigned int Width</unmanaged>	
             <unmanaged-short>unsigned int Width</unmanaged-short>	
         </member>
@@ -22067,6 +22273,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::Height']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>unsigned int Height</unmanaged>	
             <unmanaged-short>unsigned int Height</unmanaged-short>	
         </member>
@@ -22075,6 +22282,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::MipLevels']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -22083,6 +22291,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::ArraySize']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>unsigned int ArraySize</unmanaged>	
             <unmanaged-short>unsigned int ArraySize</unmanaged-short>	
         </member>
@@ -22091,6 +22300,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::Format']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -22099,6 +22309,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::SampleDesc']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>DXGI_SAMPLE_DESC SampleDesc</unmanaged>	
             <unmanaged-short>DXGI_SAMPLE_DESC SampleDesc</unmanaged-short>	
         </member>
@@ -22107,6 +22318,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::Usage']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>D3D10_USAGE Usage</unmanaged>	
             <unmanaged-short>D3D10_USAGE Usage</unmanaged-short>	
         </member>
@@ -22115,6 +22327,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::BindFlags']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>D3D10_BIND_FLAG BindFlags</unmanaged>	
             <unmanaged-short>D3D10_BIND_FLAG BindFlags</unmanaged-short>	
         </member>
@@ -22123,6 +22336,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::CPUAccessFlags']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged>	
             <unmanaged-short>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged-short>	
         </member>
@@ -22131,6 +22345,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE2D_DESC::MiscFlags']/*"/>	
+            <msdn-id>bb172480</msdn-id>	
             <unmanaged>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged-short>	
         </member>
@@ -22151,6 +22366,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::Width']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>unsigned int Width</unmanaged>	
             <unmanaged-short>unsigned int Width</unmanaged-short>	
         </member>
@@ -22159,6 +22375,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::Height']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>unsigned int Height</unmanaged>	
             <unmanaged-short>unsigned int Height</unmanaged-short>	
         </member>
@@ -22167,6 +22384,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::Depth']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>unsigned int Depth</unmanaged>	
             <unmanaged-short>unsigned int Depth</unmanaged-short>	
         </member>
@@ -22175,6 +22393,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::MipLevels']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>unsigned int MipLevels</unmanaged>	
             <unmanaged-short>unsigned int MipLevels</unmanaged-short>	
         </member>
@@ -22183,6 +22402,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::Format']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>DXGI_FORMAT Format</unmanaged>	
             <unmanaged-short>DXGI_FORMAT Format</unmanaged-short>	
         </member>
@@ -22191,6 +22411,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::Usage']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>D3D10_USAGE Usage</unmanaged>	
             <unmanaged-short>D3D10_USAGE Usage</unmanaged-short>	
         </member>
@@ -22199,6 +22420,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::BindFlags']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>D3D10_BIND_FLAG BindFlags</unmanaged>	
             <unmanaged-short>D3D10_BIND_FLAG BindFlags</unmanaged-short>	
         </member>
@@ -22207,6 +22429,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::CPUAccessFlags']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged>	
             <unmanaged-short>D3D10_CPU_ACCESS_FLAG CPUAccessFlags</unmanaged-short>	
         </member>
@@ -22215,6 +22438,7 @@ Flags that defines the behavior of method <see cref="M:SharpDX.Direct3D10.Asynch
             No documentation.	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D10_TEXTURE3D_DESC::MiscFlags']/*"/>	
+            <msdn-id>bb172481</msdn-id>	
             <unmanaged>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged>	
             <unmanaged-short>D3D10_RESOURCE_MISC_FLAG MiscFlags</unmanaged-short>	
         </member>

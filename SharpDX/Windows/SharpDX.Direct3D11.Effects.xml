@@ -1976,6 +1976,11 @@
             Returns the signature of this Effect pass.
             </summary>
         </member>
+        <member name="P:SharpDX.Direct3D11.EffectPassDescription.HasSignature">
+            <summary>
+            Returns true if this Effect pass has a Signature (eg: if a VertexShader or Geometry Shader is present), false otherwise
+            </summary>
+        </member>
         <member name="T:SharpDX.Direct3D11.EffectPassShaderDescription">
             <summary>	
             <p>Describes an effect pass.</p>	
