@@ -88,8 +88,9 @@
 }
 <br/>
 <div class="origin">
-<strong>Assembly: </strong>@Model.Assembly.FullName (@Model.Assembly.FileName @Model.Assembly.Version)<br />
 <strong>Namespace: </strong>@Raw(ToUrl(Model.Namespace))<br />
+<strong>Assembly: </strong>@Model.Assembly.FullName (@Model.Assembly.FileName @Model.Assembly.Version)<br />
+      
 @Helpers.TypeBodyMembersHeader.Dump(self)
 </div>
 @if (self is NType)
@@ -153,7 +154,4 @@
 
 @Helpers.SeeAlso.Dump(self)
 </div>
-@*Temporary space*@
-<br />
-<br />
-<br />
+

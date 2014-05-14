@@ -33,21 +33,22 @@
         switch (link.Type) {
             case LinkType.None:
                 return Escape(link.Name);
-                break;
             case LinkType.Self:
                 return string.Format("<strong>{0}</strong>", Escape(link.Name));
-                break;
             case LinkType.Local:
                 url = string.Format("{0}{1}{2}", Param.RootLink, link.LocalReference.PageId, Param.FileExt);
                 break;
             case LinkType.External:
-                url = link.Location;
-                break;
+                return string.Format("<a target=\"{0}\" href=\"{1}\" {2}>{3}</a>", 
+                    Param.ExternalLinkTarget ?? "_blank",
+                    link.Location, 
+                    link.Attributes ?? "", 
+                    Escape(link.Name));
         }
         if (url == null)
             return Escape(link.Name);
 
-        return string.Format("<a target='mainFrame' onclick='hightLightTopic(\"{3}\");' href=\"{0}\" {1}>{2}</a>", url, link.Attributes ?? "", Escape(link.Name), link.PageId);
+        return string.Format("<a target=\"mainFrame\" onclick=\"hightLightTopic('{3}');\" href=\"{0}\" {1}>{2}</a>", url, link.Attributes ?? "", Escape(link.Name), link.PageId);
     }
 }
 

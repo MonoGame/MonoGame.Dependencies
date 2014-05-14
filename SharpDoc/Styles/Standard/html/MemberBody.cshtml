@@ -35,12 +35,13 @@
     var self = Model.Member;
 }
 <div class="content-title">
-	<h1 id="#top" class="content-title">@Escape(@self.PageTitle)</h1>
+	<h1 id="#top" class="content-title">@self.PageTitle</h1>
 </div>
 <div style="clear: both;"></div>
         
-<div class="summary"><p>@Raw(TagExpand(self.Description))</p></div>
+<div class="summary">@Raw(TagExpand(self.Description))</div>
 
+<br/>
 <div class="origin">
 <strong>Namespace: </strong>@Raw(ToUrl(Model.Namespace))<br />
 <strong>Assembly: </strong>@Model.Assembly.FullName (@Model.Assembly.FileName @Model.Assembly.Version)<br />
