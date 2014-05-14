@@ -30,6 +30,9 @@
   <!-- Description for this style -->
   <description>Default style</description>
 
+  <!-- Defines the anchor target for external links. -->
+  <param name="ExternalLinkTarget">_blank</param>
+  
   <param name="RootLink"></param>
   <param name="FileExt">.htm</param>
 
