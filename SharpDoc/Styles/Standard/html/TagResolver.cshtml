@@ -48,6 +48,12 @@
         return ToUrl(id);
     }
 
+    public string ReplaceParamref(Match match)
+    {
+        string id = match.Groups[1].Value;
+        return @"<span class='sdoc-parameter'>" + id + "</span>";
+    }
+
     public string ReplaceWebdoc(Match match)
     {
         string xmlCode = match.ToString();
@@ -231,6 +237,7 @@
     
     Model.RegisterTagResolver(@"<see\s+cref=""(.*?)""\s*/>", ReplaceSee);
     Model.RegisterTagResolver(@"<see\s+cref=""(.*?)""\s*>(.*?)</see>", ReplaceSee);
+    Model.RegisterTagResolver(@"<paramref\s+name=""(.*?)""\s*/>", ReplaceParamref);
     Model.RegisterTagResolver(@"<webdoc(.*?)>(.*?)</webdoc>", ReplaceWebdoc);
     Model.RegisterTagResolver(@"<codesection(.*?)>([\w\W]*?)</codesection>", ReplaceCodeSection);
     //Model.RegisterTagResolver(@"<code(.*?)>([\w\W]*?)</code>", ReplaceCode);
