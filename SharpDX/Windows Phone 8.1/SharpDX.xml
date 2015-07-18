@@ -2265,9 +2265,9 @@
             <param name="value">The Matrix3x3 to put into row echelon form.</param>
             <returns>When the method completes, contains the row echelon form of the Matrix3x3.</returns>
         </member>
-        <member name="M:SharpDX.Matrix3x3.Billboard(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Matrix3x3@)">
+        <member name="M:SharpDX.Matrix3x3.BillboardLH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Matrix3x3@)">
             <summary>
-            Creates a spherical billboard that rotates around a specified object position.
+            Creates a left-handed spherical billboard that rotates around a specified object position.
             </summary>
             <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
             <param name="cameraPosition">The position of the camera.</param>
@@ -2275,9 +2275,29 @@
             <param name="cameraForwardVector">The forward vector of the camera.</param>
             <param name="result">When the method completes, contains the created billboard Matrix3x3.</param>
         </member>
-        <member name="M:SharpDX.Matrix3x3.Billboard(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
+        <member name="M:SharpDX.Matrix3x3.BillboardLH(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
             <summary>
-            Creates a spherical billboard that rotates around a specified object position.
+            Creates a left-handed spherical billboard that rotates around a specified object position.
+            </summary>
+            <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
+            <param name="cameraPosition">The position of the camera.</param>
+            <param name="cameraUpVector">The up vector of the camera.</param>
+            <param name="cameraForwardVector">The forward vector of the camera.</param>
+            <returns>The created billboard Matrix3x3.</returns>
+        </member>
+        <member name="M:SharpDX.Matrix3x3.BillboardRH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Matrix3x3@)">
+            <summary>
+            Creates a right-handed spherical billboard that rotates around a specified object position.
+            </summary>
+            <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
+            <param name="cameraPosition">The position of the camera.</param>
+            <param name="cameraUpVector">The up vector of the camera.</param>
+            <param name="cameraForwardVector">The forward vector of the camera.</param>
+            <param name="result">When the method completes, contains the created billboard Matrix3x3.</param>
+        </member>
+        <member name="M:SharpDX.Matrix3x3.BillboardRH(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
+            <summary>
+            Creates a right-handed spherical billboard that rotates around a specified object position.
             </summary>
             <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
             <param name="cameraPosition">The position of the camera.</param>
@@ -41186,12 +41206,13 @@
         <member name="M:SharpDX.MathUtil.Gauss(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
             <summary>
             Gauss function.
+            http://en.wikipedia.org/wiki/Gaussian_function#Two-dimensional_Gaussian_function
             </summary>
             <param name="amplitude">Curve amplitude.</param>
             <param name="x">Position X.</param>
             <param name="y">Position Y</param>
-            <param name="radX">Radius X.</param>
-            <param name="radY">Radius Y.</param>
+            <param name="centerX">Center X.</param>
+            <param name="centerY">Center Y.</param>
             <param name="sigmaX">Curve sigma X.</param>
             <param name="sigmaY">Curve sigma Y.</param>
             <returns>The result of Gaussian function.</returns>
@@ -41199,12 +41220,13 @@
         <member name="M:SharpDX.MathUtil.Gauss(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
             <summary>
             Gauss function.
+            http://en.wikipedia.org/wiki/Gaussian_function#Two-dimensional_Gaussian_function
             </summary>
             <param name="amplitude">Curve amplitude.</param>
             <param name="x">Position X.</param>
             <param name="y">Position Y</param>
-            <param name="radX">Radius X.</param>
-            <param name="radY">Radius Y.</param>
+            <param name="centerX">Center X.</param>
+            <param name="centerY">Center Y.</param>
             <param name="sigmaX">Curve sigma X.</param>
             <param name="sigmaY">Curve sigma Y.</param>
             <returns>The result of Gaussian function.</returns>
@@ -44462,55 +44484,73 @@
             <param name="matrix">The rotation matrix.</param>
             <param name="result">When the method completes, contains the newly created quaternion.</param>
         </member>
-        <member name="M:SharpDX.Quaternion.RotationLookAt(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
+        <member name="M:SharpDX.Quaternion.LookAtLH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
             <summary>
-            Creates a quaternion given forward and up vectors
+            Creates a left-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <param name="right">The right vector of the quaternion (must be perpendicular to forward vector)</param>
-            <param name="result">The newly created quaternion</param>
+            <param name="eye">The position of the viewer's eye.</param>
+            <param name="target">The camera look-at target.</param>
+            <param name="up">The camera's up vector.</param>
+            <param name="result">When the method completes, contains the created look-at quaternion.</param>
         </member>
-        <member name="M:SharpDX.Quaternion.RotationLookAt(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
+        <member name="M:SharpDX.Quaternion.LookAtLH(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
             <summary>
-            Creates a quaternion given forward and up vectors
+            Creates a left-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <param name="right">The right vector of the quaternion</param>
-            <returns>The newly created quaternion</returns>
+            <param name="eye">The position of the viewer's eye.</param>
+            <param name="target">The camera look-at target.</param>
+            <param name="up">The camera's up vector.</param>
+            <returns>The created look-at quaternion.</returns>
         </member>
         <member name="M:SharpDX.Quaternion.RotationLookAtLH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
             <summary>
-            Creates a quaternion given left-handed forward and up vectors
+            Creates a left-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <param name="result">The newly created quaternion</param>
+            <param name="forward">The camera's forward direction.</param>
+            <param name="up">The camera's up vector.</param>
+            <param name="result">When the method completes, contains the created look-at quaternion.</param>
         </member>
         <member name="M:SharpDX.Quaternion.RotationLookAtLH(SharpDX.Vector3,SharpDX.Vector3)">
             <summary>
-            Creates a quaternion given left-handed forward and up vectors
+            Creates a left-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <returns>The newly created quaternion</returns>
+            <param name="forward">The camera's forward direction.</param>
+            <param name="up">The camera's up vector.</param>
+            <returns>The created look-at quaternion.</returns>
+        </member>
+        <member name="M:SharpDX.Quaternion.LookAtRH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
+            <summary>
+            Creates a right-handed, look-at quaternion.
+            </summary>
+            <param name="eye">The position of the viewer's eye.</param>
+            <param name="target">The camera look-at target.</param>
+            <param name="up">The camera's up vector.</param>
+            <param name="result">When the method completes, contains the created look-at quaternion.</param>
+        </member>
+        <member name="M:SharpDX.Quaternion.LookAtRH(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
+            <summary>
+            Creates a right-handed, look-at quaternion.
+            </summary>
+            <param name="eye">The position of the viewer's eye.</param>
+            <param name="target">The camera look-at target.</param>
+            <param name="up">The camera's up vector.</param>
+            <returns>The created look-at quaternion.</returns>
         </member>
         <member name="M:SharpDX.Quaternion.RotationLookAtRH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
             <summary>
-            Creates a quaternion given right-handed forward and up vectors
+            Creates a right-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <param name="result">The newly created quaternion</param>
+            <param name="forward">The camera's forward direction.</param>
+            <param name="up">The camera's up vector.</param>
+            <param name="result">When the method completes, contains the created look-at quaternion.</param>
         </member>
         <member name="M:SharpDX.Quaternion.RotationLookAtRH(SharpDX.Vector3,SharpDX.Vector3)">
             <summary>
-            Creates a quaternion given right-handed forward and up vectors
+            Creates a right-handed, look-at quaternion.
             </summary>
-            <param name="forward">The forward vector the quaternion should look at</param>
-            <param name="up">The up vector of the quaternion (must be perpendicular to forward vector)</param>
-            <returns>The newly created quaternion</returns>
+            <param name="forward">The camera's forward direction.</param>
+            <param name="up">The camera's up vector.</param>
+            <returns>The created look-at quaternion.</returns>
         </member>
         <member name="M:SharpDX.Quaternion.BillboardLH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
             <summary>
@@ -44530,11 +44570,11 @@
             <param name="cameraPosition">The position of the camera.</param>
             <param name="cameraUpVector">The up vector of the camera.</param>
             <param name="cameraForwardVector">The forward vector of the camera.</param>
-            <returns>When the method completes, contains the created billboard quaternion.</returns>
+            <returns>The created billboard quaternion.</returns>
         </member>
         <member name="M:SharpDX.Quaternion.BillboardRH(SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Vector3@,SharpDX.Quaternion@)">
             <summary>
-            Creates a left-handed spherical billboard that rotates around a specified object position.
+            Creates a right-handed spherical billboard that rotates around a specified object position.
             </summary>
             <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
             <param name="cameraPosition">The position of the camera.</param>
@@ -44544,13 +44584,13 @@
         </member>
         <member name="M:SharpDX.Quaternion.BillboardRH(SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3,SharpDX.Vector3)">
             <summary>
-            Creates a left-handed spherical billboard that rotates around a specified object position.
+            Creates a right-handed spherical billboard that rotates around a specified object position.
             </summary>
             <param name="objectPosition">The position of the object around which the billboard will rotate.</param>
             <param name="cameraPosition">The position of the camera.</param>
             <param name="cameraUpVector">The up vector of the camera.</param>
             <param name="cameraForwardVector">The forward vector of the camera.</param>
-            <returns>When the method completes, contains the created billboard quaternion.</returns>
+            <returns>The created billboard quaternion.</returns>
         </member>
         <member name="M:SharpDX.Quaternion.RotationMatrix(SharpDX.Matrix)">
             <summary>
@@ -46480,14 +46520,6 @@
             <param name="sourceType">Type of the source.</param>
             <param name="targetType">Type of the target.</param>
             <returns>The method to perform the conversion. null if not found.</returns>
-        </member>
-        <member name="M:SharpDX.Utilities.LoadLibrary(System.String)">
-            <summary>
-            Loads a native library.
-            </summary>
-            <param name="dllName">Name of the DLL.</param>
-            <exception cref="T:System.DllNotFoundException">If DLL was not found.</exception>
-            <returns>Handle to the module.</returns>
         </member>
         <member name="M:SharpDX.Utilities.GetProcAddress(System.IntPtr,System.String)">
             <summary>
