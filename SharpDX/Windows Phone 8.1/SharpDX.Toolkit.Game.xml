@@ -4,86 +4,10 @@
         <name>SharpDX.Toolkit.Game</name>
     </assembly>
     <members>
-        <member name="T:SharpDX.Toolkit.AssemblyDoc">
+        <member name="T:SharpDX.Toolkit.AnimationSystem">
             <summary>
-            The <see cref="A:SharpDX.Toolkit.Game"/> assembly provides a high level Game API.
+            Manages and drives skeletal animations.
             </summary>
-        </member>
-        <member name="T:SharpDX.Toolkit.GameContext">
-            <summary>
-            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
-            </summary>
-            <summary>
-            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
-            </summary>
-            <summary>
-            Contains context used to render the game (Control for WinForm, a DrawingSurface for WP8...etc.).
-            </summary>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.#ctor(System.Object,System.Int32,System.Int32)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
-            </summary>
-            <param name="control">The control, platform dependent. See remarks for supported controls.</param>
-            <param name="requestedWidth">Width of the requested.</param>
-            <param name="requestedHeight">Height of the requested.</param>
-            <exception cref="T:System.ArgumentException">Control is not supported. Must inherit from System.Windows.Forms.Control (WinForm) or System.Windows.Controls.Border (WPF hosting WinForm) or SharpDX.Toolkit.SharpDXElement (WPF)</exception>
-            <remarks>
-            On Windows Desktop, the Toolkit supports the following controls:
-            <ul>
-            <li>XAML grid SwapChainBackgroundPanel</li>
-            <li>XAML grid SwapChainPanel (Only Windows8.1+)</li>
-            </ul>
-            </remarks>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.ValidateControl(System.Object)">
-            <summary>
-            Checks if the provided control supports any of the native interfaces for Direct3D interop.
-            </summary>
-            <param name="control">The control to check.</param>
-            <exception cref="T:System.NotSupportedException">Is thrown when <paramref name="control"/> is not supported.</exception>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.SupportsInterface``1(SharpDX.ComObject)">
-            <summary>
-            Checks if the provided <see cref="T:SharpDX.ComObject"/> instance supports a certain interface.
-            </summary>
-            <typeparam name="T">The interface type to check the support for.</typeparam>
-            <param name="comObject">The <see cref="T:SharpDX.ComObject"/> instance to check for support.</param>
-            <returns>true - if the interface <typeparamref name="T"/> is supported, false - otherwise.</returns>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class to run a Game on WinRT.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.ContextType">
-            <summary>
-            The context type of this instance.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.Control">
-            <summary>
-            The native control used.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.RequestedWidth">
-            <summary>
-            The requested width.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.RequestedHeight">
-            <summary>
-            The requested height.
-            </summary>
-        </member>
-        <member name="T:SharpDX.Toolkit.EffectCompilerSystem">
-            <summary>
-            Allows to dynamically recompile Effects at runtime when original source code changed, without having to recompile the application. See remarks.
-            </summary>
-            <remarks>
-            The effect must have been compiled with tkfxc and option /Re. This features is only available from Windows Desktop and doesn't work
-            on other platforms.
-            </remarks>
         </member>
         <member name="T:SharpDX.Toolkit.GameSystem">
             <summary>
@@ -244,6 +168,106 @@
             Gets the graphics device.
             </summary>
             <value>The graphics device.</value>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.#ctor(SharpDX.Toolkit.Game)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.AnimationSystem"/> class.
+            </summary>
+            <param name="game">The game.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.StartAnimation(SharpDX.Toolkit.Graphics.Model,SharpDX.Toolkit.Graphics.ModelAnimation)">
+            <summary>
+            Starts a new animation.
+            </summary>
+            <param name="model">The animated model.</param>
+            <param name="animation">The animation to play.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.StopAnimation(SharpDX.Toolkit.Graphics.Model)">
+            <summary>
+            Stop the animation of a model.
+            </summary>
+            <param name="model">The animated model.</param>
+        </member>
+        <member name="T:SharpDX.Toolkit.AssemblyDoc">
+            <summary>
+            The <see cref="A:SharpDX.Toolkit.Game"/> assembly provides a high level Game API.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.GameContext">
+            <summary>
+            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
+            </summary>
+            <summary>
+            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
+            </summary>
+            <summary>
+            Contains context used to render the game (Control for WinForm, a DrawingSurface for WP8...etc.).
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameContext.#ctor(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
+            </summary>
+            <param name="control">The control, platform dependent. See remarks for supported controls.</param>
+            <param name="requestedWidth">Width of the requested.</param>
+            <param name="requestedHeight">Height of the requested.</param>
+            <exception cref="T:System.ArgumentException">Control is not supported. Must inherit from System.Windows.Forms.Control (WinForm) or System.Windows.Controls.Border (WPF hosting WinForm) or SharpDX.Toolkit.SharpDXElement (WPF)</exception>
+            <remarks>
+            On Windows Desktop, the Toolkit supports the following controls:
+            <ul>
+            <li>XAML grid SwapChainBackgroundPanel</li>
+            <li>XAML grid SwapChainPanel (Only Windows8.1+)</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameContext.ValidateControl(System.Object)">
+            <summary>
+            Checks if the provided control supports any of the native interfaces for Direct3D interop.
+            </summary>
+            <param name="control">The control to check.</param>
+            <exception cref="T:System.NotSupportedException">Is thrown when <paramref name="control"/> is not supported.</exception>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameContext.SupportsInterface``1(SharpDX.ComObject)">
+            <summary>
+            Checks if the provided <see cref="T:SharpDX.ComObject"/> instance supports a certain interface.
+            </summary>
+            <typeparam name="T">The interface type to check the support for.</typeparam>
+            <param name="comObject">The <see cref="T:SharpDX.ComObject"/> instance to check for support.</param>
+            <returns>true - if the interface <typeparamref name="T"/> is supported, false - otherwise.</returns>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class to run a Game on WinRT.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.ContextType">
+            <summary>
+            The context type of this instance.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.Control">
+            <summary>
+            The native control used.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.RequestedWidth">
+            <summary>
+            The requested width.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.RequestedHeight">
+            <summary>
+            The requested height.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.EffectCompilerSystem">
+            <summary>
+            Allows to dynamically recompile Effects at runtime when original source code changed, without having to recompile the application. See remarks.
+            </summary>
+            <remarks>
+            The effect must have been compiled with tkfxc and option /Re. This features is only available from Windows Desktop and doesn't work
+            on other platforms.
+            </remarks>
         </member>
         <member name="M:SharpDX.Toolkit.EffectCompilerSystem.#ctor(SharpDX.Toolkit.Game)">
             <summary>

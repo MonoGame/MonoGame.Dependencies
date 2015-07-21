@@ -4,83 +4,10 @@
         <name>SharpDX.Toolkit.Game</name>
     </assembly>
     <members>
-        <member name="T:SharpDX.Toolkit.AssemblyDoc">
+        <member name="T:SharpDX.Toolkit.AnimationSystem">
             <summary>
-            The <see cref="A:SharpDX.Toolkit.Game"/> assembly provides a high level Game API.
+            Manages and drives skeletal animations.
             </summary>
-        </member>
-        <member name="T:SharpDX.Toolkit.GameContext">
-            <summary>
-            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
-            </summary>
-            <summary>
-            Contains context used to render the game (Control for WinForm, a DrawingSurface for WP8...etc.).
-            </summary>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
-            </summary>
-            <exception cref="T:System.NotSupportedException">Expecting a DrawingSurfaceBackgroundGrid or DrawingSurface to run the GameContext</exception>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.#ctor(System.Windows.Controls.DrawingSurfaceBackgroundGrid,System.Int32,System.Int32)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
-            </summary>
-            <param name="control">The control.</param>
-            <param name="requestedWidth">Width of the requested.</param>
-            <param name="requestedHeight">Height of the requested.</param>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.#ctor(System.Windows.Controls.DrawingSurface,System.Int32,System.Int32)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
-            </summary>
-            <param name="control">The control.</param>
-            <param name="requestedWidth">Width of the requested.</param>
-            <param name="requestedHeight">Height of the requested.</param>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.Control">
-            <summary>
-            The control used as a GameWindow context (either an instance of <see cref="T:System.Windows.Controls.DrawingSurfaceBackgroundGrid"/> or <see cref="T:System.Windows.Controls.DrawingSurface"/>.
-            </summary>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.op_Implicit(System.Windows.Controls.DrawingSurfaceBackgroundGrid)~SharpDX.Toolkit.GameContext">
-            <summary>
-            Performs an implicit conversion from <see cref="T:System.Windows.Controls.DrawingSurfaceBackgroundGrid"/> to <see cref="T:SharpDX.Toolkit.GameContext"/>.
-            </summary>
-            <param name="control">The control.</param>
-            <returns>The result of the conversion.</returns>
-        </member>
-        <member name="M:SharpDX.Toolkit.GameContext.op_Implicit(System.Windows.Controls.DrawingSurface)~SharpDX.Toolkit.GameContext">
-            <summary>
-            Performs an implicit conversion from <see cref="T:System.Windows.Controls.DrawingSurface"/> to <see cref="T:SharpDX.Toolkit.GameContext"/>.
-            </summary>
-            <param name="control">The control.</param>
-            <returns>The result of the conversion.</returns>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.ContextType">
-            <summary>
-            The context type of this instance.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.RequestedWidth">
-            <summary>
-            The requested width.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContext.RequestedHeight">
-            <summary>
-            The requested height.
-            </summary>
-        </member>
-        <member name="T:SharpDX.Toolkit.EffectCompilerSystem">
-            <summary>
-            Allows to dynamically recompile Effects at runtime when original source code changed, without having to recompile the application. See remarks.
-            </summary>
-            <remarks>
-            The effect must have been compiled with tkfxc and option /Re. This features is only available from Windows Desktop and doesn't work
-            on other platforms.
-            </remarks>
         </member>
         <member name="T:SharpDX.Toolkit.GameSystem">
             <summary>
@@ -207,6 +134,17 @@
             </summary>
             <param name="game">The game.</param>
         </member>
+        <member name="M:SharpDX.Toolkit.GameSystem.ToDisposeContent``1(``0)">
+            <summary>
+            Adds an object to be disposed automatically when <see cref="M:SharpDX.Toolkit.GameSystem.UnloadContent"/> is called. See remarks.
+            </summary>
+            <typeparam name="T">Type of the object to dispose</typeparam>
+            <param name="disposable">The disposable object.</param>
+            <returns>The disposable object.</returns>
+            <remarks>
+            Use this method for any content that is not loaded through the <see cref="T:SharpDX.Toolkit.Content.ContentManager"/>.
+            </remarks>
+        </member>
         <member name="P:SharpDX.Toolkit.GameSystem.Game">
             <summary>
             Gets the <see cref="P:SharpDX.Toolkit.GameSystem.Game"/> associated with this <see cref="T:SharpDX.Toolkit.GameSystem"/>. This value can be null in a mock environment.
@@ -230,6 +168,83 @@
             Gets the graphics device.
             </summary>
             <value>The graphics device.</value>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.#ctor(SharpDX.Toolkit.Game)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.AnimationSystem"/> class.
+            </summary>
+            <param name="game">The game.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.StartAnimation(SharpDX.Toolkit.Graphics.Model,SharpDX.Toolkit.Graphics.ModelAnimation)">
+            <summary>
+            Starts a new animation.
+            </summary>
+            <param name="model">The animated model.</param>
+            <param name="animation">The animation to play.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.AnimationSystem.StopAnimation(SharpDX.Toolkit.Graphics.Model)">
+            <summary>
+            Stop the animation of a model.
+            </summary>
+            <param name="model">The animated model.</param>
+        </member>
+        <member name="T:SharpDX.Toolkit.AssemblyDoc">
+            <summary>
+            The <see cref="A:SharpDX.Toolkit.Game"/> assembly provides a high level Game API.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.GameContext">
+            <summary>
+            A <see cref="T:SharpDX.Toolkit.GameContext"/> to use for rendering to an existing WinForm <see cref="F:SharpDX.Toolkit.GameContext.Control"/>.
+            </summary>
+            <summary>
+            Contains context used to render the game (Control for WinForm, a DrawingSurface for WP8...etc.).
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameContext.#ctor(System.Object,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.GameContext"/> class.
+            </summary>
+            <param name="control">The control, platform dependent. See remarks for supported controls.</param>
+            <param name="requestedWidth">Width of the requested.</param>
+            <param name="requestedHeight">Height of the requested.</param>
+            <exception cref="T:System.ArgumentException">Control is not supported. Must inherit from System.Windows.Forms.Control (WinForm) or System.Windows.Controls.Border (WPF hosting WinForm) or SharpDX.Toolkit.SharpDXElement (WPF)</exception>
+            <remarks>
+            On Windows Phone, the Toolkit supports the following controls:
+            <ul>
+            <li>XAML control inheriting <see cref="T:System.Windows.Controls.DrawingSurfaceBackgroundGrid"/></li>
+            <li>XAML control inheriting <see cref="T:System.Windows.Controls.DrawingSurface"/></li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.ContextType">
+            <summary>
+            The context type of this instance.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.Control">
+            <summary>
+            The native control used.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.RequestedWidth">
+            <summary>
+            The requested width.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.GameContext.RequestedHeight">
+            <summary>
+            The requested height.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.EffectCompilerSystem">
+            <summary>
+            Allows to dynamically recompile Effects at runtime when original source code changed, without having to recompile the application. See remarks.
+            </summary>
+            <remarks>
+            The effect must have been compiled with tkfxc and option /Re. This features is only available from Windows Desktop and doesn't work
+            on other platforms.
+            </remarks>
         </member>
         <member name="M:SharpDX.Toolkit.EffectCompilerSystem.#ctor(SharpDX.Toolkit.Game)">
             <summary>
@@ -289,6 +304,11 @@
             Game running on desktop in a form or <see cref="!:System.Windows.Forms.Control"/>.
             </summary>
         </member>
+        <member name="F:SharpDX.Toolkit.GameContextType.DesktopHwndWpf">
+            <summary>
+            Game running on desktop in a WPF border control through a HwndHost
+            </summary>
+        </member>
         <member name="F:SharpDX.Toolkit.GameContextType.DesktopWpf">
             <summary>
             Game running on desktop in a WPF window through a D3DImage.
@@ -297,11 +317,6 @@
         <member name="F:SharpDX.Toolkit.GameContextType.WinRT">
             <summary>
             Game running on WinRT in a CoreWindow.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.GameContextType.WinRTBackgroundXaml">
-            <summary>
-            Game running on WinRT in a SwapChainBackgroundPanel.
             </summary>
         </member>
         <member name="F:SharpDX.Toolkit.GameContextType.WinRTXaml">
@@ -444,6 +459,11 @@
             Gets or sets the depth stencil format
             </summary>
         </member>
+        <member name="F:SharpDX.Toolkit.GameGraphicsParameters.PreferredRefreshRate">
+            <summary>
+            The preferred refresh rate
+            </summary>
+        </member>
         <member name="F:SharpDX.Toolkit.GameGraphicsParameters.IsFullScreen">
             <summary>
               Gets or sets a value indicating whether the application is in full screen mode.
@@ -484,6 +504,12 @@
             Initializes the GameWindow with the specified window context.
             </summary>
             <param name="gameContext">The window context.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.GameWindow.Switch(SharpDX.Toolkit.GameContext)">
+            <summary>
+            Switches the rendering onto another game context.
+            </summary>
+            <param name="context">The new context to switch to.</param>
         </member>
         <member name="M:SharpDX.Toolkit.GameWindow.CreateGraphicsPresenter(SharpDX.Toolkit.Graphics.GraphicsDevice,SharpDX.Toolkit.Graphics.PresentationParameters)">
             <summary>
@@ -587,6 +613,13 @@
                 <c>true</c> if visible; otherwise, <c>false</c>.
             </value>
         </member>
+        <member name="M:SharpDX.Toolkit.GamePlatform.Switch(SharpDX.Toolkit.GameContext)">
+            <summary>
+            Switches the game to a new game context.
+            </summary>
+            <param name="context">The new game context.</param>
+            <exception cref="T:System.NotSupportedException">Is thrown when a different game context type is passed (for example initially it was WinForms and became WPF).</exception>
+        </member>
         <member name="T:SharpDX.Toolkit.Game">
             <summary>
             The game.
@@ -613,6 +646,14 @@
             </summary>
             <param name="gameContext">The window Context for this game.</param>
             <exception cref="T:System.InvalidOperationException">Cannot run this instance while it is already running</exception>
+        </member>
+        <member name="M:SharpDX.Toolkit.Game.Switch(SharpDX.Toolkit.GameContext)">
+            <summary>
+            Call this method to switch game rendering to a different control.
+            </summary>
+            <param name="context">The new game context.</param>
+            <exception cref="T:System.ArgumentNullException">Is thrown when <paramref name="context"/> is null.</exception>
+            <exception cref="T:System.InvalidOperationException">Is thrown when game is not running (<see cref="P:SharpDX.Toolkit.Game.IsRunning"/> is false).</exception>
         </member>
         <member name="M:SharpDX.Toolkit.Game.SuppressDraw">
             <summary>
@@ -826,6 +867,15 @@
             <returns>The registered instance of this service.</returns>
             <exception cref="T:System.ArgumentNullException">type</exception>
         </member>
+        <member name="M:SharpDX.Toolkit.GameServiceRegistry.GetService``1">
+            <summary>
+            Gets the service object of specified type. The service must be registered with the <typeparamref name="T"/> type key.
+            </summary>
+            <remarks>This method will thrown an exception if the service is not registered, it null value can be accepted - use the <see cref="M:System.IServiceProvider.GetService(System.Type)"/> method.</remarks>
+            <typeparam name="T">The type of the service to get.</typeparam>
+            <returns>The service instance.</returns>
+            <exception cref="T:System.ArgumentException">Is thrown when the corresponding service is not registered.</exception>
+        </member>
         <member name="M:SharpDX.Toolkit.GameServiceRegistry.AddService(System.Type,System.Object)">
             <summary>
             Adds a service to this <see cref="T:SharpDX.Toolkit.GameServiceRegistry"/>.
@@ -835,9 +885,28 @@
             <exception cref="T:System.ArgumentNullException">type;Service type cannot be null</exception>
             <exception cref="T:System.ArgumentException">Service is already registered;type</exception>
         </member>
+        <member name="M:SharpDX.Toolkit.GameServiceRegistry.AddService``1(``0)">
+            <summary>
+            Adds a service to this service provider.
+            </summary>
+            <typeparam name="T">The type of the service to add.</typeparam>
+            <param name="provider">The instance of the service provider to add.</param>
+            <exception cref="T:System.ArgumentNullException">Service type cannot be null</exception>
+            <exception cref="T:System.ArgumentException">Service is already registered</exception>
+        </member>
         <member name="M:SharpDX.Toolkit.GameServiceRegistry.RemoveService(System.Type)">
             <summary>Removes the object providing a specified service.</summary>
             <param name="type">The type of service.</param>
+        </member>
+        <member name="E:SharpDX.Toolkit.GameServiceRegistry.ServiceAdded">
+            <summary>
+            Occurs when a new service is added.
+            </summary>
+        </member>
+        <member name="E:SharpDX.Toolkit.GameServiceRegistry.ServiceRemoved">
+            <summary>
+            Occurs when when a service is removed.
+            </summary>
         </member>
         <member name="T:SharpDX.Toolkit.GameTime">
             <summary>
@@ -1045,6 +1114,12 @@
             Gets or sets the preferred back buffer format.
             </summary>
             <value>The preferred back buffer format.</value>
+        </member>
+        <member name="P:SharpDX.Toolkit.GraphicsDeviceManager.PreferredRefreshRate">
+            <summary>
+            Gets or sets the preferred refresh rate (Default is 60fps).
+            </summary>
+            <value>The preferred refresh rate.</value>
         </member>
         <member name="P:SharpDX.Toolkit.GraphicsDeviceManager.PreferredBackBufferHeight">
             <summary>

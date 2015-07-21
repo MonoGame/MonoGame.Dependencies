@@ -14,11 +14,23 @@
             Exception when an asset was not found from the <see cref="T:SharpDX.Toolkit.Content.ContentManager"/>.
             </summary>
         </member>
-        <member name="M:SharpDX.Toolkit.Content.AssetNotFoundException.#ctor(System.String)">
+        <member name="M:SharpDX.Toolkit.Content.AssetNotFoundException.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Content.AssetNotFoundException"/> class.
             </summary>
-            <param name="message">The message.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.Content.AssetNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Content.AssetNotFoundException"/> class with the specified message.
+            </summary>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.Content.AssetNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Content.AssetNotFoundException"/> class with the specified message and inner exception.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="innerException">The inner exception.</param>
         </member>
         <member name="T:SharpDX.Toolkit.Content.ContentManager">
             <summary>
@@ -50,6 +62,7 @@
             <exception cref="T:SharpDX.Toolkit.Content.AssetNotFoundException">If the asset was not found from all <see cref="T:SharpDX.Toolkit.Content.IContentResolver"/>.</exception>
             <exception cref="T:System.NotSupportedException">If no content reader was suitable to decode the asset.</exception>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:SharpDX.Toolkit.Content.IContentManager.Load(System.Type,System.String,System.Object)" -->
         <member name="M:SharpDX.Toolkit.Content.IContentManager.Unload">
             <summary>
             Unloads all data that was loaded by this ContentManager. All data will be disposed.
@@ -58,10 +71,18 @@
             Unlike <see cref="M:SharpDX.Toolkit.Content.ContentManager.Load``1(System.String,System.Object)"/> method, this method is not thread safe and must be called by a single caller at a single time.
             </remarks>
         </member>
-        <member name="M:SharpDX.Toolkit.Content.IContentManager.Unload(System.String)">
+        <member name="M:SharpDX.Toolkit.Content.IContentManager.Unload``1(System.String)">
             <summary>
             Unloads and disposes an asset.
             </summary>
+            <param name="assetName">The asset name</param>
+            <returns><c>true</c> if the asset exists and was unloaded, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:SharpDX.Toolkit.Content.IContentManager.Unload(System.Type,System.String)">
+            <summary>
+            Unloads and disposes an asset.
+            </summary>
+            <param name="assetType">The asset type</param>
             <param name="assetName">The asset name</param>
             <returns><c>true</c> if the asset exists and was unloaded, <c>false</c> otherwise.</returns>
         </member>
@@ -81,17 +102,25 @@
             </summary>
             <param name="serviceProvider">The service provider that the ContentManager should use to locate services.</param>
         </member>
+        <member name="M:SharpDX.Toolkit.Content.ContentManager.Exists(System.String)">
+            <summary>
+            Checks if the specified assets exists.
+            </summary>
+            <param name="assetName">The asset name with extension.</param>
+            <returns><c>true</c> if the specified assets exists, <c>false</c> otherwise</returns>
+        </member>
         <member name="M:SharpDX.Toolkit.Content.ContentManager.Load``1(System.String,System.Object)">
             <summary>
             Loads an asset that has been processed by the Content Pipeline.  Reference page contains code sample.
             </summary>
-            <typeparam name="T"></typeparam>
+            <typeparam name="T">Type of the asset</typeparam>
             <param name="assetName">The asset name </param>
             <param name="options">The options to pass to the content reader (null by default).</param>
             <returns>``0.</returns>
             <exception cref="T:SharpDX.Toolkit.Content.AssetNotFoundException">If the asset was not found from all <see cref="T:SharpDX.Toolkit.Content.IContentResolver"/>.</exception>
             <exception cref="T:System.NotSupportedException">If no content reader was suitable to decode the asset.</exception>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:SharpDX.Toolkit.Content.ContentManager.Load(System.Type,System.String,System.Object)" -->
         <member name="M:SharpDX.Toolkit.Content.ContentManager.Unload">
             <summary>
             Unloads all data that was loaded by this ContentManager. All data will be disposed.
@@ -100,10 +129,18 @@
             Unlike <see cref="M:SharpDX.Toolkit.Content.ContentManager.Load``1(System.String,System.Object)"/> method, this method is not thread safe and must be called by a single caller at a single time.
             </remarks>
         </member>
-        <member name="M:SharpDX.Toolkit.Content.ContentManager.Unload(System.String)">
+        <member name="M:SharpDX.Toolkit.Content.ContentManager.Unload``1(System.String)">
             <summary>
             Unloads and disposes an asset.
             </summary>
+            <param name="assetName">The asset name</param>
+            <returns><c>true</c> if the asset exists and was unloaded, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:SharpDX.Toolkit.Content.ContentManager.Unload(System.Type,System.String)">
+            <summary>
+            Unloads and disposes an asset.
+            </summary>
+            <param name="assetType">The asset type</param>
             <param name="assetName">The asset name</param>
             <returns><c>true</c> if the asset exists and was unloaded, <c>false</c> otherwise.</returns>
         </member>
@@ -117,6 +154,12 @@
             Add or remove registered <see cref="T:SharpDX.Toolkit.Content.IContentReader"/> to this instance.
             </summary>
         </member>
+        <member name="P:SharpDX.Toolkit.Content.ContentManager.ReaderFactories">
+            <summary>
+            Add or remove a registered <see cref="T:SharpDX.Toolkit.Content.IContentReaderFactory"/> to this instance.
+            </summary>
+            <value>The reader factories.</value>
+        </member>
         <member name="P:SharpDX.Toolkit.Content.ContentManager.ServiceProvider">
             <summary>
             Gets the service provider associated with the ContentManager.
@@ -126,6 +169,11 @@
         <member name="P:SharpDX.Toolkit.Content.ContentManager.RootDirectory">
             <summary>
             Gets or sets the root directory.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.Content.ContentManager.AssetKey">
+            <summary>
+            Use this key to store loaded assets.
             </summary>
         </member>
         <member name="T:SharpDX.Toolkit.Content.ContentReaderAttribute">
@@ -210,11 +258,12 @@
             </summary>
             <param name="rootDirectory">The root directory.</param>
         </member>
-        <member name="M:SharpDX.Toolkit.Content.FileSystemContentResolver.GetAssetPath(System.String)">
+        <member name="M:SharpDX.Toolkit.Content.FileSystemContentResolver.GetAssetPath(System.String,System.Boolean)">
             <summary>
             Gets the full asset path based on the root directory and default extension.
             </summary>
             <param name="assetName">The asset name.</param>
+            <param name="forceAppendExtension">A value indicating whether to append the default extension even if the supplied name already has one.</param>
             <returns>The full asset path.</returns>
         </member>
         <member name="P:SharpDX.Toolkit.Content.FileSystemContentResolver.RootDirectory">
@@ -235,6 +284,19 @@
             <param name="contentManager">The content manager.</param>
             <param name="parameters"></param>
             <returns>The data decoded from the stream, or null if the kind of asset is not supported by this content reader.</returns>
+        </member>
+        <member name="T:SharpDX.Toolkit.Content.IContentReaderFactory">
+            <summary>
+            A factory to create <see cref="T:SharpDX.Toolkit.Content.IContentReader"/> when a specific type is requested
+            from the <see cref="T:SharpDX.Toolkit.Content.IContentManager"/>.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Content.IContentReaderFactory.TryCreate(System.Type)">
+            <summary>
+            Returns an instance of a <see cref="T:SharpDX.Toolkit.Content.IContentReader"/> for loading the specified type or null if not handled by this factory.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An instance of a <see cref="T:SharpDX.Toolkit.Content.IContentReader"/> for loading the specified type or null if not handled..</returns>
         </member>
         <member name="T:SharpDX.Toolkit.Content.NamespaceDoc">
             <summary>
@@ -377,294 +439,116 @@
             Common data used by <see cref="T:SharpDX.Toolkit.Graphics.EffectData"/>, <see cref="T:SharpDX.Toolkit.Graphics.ModelData"/>.
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Name">
+        <member name="T:SharpDX.Toolkit.Graphics.MaterialKeys">
+            <summary>
+            Default keys optionally stored in <see cref="F:SharpDX.Toolkit.Graphics.ModelData.Material.Properties"/>.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Name">
             <summary>
             The name of the material, if available. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.TwoSided">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.TwoSided">
             <summary>
             Specifies whether meshes using this material must be rendered without backface culling. 0 for false, !0 for true. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ShadingMode">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ShadingMode">
             <summary>
             One of the <see cref="T:SharpDX.Toolkit.Graphics.MaterialShadingMode"/> enumerated values. Defines the library shading model to use for (real time) rendering to approximate the original look of the material as closely as possible. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Wireframe">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Wireframe">
             <summary>
             Specifies whether wireframe rendering must be turned on for the material. 0 for false, !0 for true. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.BlendMode">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.BlendMode">
             <summary>
             Defines the blending mode used when rendering this material.
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Opacity">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Opacity">
             <summary>
             Defines the opacity of the material in a range between 0..1. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.BumpScaling">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.BumpScaling">
             <summary>
             Defines the bump normal scaling.
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Shininess">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Shininess">
             <summary>
             Defines the shininess of a Phong-shaded material. This is actually the exponent of the Phong specular equation 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Reflectivity">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Reflectivity">
             <summary>
             Defines the reflectivity of the material.
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ShininessStrength">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ShininessStrength">
             <summary>
             Scales the specular color of the material. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.Refraction">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.Refraction">
             <summary>
             Defines the Index Of Refraction for the material. That's not supported by most file formats. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorDiffuse">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorDiffuse">
             <summary>
             Diffuse color of the material. This is typically scaled by the amount of incoming diffuse light (e.g. using Gouraud shading).
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorAmbient">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorAmbient">
             <summary>
             Ambient color of the material. This is typically scaled by the amount of ambient light 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorSpecular">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorSpecular">
             <summary>
             Specular color of the material. This is typically scaled by the amount of incoming specular light (e.g. using Phong shading) 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorEmissive">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorEmissive">
             <summary>
             Emissive color of the material. This is the amount of light emitted by the object. In real time applications it will usually not affect surrounding objects, but ray tracing applications may wish to treat emissive objects as light sources. 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorTransparent">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorTransparent">
             <summary>
             Defines the transparent color of the material, this is the color to be multiplied with the color of translucent light to construct the final 'destination color' for a particular position in the screen buffer. T 
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeysBase.ColorReflective">
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialKeys.ColorReflective">
             <summary>
             Defines the reflective color of the material.
             </summary>
         </member>
-        <member name="M:SharpDX.Toolkit.Graphics.MaterialKeysBase.FindKeyByName(System.String)">
+        <member name="M:SharpDX.Toolkit.Graphics.MaterialKeys.FindKeyByName(System.String)">
             <summary>
             Finds the name of the key by.
             </summary>
             <param name="name">The name.</param>
             <returns>PropertyKey.</returns>
         </member>
-        <member name="M:SharpDX.Toolkit.Graphics.MaterialKeysBase.RegisterKey``1(SharpDX.Toolkit.PropertyKey{``0})">
+        <member name="M:SharpDX.Toolkit.Graphics.MaterialKeys.RegisterKey``1(SharpDX.Toolkit.PropertyKey{``0})">
             <summary>
             Registers the specified key.
             </summary>
             <typeparam name="T">Type of the property</typeparam>
-            <param name="key">The key.</param>
-            <returns>The key.</returns>
+            <param name="key">The property key.</param>
+            <returns>The registered property key.</returns>
         </member>
-        <member name="P:SharpDX.Toolkit.Graphics.MaterialKeysBase.RegisteredKeys">
+        <member name="P:SharpDX.Toolkit.Graphics.MaterialKeys.RegisteredKeys">
             <summary>
             Gets the registered keys.
             </summary>
             <value>The registered keys.</value>
-        </member>
-        <member name="T:SharpDX.Toolkit.PropertyKey">
-            <summary>
-            A Name describing a property attribute.
-            </summary>
-        </member>
-        <member name="M:SharpDX.Toolkit.PropertyKey.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyKey"/> class.
-            </summary>
-            <param name="name">The Name.</param>
-        </member>
-        <member name="P:SharpDX.Toolkit.PropertyKey.Name">
-            <summary>
-            Gets the Name.
-            </summary>
-            <value>The Name.</value>
-        </member>
-        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class.
-            </summary>
-        </member>
-        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor(System.Int32)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class that is empty, has the specified initial capacity, and uses the default equality comparer for the key type.
-            </summary>
-            <param name="capacity">The initial number of elements that the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> can contain.</param>
-        </member>
-        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor(System.Collections.Generic.IDictionary{SharpDX.Toolkit.PropertyKey,System.Object})">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class.
-            </summary>
-            <param name="dictionary">The dictionary.</param>
-        </member>
-        <!-- Badly formed XML comment ignored for member "T:SharpDX.Toolkit.Graphics.MaterialShadingMode" -->
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.None">
-            <summary>
-            No particular shading.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Flat">
-            <summary>
-            Flat shading. Shading is done on per-face base,
-            diffuse only. Also known as 'faceted shading'.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Gouraud">
-            <summary>
-            Simple Gouraud shading. 
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Phong">
-            <summary>
-            Phong-Shading.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Blinn">
-            <summary>
-            Phong-Blinn-Shading
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Toon">
-            <summary>
-            Toon-Shading per pixel, also known as 'comic' shader.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.OrenNayar">
-            <summary>
-            OrenNayar-Shading per pixel.
-            </summary>
-            <remarks>
-            Extension to standard Lambertian shading, taking the    
-            roughness of the material into account
-            </remarks>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Minnaert">
-            <summary>
-            Minnaert-Shading per pixel
-            </summary>
-            <remarks>
-            Extension to standard Lambertian shading, taking the
-            "darkness" of the material into account
-            </remarks>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.CookTorrance">
-            <summary>
-            CookTorrance-Shading per pixel
-            </summary>
-            <remarks>
-            Special shader for metallic surfaces.
-            </remarks>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.NoShading">
-            <summary>
-            No shading at all. Constant light influence of 1.0.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Fresnel">
-            <summary>
-            Fresnel shading
-            </summary>
-        </member>
-        <member name="T:SharpDX.Toolkit.Graphics.MaterialTextureFlags">
-            <summary>
-            Defines some mixed flags for a particular texture.
-            </summary>
-            <remarks>
-            Usually you'll instruct your cg artists how textures have to look like ...
-            and how they will be processed in your application. However, if you use
-            Assimp for completely generic loading purposes you might also need to 
-            process these flags in order to display as many 'unknown' 3D models as 
-            possible correctly.
-            
-            This corresponds to the #AI_MATKEY_TEXFLAGS property.
-            </remarks>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.None">
-            <summary>
-            No flags.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.Invert">
-            <summary>
-            The texture's color values have to be inverted (component-wise 1-n)
-            </summary>
-            
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.aiTextureFlags_UseAlpha">
-            <summary>
-            Explicit request to the application to process the alpha channel
-            of the texture.
-            </summary>
-            <remarks>
-            Mutually exclusive with #aiTextureFlags_IgnoreAlpha. These
-            flags are set if the library can say for sure that the alpha
-            channel is used/is not used. If the model format does not
-            define this, it is left to the application to decide whether
-            the texture alpha channel - if any - is evaluated or not.
-            </remarks>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.IgnoreAlpha">
-            <summary>
-            Explicit request to the application to ignore the alpha channel of the texture.
-             </summary>
-            <remarks>
-            Mutually exclusive with #aiTextureFlags_UseAlpha. 
-            </remarks>
-        </member>
-        <member name="T:SharpDX.Toolkit.Graphics.MaterialTextureOperator">
-            <summary>
-            Defines how the Nth texture of a specific type is combined with the result of all previous layers.
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Multiply">
-            <summary>
-            T = T1 * T2 
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Add">
-            <summary>
-            T = T1 + T2
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Subtract">
-            <summary>
-            T = T1 - T2
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Divide">
-            <summary>
-            T = T1 / T2
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.SmoothAdd">
-            <summary>
-            T = (T1 + T2) - (T1 * T2)
-            </summary>
-        </member>
-        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.SignedAdd">
-            <summary>
-            T = T1 + (T2-0.5)
-            </summary>
         </member>
         <member name="T:SharpDX.Toolkit.Graphics.ModelData">
             <summary>
@@ -697,6 +581,11 @@
             </summary>
         </member>
         <member name="F:SharpDX.Toolkit.Graphics.ModelData.Meshes">
+            <summary>
+            Gets the mesh of this model.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.Animations">
             <summary>
             Gets the mesh of this model.
             </summary>
@@ -742,6 +631,70 @@
             <param name="fileName">The output filename.</param>
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.ModelData.SharpDX#Serialization#IDataSerializable#Serialize(SharpDX.Serialization.BinarySerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.ModelData.Animation">
+            <summary>
+            Class Animation
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.Animation.Name">
+            <summary>
+            The name of this animation.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.Animation.Duration">
+            <summary>
+            Total total animation duration.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.Animation.Channels">
+            <summary>
+            The channels of this animation.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.Animation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Graphics.ModelData.Animation"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.Animation.SharpDX#Serialization#IDataSerializable#Serialize(SharpDX.Serialization.BinarySerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.ModelData.KeyFrame">
+            <summary>
+            Class KeyFrame
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.KeyFrame.Time">
+            <summary>
+            The key time.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.KeyFrame.Value">
+            <summary>
+            The bone transform.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.KeyFrame.SharpDX#Serialization#IDataSerializable#Serialize(SharpDX.Serialization.BinarySerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.ModelData.SkinnedBone">
+            <summary>
+            Class SkinnedBone
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.SkinnedBone.BoneIndex">
+            <summary>
+            Index of the skinned bone.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.SkinnedBone.InverseBindTransform">
+            <summary>
+            The absolute transform that takes the skinned vertices in bind pose from world space to bone space.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.SkinnedBone.SharpDX#Serialization#IDataSerializable#Serialize(SharpDX.Serialization.BinarySerializer)">
             <inheritdoc/>
         </member>
         <member name="T:SharpDX.Toolkit.Graphics.ModelData.MaterialTexture">
@@ -914,14 +867,232 @@
             The vertex buffer range. The slot in the buffer range is the position of the vertex buffer in <see cref="T:SharpDX.Toolkit.Graphics.ModelData.VertexBuffer"/>s.
             </summary>
         </member>
-        <member name="F:SharpDX.Toolkit.Graphics.ModelData.MeshPart.BoneOffsetMatrices">
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.MeshPart.SkinnedBones">
             <summary>
-            Gets the offset matrix attached to each bone weights
+            Gets the skinned bones.
             </summary>
         </member>
         <member name="F:SharpDX.Toolkit.Graphics.ModelData.MeshPart.Properties">
             <summary>
             The attributes attached to this mesh part.
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel">
+            <summary>
+            Class AnimationChannel
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel.BoneName">
+            <summary>
+            The name of the animated bone.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel.KeyFrames">
+            <summary>
+            The key frames of this animation.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.Graphics.ModelData.AnimationChannel.SharpDX#Serialization#IDataSerializable#Serialize(SharpDX.Serialization.BinarySerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SharpDX.Toolkit.PropertyKey">
+            <summary>
+            A Name describing a property attribute.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.PropertyKey.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyKey"/> class.
+            </summary>
+            <param name="name">The Name.</param>
+        </member>
+        <member name="P:SharpDX.Toolkit.PropertyKey.Name">
+            <summary>
+            Gets the Name.
+            </summary>
+            <value>The Name.</value>
+        </member>
+        <member name="T:SharpDX.Toolkit.PropertyKey`1">
+            <summary>
+            A typed <see cref="T:SharpDX.Toolkit.PropertyKey"/>
+            </summary>
+            <typeparam name="T">Type of the value to associate with the key</typeparam>
+        </member>
+        <member name="M:SharpDX.Toolkit.PropertyKey`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyKey"/> class.
+            </summary>
+            <param name="name">The Name.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class that is empty, has the specified initial capacity, and uses the default equality comparer for the key type.
+            </summary>
+            <param name="capacity">The initial number of elements that the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> can contain.</param>
+        </member>
+        <member name="M:SharpDX.Toolkit.PropertyCollection.#ctor(System.Collections.Generic.IDictionary{SharpDX.Toolkit.PropertyKey,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.Toolkit.PropertyCollection"/> class.
+            </summary>
+            <param name="dictionary">The dictionary.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:SharpDX.Toolkit.Graphics.MaterialShadingMode" -->
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.None">
+            <summary>
+            No particular shading.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Flat">
+            <summary>
+            Flat shading. Shading is done on per-face base,
+            diffuse only. Also known as 'faceted shading'.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Gouraud">
+            <summary>
+            Simple Gouraud shading. 
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Phong">
+            <summary>
+            Phong-Shading.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Blinn">
+            <summary>
+            Phong-Blinn-Shading
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Toon">
+            <summary>
+            Toon-Shading per pixel, also known as 'comic' shader.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.OrenNayar">
+            <summary>
+            OrenNayar-Shading per pixel.
+            </summary>
+            <remarks>
+            Extension to standard Lambertian shading, taking the    
+            roughness of the material into account
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Minnaert">
+            <summary>
+            Minnaert-Shading per pixel
+            </summary>
+            <remarks>
+            Extension to standard Lambertian shading, taking the
+            "darkness" of the material into account
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.CookTorrance">
+            <summary>
+            CookTorrance-Shading per pixel
+            </summary>
+            <remarks>
+            Special shader for metallic surfaces.
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.NoShading">
+            <summary>
+            No shading at all. Constant light influence of 1.0.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialShadingMode.Fresnel">
+            <summary>
+            Fresnel shading
+            </summary>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.MaterialTextureFlags">
+            <summary>
+            Defines some mixed flags for a particular texture.
+            </summary>
+            <remarks>
+            Usually you'll instruct your cg artists how textures have to look like ...
+            and how they will be processed in your application. However, if you use
+            Assimp for completely generic loading purposes you might also need to 
+            process these flags in order to display as many 'unknown' 3D models as 
+            possible correctly.
+            
+            This corresponds to the #AI_MATKEY_TEXFLAGS property.
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.None">
+            <summary>
+            No flags.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.Invert">
+            <summary>
+            The texture's color values have to be inverted (component-wise 1-n)
+            </summary>
+            
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.aiTextureFlags_UseAlpha">
+            <summary>
+            Explicit request to the application to process the alpha channel
+            of the texture.
+            </summary>
+            <remarks>
+            Mutually exclusive with #aiTextureFlags_IgnoreAlpha. These
+            flags are set if the library can say for sure that the alpha
+            channel is used/is not used. If the model format does not
+            define this, it is left to the application to decide whether
+            the texture alpha channel - if any - is evaluated or not.
+            </remarks>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureFlags.IgnoreAlpha">
+            <summary>
+            Explicit request to the application to ignore the alpha channel of the texture.
+             </summary>
+            <remarks>
+            Mutually exclusive with #aiTextureFlags_UseAlpha. 
+            </remarks>
+        </member>
+        <member name="T:SharpDX.Toolkit.Graphics.MaterialTextureOperator">
+            <summary>
+            Defines how the Nth texture of a specific type is combined with the result of all previous layers.
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Multiply">
+            <summary>
+            T = T1 * T2 
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Add">
+            <summary>
+            T = T1 + T2
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Subtract">
+            <summary>
+            T = T1 - T2
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.Divide">
+            <summary>
+            T = T1 / T2
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.SmoothAdd">
+            <summary>
+            T = (T1 + T2) - (T1 * T2)
+            </summary>
+        </member>
+        <member name="F:SharpDX.Toolkit.Graphics.MaterialTextureOperator.SignedAdd">
+            <summary>
+            T = T1 + (T2-0.5)
             </summary>
         </member>
         <member name="T:SharpDX.Toolkit.Graphics.EffectDataContentReader">
@@ -1564,6 +1735,8 @@
             <param name="flags">The flags.</param>
             <param name="macros">The macrosArgs.</param>
             <param name="includeDirectoryList">The include directory list.</param>
+            <param name="alloDynamicCompiling">Whether or not to allow dynamic compilation.</param>
+            <param name="dependencyFilePath">Path to dependency files.</param>
             <returns>The result of compilation.</returns>
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.IEffectCompiler.Compile(System.String,System.String,SharpDX.Toolkit.Graphics.EffectCompilerFlags,System.Collections.Generic.List{SharpDX.Toolkit.Graphics.EffectData.ShaderMacro},System.Collections.Generic.List{System.String},System.Boolean,System.String)">
@@ -1575,6 +1748,8 @@
             <param name="flags">The flags.</param>
             <param name="macrosArgs">The macrosArgs.</param>
             <param name="includeDirectoryList">The include directory list.</param>
+            <param name="allowDynamicCompiling">Whether or not to allow dynamic compilation.</param>
+            <param name="dependencyFilePath">Path to dependency files.</param>
             <returns>The result of compilation.</returns>
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.IEffectCompiler.DisassembleShader(SharpDX.Toolkit.Graphics.EffectData.Shader)">
@@ -2181,7 +2356,7 @@
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.VertexElement.BlendWeights``1(System.Int32,System.Int32)">
             <summary>
-            Declares a VertexElement with the semantic "BLENDWEIGHTS".
+            Declares a VertexElement with the semantic "BLENDWEIGHT".
             </summary>
             <typeparam name="T">Type of the BlendWeights semantic.</typeparam>
             <param name="semanticIndex">The semantic index.</param>
@@ -2190,7 +2365,7 @@
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.VertexElement.BlendWeights(SharpDX.DXGI.Format,System.Int32)">
             <summary>
-            Declares a VertexElement with the semantic "BLENDWEIGHTS".
+            Declares a VertexElement with the semantic "BLENDWEIGHT".
             </summary>
             <param name="format">Format of this element.</param>
             <param name="offsetInBytes">The offset in bytes of this element. Use <see cref="F:SharpDX.Toolkit.Graphics.VertexElement.AppendAligned"/> to compute automatically the offset from previous elements.</param>
@@ -2198,7 +2373,7 @@
         </member>
         <member name="M:SharpDX.Toolkit.Graphics.VertexElement.BlendWeights(System.Int32,SharpDX.DXGI.Format,System.Int32)">
             <summary>
-            Declares a VertexElement with the semantic "BLENDWEIGHTS".
+            Declares a VertexElement with the semantic "BLENDWEIGHT".
             </summary>
             <param name="semanticIndex">The semantic index.</param>
             <param name="format">Format of this element.</param>
@@ -3005,6 +3180,163 @@
             <msdn-id>ff728735</msdn-id>	
             <unmanaged>D3D_SVT_CONSUME_STRUCTURED_BUFFER</unmanaged>	
             <unmanaged-short>D3D_SVT_CONSUME_STRUCTURED_BUFFER</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.CompositeTransform">
+            <summary>
+            Represents a transformation composed of a scaling, rotation and translation operation.
+            </summary>
+        </member>
+        <member name="F:SharpDX.CompositeTransform.Scale">
+            <summary>
+            The scaling component of the transformation.
+            </summary>
+        </member>
+        <member name="F:SharpDX.CompositeTransform.Rotation">
+            <summary>
+            The rotation component of the transformation.
+            </summary>
+        </member>
+        <member name="F:SharpDX.CompositeTransform.Translation">
+            <summary>
+            The translation component of the transformation.
+            </summary>
+        </member>
+        <member name="F:SharpDX.CompositeTransform.Identity">
+            <summary>
+            The identety <see cref="T:SharpDX.CompositeTransform"/>.
+            </summary>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.#ctor(SharpDX.Vector3,SharpDX.Quaternion,SharpDX.Vector3)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.CompositeTransform"/> struct.
+            </summary>
+            <param name="scale">The scaling component of the transformation.</param>
+            <param name="rotation">The rotation component of the transformation.</param>
+            <param name="translation">The translation component of the transformation.</param>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.#ctor(SharpDX.Matrix)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.CompositeTransform"/> struct.
+            </summary>
+            <param name="transform">The transformation matrix.</param>
+            <remarks>
+            This constructor is designed to decompose a SRT transformation matrix only.
+            </remarks>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Slerp(SharpDX.CompositeTransform@,SharpDX.CompositeTransform@,System.Single,SharpDX.CompositeTransform@)">
+            <summary>
+            Interpolates between two transformation, using spherical linear interpolation for rotations and linear interpolation for scaling and translation.
+            </summary>
+            <param name="start">Start transformation.</param>
+            <param name="end">End transformation.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of <paramref name="end"/>.</param>
+            <param name="result">When the method completes, contains the interpolation of the two transformations.</param>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Slerp(SharpDX.CompositeTransform,SharpDX.CompositeTransform,System.Single)">
+            <summary>
+            Interpolates between two transformation, using spherical linear interpolation for rotations and linear interpolation for scaling and translation.
+            </summary>
+            <param name="start">Start transformation.</param>
+            <param name="end">End transformation.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of <paramref name="end"/>.</param>
+            <returns>The interpolation of the two transformations.</returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.op_Explicit(SharpDX.CompositeTransform)~SharpDX.Matrix">
+            <summary>
+            Performs an explicit conversion from <see cref="T:SharpDX.CompositeTransform"/> to <see cref="!:SlimDX.Matrix"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.op_Equality(SharpDX.CompositeTransform,SharpDX.CompositeTransform)">
+            <summary>
+            Tests for equality between two objects.
+            </summary>
+            <param name="left">The first value to compare.</param>
+            <param name="right">The second value to compare.</param>
+            <returns><c>true</c> if <paramref name="left"/> has the same value as <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.op_Inequality(SharpDX.CompositeTransform,SharpDX.CompositeTransform)">
+            <summary>
+            Tests for inequality between two objects.
+            </summary>
+            <param name="left">The first value to compare.</param>
+            <param name="right">The second value to compare.</param>
+            <returns><c>true</c> if <paramref name="left"/> has a different value than <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.ToString(System.String)">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <param name="format">The format.</param>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.ToString(System.IFormatProvider)">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <param name="formatProvider">The format provider.</param>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.ToString(System.String,System.IFormatProvider)">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <param name="format">The format.</param>
+            <param name="formatProvider">The format provider.</param>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Serialize(SharpDX.Serialization.BinarySerializer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Equals(SharpDX.CompositeTransform@)">
+            <summary>
+            Determines whether the specified <see cref="T:SharpDX.CompositeTransform"/> is equal to this instance.
+            </summary>
+            <param name="other">The <see cref="T:SharpDX.CompositeTransform"/> to compare with this instance.</param>
+            <returns>
+            <c>true</c> if the specified <see cref="T:SharpDX.CompositeTransform"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Equals(SharpDX.CompositeTransform)">
+            <summary>
+            Determines whether the specified <see cref="T:SharpDX.CompositeTransform"/> is equal to this instance.
+            </summary>
+            <param name="other">The <see cref="T:SharpDX.CompositeTransform"/> to compare with this instance.</param>
+            <returns>
+            <c>true</c> if the specified <see cref="T:SharpDX.CompositeTransform"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:SharpDX.CompositeTransform.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to this instance.
+            </summary>
+            <param name="value">The <see cref="T:System.Object"/> to compare with this instance.</param>
+            <returns>
+            <c>true</c> if the specified <see cref="T:System.Object"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
         </member>
     </members>
 </doc>
