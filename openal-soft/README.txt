@@ -1,5 +1,4 @@
 Built from https://github.com/KonajuGames/openal-soft
 
-This version of openal-soft is from the Orx Portable Game Engine
-http://orx-project.org/
-https://bitbucket.org/orx/orx
+This version of openal-soft is from the official 1.16.0 sources
+http://kcat.strangesoft.net/openal.html
