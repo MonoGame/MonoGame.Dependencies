@@ -506,7 +506,7 @@
             </summary>
             <remarks>Is immutable.</remarks>
         </member>
-        <member name="M:SharpDX.Toolkit.Input.MouseState.#ctor(SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,System.Single,System.Single,System.Int32)">
+        <member name="M:SharpDX.Toolkit.Input.MouseState.#ctor(SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,SharpDX.Toolkit.Input.ButtonState,System.Single,System.Single,System.Single,System.Single,System.Int32)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.Toolkit.Input.MouseState"/> structure.
             </summary>
@@ -570,9 +570,21 @@
             Y-position of the mouse cursor in the range [0,1]
             </summary>
         </member>
+        <member name="P:SharpDX.Toolkit.Input.MouseState.DeltaX">
+            <summary>
+            Gets the delta on x since the previous update.
+            </summary>
+            <value>The delta x.</value>
+        </member>
+        <member name="P:SharpDX.Toolkit.Input.MouseState.DeltaY">
+            <summary>
+            Gets the delta y since the previous update.
+            </summary>
+            <value>The delta y.</value>
+        </member>
         <member name="P:SharpDX.Toolkit.Input.MouseState.WheelDelta">
             <summary>
-            Gets the cumulative mouse scroll wheel value since the game was started.
+            Gets the mouse scroll wheel value since the previous update.
             </summary>
         </member>
         <member name="T:SharpDX.Toolkit.Input.PointerDeviceType">
