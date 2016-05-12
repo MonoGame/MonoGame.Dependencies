@@ -639,6 +639,13 @@
              Prefix to use to load an image from a file path
              </summary>
             </member>
+        <member name="M:Eto.Drawing.ImageConverter.IsIcon(System.String)">
+             <summary>
+             Determines whether the specified fileName is an icon (ends with .ico)
+             </summary>
+             <returns><c>true</c> if the fileName is an icon; otherwise, <c>false</c>.</returns>
+             <param name="fileName">File name.</param>
+            </member>
         <member name="M:Eto.Drawing.ImageConverter.CanConvertFrom(Eto.ITypeDescriptorContext,System.Type)">
              <summary>
              Gets a value indicating that this converter can convert from the source type to an image
@@ -5963,6 +5970,15 @@
              </summary>
              <param name="handler">Handler to use as the implementation of the form.</param>
             </member>
+        <member name="P:Eto.Forms.Form.ShowActivated">
+             <summary>
+             Gets or sets a value indicating that the form should be activated when initially shown.
+             </summary>
+             <remarks>
+             When <c>true</c>, the form will become the active/focussed window when the <see cref="M:Eto.Forms.Form.Show" /> method is called.
+             When <c>false</c>, the form will show but will not get focus until the user clicks on the form.
+             </remarks>
+            </member>
         <member name="M:Eto.Forms.Form.Show">
              <summary>
              Show the form
@@ -5977,6 +5993,15 @@
              <summary>
              Show the form
              </summary>
+            </member>
+        <member name="P:Eto.Forms.Form.IHandler.ShowActivated">
+             <summary>
+             Gets or sets a value indicating that the form should be activated when initially shown.
+             </summary>
+             <remarks>
+             When <c>true</c>, the form will become the active/focussed window when the <see cref="M:Eto.Forms.Form.IHandler.Show" /> method is called.
+             When <c>false</c>, the form will show but will not get focus until the user clicks on the form.
+             </remarks>
             </member>
         <member name="T:Eto.Forms.Keys">
              <summary>
