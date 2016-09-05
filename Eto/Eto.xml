@@ -23284,6 +23284,22 @@
              <summary>
              Gets the name of this font family
              </summary>
+             <remarks>
+             This is a non-localized version of the name, suitable for internal use.
+             </remarks>
+             <seealso cref="P:Eto.Drawing.FontFamily.LocalizedName" />
+            </member>
+        <member name="P:Eto.Drawing.FontFamily.LocalizedName">
+             <summary>
+             Gets the localized name of the font for the current UI language
+             </summary>
+             <remarks>
+             This will return a name suitable to display to the user in their own language, if the font provides a specific name for their UI language.
+             
+             For platforms that do not support localized font names, or for fonts that do not have a specific name for the current language, the
+             value of <see cref="P:Eto.Drawing.FontFamily.Name" /> will be returned.
+             </remarks>
+             <value>The localized name of this font.</value>
             </member>
         <member name="P:Eto.Drawing.FontFamily.Typefaces">
              <summary>
@@ -23365,6 +23381,18 @@
              <remarks>
              This should be the same as what is used to create new instances of a font family using the <see cref="M:Eto.Drawing.FontFamily.IHandler.Create(System.String)" /> method
              </remarks>
+            </member>
+        <member name="P:Eto.Drawing.FontFamily.IHandler.LocalizedName">
+             <summary>
+             Gets the localized name of the font for the current UI language
+             </summary>
+             <remarks>
+             This will return a name suitable to display to the user in their own language, if the font provides a specific name for their UI language.
+             
+             For platforms that do not support localized font names, or for fonts that do not have a specific name for the current language, the
+             value of <see cref="P:Eto.Drawing.FontFamily.IHandler.Name" /> will be returned.
+             </remarks>
+             <value>The localized name of this font.</value>
             </member>
         <member name="P:Eto.Drawing.FontFamily.IHandler.Typefaces">
              <summary>
