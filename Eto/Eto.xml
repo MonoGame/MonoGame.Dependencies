@@ -1565,6 +1565,33 @@
             <param name="y">The y coordinate of the pixel to set.</param>
             <param name="color">Color to set the pixel to.</param>
         </member>
+        <member name="M:Eto.Drawing.Bitmap.WithSize(System.Int32,System.Int32)">
+            <summary>
+            Gets an Icon representation of this Bitmap scaled to draw within the specified fitting size.
+            </summary>
+            <remarks>
+            This is useful when you want to draw the image at a different size than the default size without resizing the image.
+            Note that the <paramref name="width"/> and <paramref name="height"/> specifies the maxiumum drawing size of the Icon, but will not
+            change the aspect of each frame's bitmap.  For example, if an existing frame is 128x128, and you specify 16x32,
+            then the resulting frame will draw at 16x16.
+            </remarks>
+            <returns>A new icon that will draw within the fitting size.</returns>
+            <param name="width">Maxiumum drawing width for the new icon.</param>
+            <param name="height">Maxiumum drawing height for the new icon.</param>
+        </member>
+        <member name="M:Eto.Drawing.Bitmap.WithSize(Eto.Drawing.Size)">
+            <summary>
+            Gets an Icon representation of this Bitmap scaled to draw within the specified fitting size.
+            </summary>
+            <remarks>
+            This is useful when you want to draw the image at a different size than the default size without resizing the image.
+            Note that the <paramref name="fittingSize"/> specifies the maxiumum drawing size of the Icon, but will not
+            change the aspect of each frame's bitmap.  For example, if an existing frame is 128x128, and you specify 16x32,
+            then the resulting frame will draw at 16x16.
+            </remarks>
+            <returns>A new icon that will draw within the fitting size.</returns>
+            <param name="fittingSize">The maximum size to draw the Icon.</param>
+        </member>
         <member name="T:Eto.Drawing.Bitmap.IHandler">
             <summary>
             Handler interface for the <see cref="T:Eto.Drawing.Bitmap"/> class
@@ -3426,6 +3453,33 @@
             <returns>The frame that is the closest match for the specified scale and fitting size.</returns>
             <param name="scale">Logical scale to find for, 1 for normal size, 2 for retina, etc.</param>
             <param name="fittingSize">Fitting size that the icon will be drawn to, if known.</param>
+        </member>
+        <member name="M:Eto.Drawing.Icon.WithSize(Eto.Drawing.Size)">
+            <summary>
+            Gets a copy of this Icon with frames scaled to draw within the specified fitting size.
+            </summary>
+            <remarks>
+            This is useful when you want to draw an Icon at a different size than the default size. 
+            Note that the <paramref name="fittingSize"/> specifies the maxiumum drawing size of the Icon, but will not
+            change the aspect of each frame's bitmap.  For example, if an existing frame is 128x128, and you specify 16x32,
+            then the resulting frame will draw at 16x16.
+            </remarks>
+            <returns>A new icon that will draw within the fitting size.</returns>
+            <param name="fittingSize">The maximum size to draw the Icon.</param>
+        </member>
+        <member name="M:Eto.Drawing.Icon.WithSize(System.Int32,System.Int32)">
+            <summary>
+            Gets a copy of this Icon with frames scaled to draw within the specified fitting size.
+            </summary>
+            <remarks>
+            This is useful when you want to draw an Icon at a different size than the default size. 
+            Note that the <paramref name="width"/> and <paramref name="height"/> specifies the maxiumum drawing size of the Icon, but will not
+            change the aspect of each frame's bitmap.  For example, if an existing frame is 128x128, and you specify 16x32,
+            then the resulting frame will draw at 16x16.
+            </remarks>
+            <returns>A new icon that will draw within the fitting size.</returns>
+            <param name="width">Maxiumum drawing width for the new icon.</param>
+            <param name="height">Maxiumum drawing height for the new icon.</param>
         </member>
         <member name="P:Eto.Drawing.Icon.Frames">
             <summary>
@@ -10049,6 +10103,22 @@
             Presents a drop down to select from a list of items
             </summary>
         </member>
+        <member name="M:Eto.Forms.DropDown.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DropDown"/> class.
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.DropDown.ItemImageBinding">
+            <summary>
+            Gets or sets the binding to get the image for each item. 
+            </summary>
+            <remarks>
+            By default this looks for the "Image" property of the item, and also works if you use <see cref="T:Eto.Forms.ImageListItem"/>.
+            
+            This will be ignored when creating a <see cref="T:Eto.Forms.ComboBox"/>, and is only supported with the <see cref="T:Eto.Forms.DropDown"/> directly.
+            </remarks>
+            <value>The binding to get the image for each item.</value>
+        </member>
         <member name="P:Eto.Forms.DropDown.ShowBorder">
             <summary>
             Gets or sets a value indicating whether to show the control's border.
@@ -10059,6 +10129,85 @@
             Typically used when you want to show the control within a cell of the <see cref="T:Eto.Forms.GridView"/>.
             </remarks>
             <value><c>true</c> to show the control border; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Eto.Forms.DropDown.DropDownOpeningEvent">
+            <summary>
+            Event identifier for handlers when attaching the <see cref="E:Eto.Forms.DropDown.DropDownOpening"/> event
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.DropDown.DropDownOpening">
+            <summary>
+            Occurs right before the drop down is opened.
+            </summary>
+            <remarks>
+            This is useful so you can fill the items of the drop down only when they are needed.
+            </remarks>
+        </member>
+        <member name="M:Eto.Forms.DropDown.OnDropDownOpening(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownOpening"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="F:Eto.Forms.DropDown.DropDownClosedEvent">
+            <summary>
+            Event identifier for handlers when attaching the <see cref="E:Eto.Forms.DropDown.DropDownClosed"/> event.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.DropDown.DropDownClosed">
+            <summary>
+            Occurs when the drop down is closed.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DropDown.OnDropDownClosed(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownClosed"/> event
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.DropDown.GetCallback">
+            <summary>
+            Gets the callback.
+            </summary>
+            <returns>The callback.</returns>
+        </member>
+        <member name="T:Eto.Forms.DropDown.ICallback">
+            <summary>
+            Callback interface for the DropDown
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DropDown.ICallback.OnDropDownOpening(Eto.Forms.DropDown,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownOpening"/> event.
+            </summary>
+            <param name="widget">Widget to raise the event</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.DropDown.ICallback.OnDropDownClosed(Eto.Forms.DropDown,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownClosed"/> event
+            </summary>
+            <param name="widget">Widget to raise the event</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="T:Eto.Forms.DropDown.Callback">
+            <summary>
+            Callback implementation for the DropDown
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DropDown.Callback.OnDropDownOpening(Eto.Forms.DropDown,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownOpening"/> event.
+            </summary>
+            <param name="widget">Widget to raise the event</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.DropDown.Callback.OnDropDownClosed(Eto.Forms.DropDown,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DropDown.DropDownClosed"/> event
+            </summary>
+            <param name="widget">Widget to raise the event</param>
+            <param name="e">Event arguments</param>
         </member>
         <member name="T:Eto.Forms.DropDown.IHandler">
             <summary>
@@ -10446,6 +10595,12 @@
             </summary>
             <value>The grid line style.</value>
         </member>
+        <member name="P:Eto.Forms.Grid.Border">
+            <summary>
+            Gets or sets the border type
+            </summary>
+            <value>The border.</value>
+        </member>
         <member name="M:Eto.Forms.Grid.SelectRow(System.Int32)">
             <summary>
             Selects the row to the specified <paramref name="row"/>, clearing other selections
@@ -10609,6 +10764,12 @@
             Gets or sets the style of grid lines to show between columns and rows
             </summary>
             <value>The grid line style.</value>
+        </member>
+        <member name="P:Eto.Forms.Grid.IHandler.Border">
+            <summary>
+            Gets or sets the border type
+            </summary>
+            <value>The border.</value>
         </member>
         <member name="M:Eto.Forms.Grid.IHandler.SelectRow(System.Int32)">
             <summary>
@@ -11023,6 +11184,24 @@
             Gets the instance of the platform-specific object
             </summary>
             <value>The control object.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControlHandler`3.KeyboardControl">
+            <summary>
+            Gets the control used to attach keyboard and text input events
+            </summary>
+            <value>The keyboard control.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControlHandler`3.MouseControl">
+            <summary>
+            Gets the control used to attach mouse events
+            </summary>
+            <value>The mouse control.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControlHandler`3.FocusControl">
+            <summary>
+            Gets the control used to attach focus events.
+            </summary>
+            <value>The focus control.</value>
         </member>
         <member name="M:Eto.Forms.ThemedControlHandler`3.AttachEvent(System.String)">
             <summary>
@@ -12462,6 +12641,18 @@
             Gets the panel used as the splitter between the two panes.
             </summary>
         </member>
+        <member name="P:Eto.Forms.ThemedControls.ThemedSplitterHandler.Panel1MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the first panel.
+            </summary>
+            <value>The minimal size of the first panel.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControls.ThemedSplitterHandler.Panel2MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the second panel.
+            </summary>
+            <value>The minimal size of the second panel.</value>
+        </member>
         <member name="T:Eto.Forms.ThemedControls.ThemedSpinnerMode">
             <summary>
             Display Mode of the <see cref="T:Eto.Forms.ThemedControls.ThemedSpinnerHandler"/>
@@ -12864,6 +13055,22 @@
             of one of the panels is changed.
             </remarks>
             <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControls.ThemedTextStepperHandler.KeyboardControl">
+            <summary>
+            Gets the control used to attach keyboard and text input events
+            </summary>
+            <value>The keyboard control.</value>
+        </member>
+        <member name="P:Eto.Forms.ThemedControls.ThemedTextStepperHandler.BackgroundColor">
+            <summary>
+            Gets or sets the color for the background of the control
+            </summary>
+            <remarks>
+            Note that on some platforms (e.g. Mac), setting the background color of a control can change the performance
+            characteristics of the control and its children, since it must enable layers to do so.
+            </remarks>
+            <value>The color of the background.</value>
         </member>
         <member name="M:Eto.Forms.ThemedControls.ThemedTextStepperHandler.AttachEvent(System.String)">
             <summary>
@@ -13734,6 +13941,26 @@
             </remarks>
             <value>The default button.</value>
         </member>
+        <member name="P:Eto.Forms.Dialog.PositiveButtons">
+            <summary>
+            Gets the positive buttons list, these buttons are automatically added to the dialog.
+            </summary>
+            <remarks>
+            Depending on the platform these buttons can be added on the left side or the right
+            side. The lower the index the closer the button is to the edge.
+            </remarks>
+            <value>The positive buttons.</value>
+        </member>
+        <member name="P:Eto.Forms.Dialog.NegativeButtons">
+            <summary>
+            Gets the negative buttons list, these buttons are automatically added to the dialog.
+            </summary>
+            <remarks>
+            Depending on the platform these buttons can be added on the left side or the right
+            side. The lower the index the closer the button is to the edge.
+            </remarks>
+            <value>The negative buttons.</value>
+        </member>
         <member name="M:Eto.Forms.Dialog.ShowModal(Eto.Forms.Control)">
             <summary>
             Shows the dialog modally, blocking the current thread until it is closed.
@@ -13805,6 +14032,22 @@
             On some platforms, the abort button would be called automatically if the user presses the escape key
             </remarks>
             <value>The abort button.</value>
+        </member>
+        <member name="M:Eto.Forms.Dialog.IHandler.InsertDialogButton(System.Boolean,System.Int32,Eto.Forms.Button)">
+            <summary>
+            Adds a positive or negative button to the specified position.
+            </summary>
+            <param name="positive">Positive or negative button.</param>
+            <param name="index">Position to add it to,</param>
+            <param name="item">The button itself.</param>
+        </member>
+        <member name="M:Eto.Forms.Dialog.IHandler.RemoveDialogButton(System.Boolean,System.Int32,Eto.Forms.Button)">
+            <summary>
+            Removes a positive or negative button from the specified position.
+            </summary>
+            <param name="positive">Positive or negative button.</param>
+            <param name="index">Current position of the button.</param>
+            <param name="item">The button that is being removed.</param>
         </member>
         <member name="T:Eto.Forms.FileDialogFilter">
             <summary>
@@ -16654,6 +16897,15 @@
             This prepares the control by firing the <see cref="E:Eto.Forms.Control.PreLoad"/>, <see cref="E:Eto.Forms.Control.Load"/>, etc. events.
             </remarks>
         </member>
+        <member name="M:Eto.Forms.Control.DetachNative">
+            <summary>
+            Detaches the control when it is used in a native application, when you want to reuse the control.
+            </summary>
+            <remarks>
+            This should only be called after <see cref="M:Eto.Forms.Control.AttachNative"/> has been called, which is usually done by calling
+            to <c>ToNative(true)</c>.
+            </remarks>
+        </member>
         <member name="P:Eto.Forms.Control.BackgroundColor">
             <summary>
             Gets or sets the color for the background of the control
@@ -18922,11 +19174,23 @@
             </summary>
             <value>The first panel.</value>
         </member>
+        <member name="P:Eto.Forms.Splitter.Panel1MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the first panel.
+            </summary>
+            <value>The minimal size of the first panel.</value>
+        </member>
         <member name="P:Eto.Forms.Splitter.Panel2">
             <summary>
             Gets or sets the bottom or right panel of the splitter.
             </summary>
             <value>The second panel.</value>
+        </member>
+        <member name="P:Eto.Forms.Splitter.Panel2MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the second panel.
+            </summary>
+            <value>The minimal size of the second panel.</value>
         </member>
         <member name="M:Eto.Forms.Splitter.Remove(Eto.Forms.Control)">
             <summary>
@@ -19013,6 +19277,18 @@
             Gets or sets the bottom or right panel of the splitter.
             </summary>
             <value>The second panel.</value>
+        </member>
+        <member name="P:Eto.Forms.Splitter.IHandler.Panel1MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the first panel.
+            </summary>
+            <value>The minimal size of the first panel.</value>
+        </member>
+        <member name="P:Eto.Forms.Splitter.IHandler.Panel2MinimumSize">
+            <summary>
+            Gets or sets the minimal size of the second panel.
+            </summary>
+            <value>The minimal size of the second panel.</value>
         </member>
         <member name="T:Eto.Forms.SplitterOrientation">
             <summary>
@@ -19962,6 +20238,23 @@
             </summary>
             <param name="item">Item that triggered the event.</param>
         </member>
+        <member name="T:Eto.Forms.TreeGridCell">
+            <summary>
+            Information of a cell in the <see cref="T:Eto.Forms.TreeGridView"/>
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.TreeGridCell.Item">
+            <summary>
+            Gets the item associated with the row of the cell.
+            </summary>
+            <value>The row item.</value>
+        </member>
+        <member name="P:Eto.Forms.TreeGridCell.Column">
+            <summary>
+            Gets the column of the cell, or null
+            </summary>
+            <value>The column.</value>
+        </member>
         <member name="T:Eto.Forms.TreeGridView">
             <summary>
             Presents a tree with multiple columns
@@ -20085,6 +20378,27 @@
             </summary>
             <value>The context menu.</value>
         </member>
+        <member name="M:Eto.Forms.TreeGridView.ReloadData">
+            <summary>
+            Refreshes the data, keeping the selection
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TreeGridView.ReloadItem(Eto.Forms.ITreeGridItem)">
+            <summary>
+            Refreshes the specified item and all its children, keeping the selection if not part of the refreshed nodes
+            </summary>
+            <param name="item">Item to refresh</param>
+        </member>
+        <member name="M:Eto.Forms.TreeGridView.GetCellAt(Eto.Drawing.PointF)">
+            <summary>
+            Gets the node at a specified point from the origin of the control
+            </summary>
+            <remarks>
+            Useful for determining which node is under the mouse cursor.
+            </remarks>
+            <returns>The item from the data store that is displayed at the specified location</returns>
+            <param name="point">Point to find the node</param>
+        </member>
         <member name="M:Eto.Forms.TreeGridView.GetCallback">
             <summary>
             Gets an instance of an object used to perform callbacks to the widget from handler implementations
@@ -20180,6 +20494,31 @@
             Gets or sets the selected item in the tree.
             </summary>
             <value>The selected item.</value>
+        </member>
+        <member name="P:Eto.Forms.TreeGridView.IHandler.SelectedItems">
+            <summary>
+            Gets an enumeration of the currently selected items
+            </summary>
+            <value>The selected items.</value>
+        </member>
+        <member name="M:Eto.Forms.TreeGridView.IHandler.ReloadData">
+            <summary>
+            Refreshes the data, keeping the selection
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TreeGridView.IHandler.ReloadItem(Eto.Forms.ITreeGridItem)">
+            <summary>
+            Refreshes the specified item and all its children, keeping the selection if not part of the refreshed nodes
+            </summary>
+            <param name="item">Item to refresh</param>
+        </member>
+        <member name="M:Eto.Forms.TreeGridView.IHandler.GetCellAt(Eto.Drawing.PointF,System.Int32@)">
+            <summary>
+            Gets the item and column of a location in the control.
+            </summary>
+            <returns>The item from the data store that is displayed at the specified location</returns>
+            <param name="location">Point to find the node</param>
+            <param name="column">Column at the location, or -1 if no column (e.g. at the end of the row)</param>
         </member>
         <member name="T:Eto.Forms.CheckMenuItem">
             <summary>
@@ -22296,6 +22635,28 @@
             <returns>A new DynamicRow instance used to hold the horizontal controls</returns>
             <param name="yscale">Yscale of the horizontal section</param>
         </member>
+        <member name="M:Eto.Forms.DynamicLayout.BeginCentered(System.Nullable{Eto.Drawing.Padding},System.Nullable{Eto.Drawing.Size},System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            Creates a new section where all controls will be centered together.
+            </summary>
+            <remarks>
+            This is useful when you want to create a section that groups controls which align themselves together but are centered in the parent.
+            When finished adding controls to the centered section, call <see cref="M:Eto.Forms.DynamicLayout.EndCentered"/>.
+            To center vertically, set <paramref name="yscale"/> to <c>true</c>.
+            </remarks>
+            <param name="padding">Padding to apply around the controls, or null to use the <see cref="P:Eto.Forms.DynamicLayout.DefaultPadding"/></param>
+            <param name="spacing">Spacing to apply to cells in the section, or null to use the <see cref="P:Eto.Forms.DynamicLayout.DefaultSpacing"/></param>
+            <param name="xscale">Xscale of the vertical section</param>
+            <param name="yscale">Yscale of the vertical section</param>
+        </member>
+        <member name="M:Eto.Forms.DynamicLayout.EndCentered">
+            <summary>
+            Ends the current centered section.
+            </summary>
+            <remarks>
+            This should be balanced with every call to <see cref="M:Eto.Forms.DynamicLayout.BeginCentered(System.Nullable{Eto.Drawing.Padding},System.Nullable{Eto.Drawing.Size},System.Nullable{System.Boolean},System.Nullable{System.Boolean})"/>.
+            </remarks>
+        </member>
         <member name="M:Eto.Forms.DynamicLayout.Add(Eto.Forms.Control,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
             <summary>
             Add the control with the optional scaling
@@ -22351,6 +22712,44 @@
             <param name="spacing">Spacing between each cell in the row</param>
             <param name="xscale">Xscale for the vertical section</param>
             <param name="yscale">Yscale for each of the controls in the row</param>
+            <param name="controls">Controls to add initially</param>
+        </member>
+        <member name="M:Eto.Forms.DynamicLayout.AddSeparateColumn(Eto.Forms.Control[])">
+            <summary>
+            Adds a separate vertical column of items in a new vertical section
+            </summary>
+            <remarks>
+            This performs the same as the following, but in a single line:
+            <code>
+            	layout.BeginVertical();
+            	layout.Add(control1);
+            	layout.Add(control2);
+            	...
+            	layout.EndVertical();
+            </code>
+            </remarks>
+            <returns>The table added to contain the items</returns>
+            <param name="controls">Controls to add initially</param>
+        </member>
+        <member name="M:Eto.Forms.DynamicLayout.AddSeparateColumn(System.Nullable{Eto.Drawing.Padding},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{Eto.Forms.Control})">
+            <summary>
+            Adds a separate vertical column of items in a new vertical section
+            </summary>
+            <remarks>
+            This performs the same as the following, but in a single line:
+            <code>
+            	layout.BeginVertical(padding, spacing, xscale, yscale);
+            	layout.Add(control1);
+            	layout.Add(control2);
+            	...
+            	layout.EndVertical();
+            </code>
+            </remarks>
+            <returns>The table added to contain the items</returns>
+            <param name="padding">Padding for the vertical section</param>
+            <param name="spacing">Spacing between each cell in the column</param>
+            <param name="xscale">Xscale for the vertical section</param>
+            <param name="yscale">Yscale for the vertical section</param>
             <param name="controls">Controls to add initially</param>
         </member>
         <member name="M:Eto.Forms.DynamicLayout.AddRow(Eto.Forms.Control[])">
@@ -23449,6 +23848,18 @@
             Cell for <see cref="T:Eto.Forms.Grid"/> controls to show image and text in one cell.
             </summary>
         </member>
+        <member name="P:Eto.Forms.ImageTextCell.TextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the text within the cell.
+            </summary>
+            <value>The text alignment.</value>
+        </member>
+        <member name="P:Eto.Forms.ImageTextCell.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment of the text within the cell.
+            </summary>
+            <value>The vertical text alignment.</value>
+        </member>
         <member name="P:Eto.Forms.ImageTextCell.ImageBinding">
             <summary>
             Gets or sets the binding of the image to display for the cell.
@@ -23496,6 +23907,18 @@
             Gets or sets the interpolation mode when scaling images to fit into the cell.
             </summary>
             <value>The image interpolation.</value>
+        </member>
+        <member name="P:Eto.Forms.ImageTextCell.IHandler.TextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the text within the cell.
+            </summary>
+            <value>The text alignment.</value>
+        </member>
+        <member name="P:Eto.Forms.ImageTextCell.IHandler.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment of the text within the cell.
+            </summary>
+            <value>The vertical text alignment.</value>
         </member>
         <member name="T:Eto.Forms.SingleValueCell`1">
             <summary>
@@ -23643,6 +24066,18 @@
             Cell for a text box in a <see cref="T:Eto.Forms.Grid"/>.
             </summary>
         </member>
+        <member name="P:Eto.Forms.TextBoxCell.TextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the text within the cell.
+            </summary>
+            <value>The text alignment.</value>
+        </member>
+        <member name="P:Eto.Forms.TextBoxCell.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment of the text within the cell.
+            </summary>
+            <value>The vertical text alignment.</value>
+        </member>
         <member name="M:Eto.Forms.TextBoxCell.#ctor(System.Int32)">
             <summary>
             Initializes a new instance of the <see cref="T:Eto.Forms.TextBoxCell"/> class binding to the specified <paramref name="column"/>.
@@ -23664,6 +24099,18 @@
             <summary>
             Handler interface for the <see cref="T:Eto.Forms.TextBoxCell"/>.
             </summary>
+        </member>
+        <member name="P:Eto.Forms.TextBoxCell.IHandler.TextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the text within the cell.
+            </summary>
+            <value>The text alignment.</value>
+        </member>
+        <member name="P:Eto.Forms.TextBoxCell.IHandler.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical alignment of the text within the cell.
+            </summary>
+            <value>The vertical text alignment.</value>
         </member>
         <member name="T:Eto.Forms.ImageViewCell">
             <summary>
@@ -27643,6 +28090,17 @@
             </summary>
             <param name="provider">Masked text provider to specify the format of the mask.</param>
         </member>
+        <member name="M:Eto.Forms.MaskedTextBox.UpdateText">
+            <summary>
+            Updates the text to the display text from the provider.
+            </summary>
+            <remarks>
+            Call this in a subclass when you want to update the text based on the state of the control.
+            When the <see cref="P:Eto.Forms.IMaskedTextProvider.IsEmpty"/> is true, it will set the text to null to show the placeholder text.
+            
+            Override this to perform other actions before or after the text of the control is updated.
+            </remarks>
+        </member>
         <member name="M:Eto.Forms.MaskedTextBox.OnLoadComplete(System.EventArgs)">
             <summary>
             Raises the <see cref="E:Eto.Forms.Control.LoadComplete"/> event.
@@ -30943,6 +31401,32 @@
             </summary>
             <param name="args">Cell paint arguments.</param>
         </member>
+        <member name="T:Eto.Forms.RelayCommand">
+            <summary>
+            Command to relay execution and execute state to delegates
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.RelayCommand.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.RelayCommand"/> class.
+            </summary>
+            <remarks>
+            The <see cref="M:Eto.Forms.RelayCommand`1.CanExecute(System.Object)"/> will always return true.
+            </remarks>
+            <param name="execute">Delegate to execute the command.</param>
+        </member>
+        <member name="M:Eto.Forms.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.RelayCommand"/> class.
+            </summary>
+            <remarks>
+            This constructor allows you to specify whether the command can be executed.
+            If the state of the <paramref name="canExecute"/> delegate changes, you can call <see cref="M:Eto.Forms.RelayCommand`1.UpdateCanExecute"/>
+            to tell the control that is bound to this command to call the delegate again.
+            </remarks>
+            <param name="execute">Delegate to execute the command.</param>
+            <param name="canExecute">Delegate to determine the state of whether the command can be executed.</param>
+        </member>
         <member name="T:Eto.Forms.RelayCommand`1">
             <summary>
             Command to relay execution and execute state to delegates
@@ -31749,6 +32233,698 @@
             Gets or sets the file path of the file that should be opened.
             </summary>
             <value>The file path of the file that should be opened.</value>
+        </member>
+        <member name="T:Eto.Forms.DocumentPageEventArgs">
+            <summary>
+            Arguments for the <see cref="T:Eto.Forms.DocumentControl"/> to get the current page.
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.DocumentPageEventArgs.Page">
+            <summary>
+            Gets the document page.
+            </summary>
+            <value>The document page.</value>
+        </member>
+        <member name="M:Eto.Forms.DocumentPageEventArgs.#ctor(Eto.Forms.DocumentPage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DocumentPageEventArgs"/> class.
+            </summary>
+            <param name="page">Page.</param>
+        </member>
+        <member name="T:Eto.Forms.DocumentControl">
+            <summary>
+            Control to present multiple pages with a tab selection
+            </summary>
+            <remarks>
+            Some platforms (e.g. OS X) have limitations on how many tabs are visible.
+            It is advised to utilize different methods (e.g. a listbox or combo box) to switch between many sections
+            if there are too many tabs.
+            </remarks>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.Controls">
+            <summary>
+            Gets an enumeration of controls that are directly contained by this container
+            </summary>
+            <value>The contained controls.</value>
+        </member>
+        <member name="E:Eto.Forms.DocumentControl.PageClosed">
+            <summary>
+            Occurs when the <see cref="T:Eto.Forms.DocumentPage"/> is closed.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.DocumentControl.SelectedIndexChanged">
+            <summary>
+            Occurs when the <see cref="P:Eto.Forms.DocumentControl.SelectedIndex"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.OnPageClosed(Eto.Forms.DocumentPageEventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DocumentControl.PageClosed"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.OnSelectedIndexChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DocumentControl.SelectedIndexChanged"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DocumentControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.#ctor(Eto.Forms.DocumentControl.IHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DocumentControl"/> class with the specified handler.
+            </summary>
+            <param name="handler">Handler for the implementation of the tab control.</param>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected tab.
+            </summary>
+            <value>The index of the selected tab.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.SelectedPage">
+            <summary>
+            Gets or sets the currently selected page.
+            </summary>
+            <value>The selected page.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.Pages">
+            <summary>
+            Gets the collection of tab pages.
+            </summary>
+            <value>The pages.</value>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.Remove(Eto.Forms.Control)">
+            <summary>
+            Remove the specified child from the container.
+            </summary>
+            <param name="child">Child to remove.</param>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.SelectedIndexBinding">
+            <summary>
+            Gets the binding for the <see cref="P:Eto.Forms.DocumentControl.SelectedIndex"/> property.
+            </summary>
+            <value>The selected index binding.</value>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.GetCallback">
+            <summary>
+            Gets an instance of an object used to perform callbacks to the widget from handler implementations
+            </summary>
+            <returns>The callback instance to use for this widget</returns>
+        </member>
+        <member name="T:Eto.Forms.DocumentControl.ICallback">
+            <summary>
+            Callback interface for the <see cref="T:Eto.Forms.DocumentControl"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.ICallback.OnPageClosed(Eto.Forms.DocumentControl,Eto.Forms.DocumentPageEventArgs)">
+            <summary>
+            Raises the page closed event.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.ICallback.OnSelectedIndexChanged(Eto.Forms.DocumentControl,System.EventArgs)">
+            <summary>
+            Raises the selected index changed event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.DocumentControl.Callback">
+            <summary>
+            Callback implementation for handlers of the <see cref="T:Eto.Forms.DocumentControl"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.Callback.OnPageClosed(Eto.Forms.DocumentControl,Eto.Forms.DocumentPageEventArgs)">
+            <summary>
+            Raises the page closed event.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.Callback.OnSelectedIndexChanged(Eto.Forms.DocumentControl,System.EventArgs)">
+            <summary>
+            Raises the selected index changed event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.DocumentControl.IHandler">
+            <summary>
+            Handler interface for the <see cref="T:Eto.Forms.DocumentControl"/>
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.DocumentControl.IHandler.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected tab.
+            </summary>
+            <value>The index of the selected tab.</value>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.IHandler.InsertPage(System.Int32,Eto.Forms.DocumentPage)">
+            <summary>
+            Inserts a tab at the specified index.
+            </summary>
+            <param name="index">Index to insert the tab.</param>
+            <param name="page">Page to insert.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.IHandler.GetPage(System.Int32)">
+            <summary>
+            Gets the tab.
+            </summary>
+            <returns>The tab.</returns>
+            <param name="index">The tab index.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.IHandler.GetPageCount">
+            <summary>
+            Gets the tab count.
+            </summary>
+            <returns>The tab count.</returns>
+        </member>
+        <member name="M:Eto.Forms.DocumentControl.IHandler.RemovePage(System.Int32)">
+            <summary>
+            Removes the specified tab.
+            </summary>
+            <param name="index">Index of the page to remove.</param>
+        </member>
+        <member name="T:Eto.Forms.DocumentPage">
+            <summary>
+            Control for a page in a <see cref="T:Eto.Forms.DocumentControl"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentPage.#ctor(Eto.Forms.Control,System.Nullable{Eto.Drawing.Padding})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DocumentPage"/> class.
+            </summary>
+            <param name="control">Control.</param>
+            <param name="padding">Padding.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentPage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.DocumentPage"/> class.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.DocumentPage.Closed">
+            <summary>
+            Occurs when the tab is closed.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.DocumentPage.Click">
+            <summary>
+            Occurs when the tab is clicked to select it.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.DocumentPage.OnClose(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DocumentPage.Closed"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Eto.Forms.DocumentPage.OnClick(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.DocumentPage.Click"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.Closable">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Eto.Forms.DocumentPage"/> is closable.
+            </summary>
+            <value><c>true</c> if closable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.Image">
+            <summary>
+            Gets or sets the image of the page.
+            </summary>
+            <remarks>
+            It is usally good to use an <see cref="T:Eto.Drawing.Icon"/> for the image with multiple sizes, so that scaling won't be needed
+            to fit the image in the space.
+            Usually you'd need 16x16 (desktop), 32x32 (iOS), and 64x64 (iOS Retina) variations.
+            </remarks>
+            <value>The tab's image to display.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.Text">
+            <summary>
+            Gets or sets the title text of the page.
+            </summary>
+            <value>The title text.</value>
+        </member>
+        <member name="T:Eto.Forms.DocumentPage.IHandler">
+            <summary>
+            Handler interface for the <see cref="T:Eto.Forms.DocumentPage"/>
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.IHandler.Closable">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Eto.Forms.DocumentPage.IHandler"/> is closable.
+            </summary>
+            <value><c>true</c> if closable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.IHandler.Image">
+            <summary>
+            Gets or sets the image of the page.
+            </summary>
+            <value>The tab's image.</value>
+        </member>
+        <member name="P:Eto.Forms.DocumentPage.IHandler.Text">
+            <summary>
+            Gets or sets the title text of the page.
+            </summary>
+            <value>The title text.</value>
+        </member>
+        <member name="T:Eto.Forms.TrayIndicator">
+            <summary>
+            A system tray indicator.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.GetCallback">
+            <summary>
+            Gets an instance of an object used to perform callbacks to the widget from handler implementations.
+            </summary>
+            <returns>The callback instance to use for this widget.</returns>
+        </member>
+        <member name="P:Eto.Forms.TrayIndicator.Icon">
+            <summary>
+            Gets or sets the icon for the <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+            <value>The icon of the <see cref="T:Eto.Forms.TrayIndicator"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.TrayIndicator.Title">
+            <summary>
+            Gets or sets the title/tooltip for the <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+            <value>The title/tooltip for the <see cref="T:Eto.Forms.TrayIndicator"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.TrayIndicator.Visible">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Eto.Forms.TrayIndicator"/> is visible.
+            </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.Hide">
+            <summary>
+            Hide this instance of <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+            <remarks>
+            Make sure to call this method before closing the application.
+            </remarks>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.SetMenu(Eto.Forms.ContextMenu)">
+            <summary>
+            Sets the indicator menu.
+            </summary>
+            <remarks>
+            Make sure to call this method every time you make changes to the context menu.
+            </remarks>
+            <param name="menu">The indicator menu.</param>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.Show">
+            <summary>
+            Show this instance of <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.TrayIndicator.IHandler">
+            <summary>
+            Handler interface for the <see cref="T:Eto.Forms.TrayIndicator"/> control
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.TrayIndicator.IHandler.Title">
+            <summary>
+            Gets or sets the title/tooltip for the <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+            <value>The title/tooltip for the <see cref="T:Eto.Forms.TrayIndicator"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.TrayIndicator.IHandler.Visible">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Eto.Forms.TrayIndicator"/> is visible.
+            </summary>
+            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.IHandler.SetIcon(Eto.Drawing.Icon)">
+            <summary>
+            Sets the icon for the <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+            <param name="icon">The icon of the <see cref="T:Eto.Forms.TrayIndicator"/>.</param>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.IHandler.SetMenu(Eto.Forms.ContextMenu)">
+            <summary>
+            Sets the indicator menu.
+            </summary>
+            <param name="menu">The indicator menu.</param>
+        </member>
+        <member name="F:Eto.Forms.TrayIndicator.ActivatedEvent">
+            <summary>
+            Event identifier for handlers when attaching the <see cref="E:Eto.Forms.TrayIndicator.Activated"/> event.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.TrayIndicator.Activated">
+            <summary>
+            Event to handle when the user left click the <see cref="T:Eto.Forms.TrayIndicator"/>.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.OnActivated(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.TrayIndicator.Activated"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:Eto.Forms.TrayIndicator.ICallback">
+            <summary>
+            Callback interface for <see cref="T:Eto.Forms.TrayIndicator"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.ICallback.OnActivated(Eto.Forms.TrayIndicator,System.EventArgs)">
+            <summary>
+            Raises activated event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.TrayIndicator.Callback">
+            <summary>
+            Callback implementation for handlers of <see cref="T:Eto.Forms.TrayIndicator"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.TrayIndicator.Callback.OnActivated(Eto.Forms.TrayIndicator,System.EventArgs)">
+            <summary>
+            Raises activated event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.Notification">
+            <summary>
+            System toast notification.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.Notification.GetCallback">
+            <summary>
+            Gets an instance of an object used to perform callbacks to the widget from handler implementations.
+            </summary>
+            <returns>The callback instance to use for this widget.</returns>
+        </member>
+        <member name="P:Eto.Forms.Notification.Icon">
+            <summary>
+            Gets or sets the icon for the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <remarks>
+            Does nothing on WPF and WinForms.
+            </remarks>
+            <value>The icon of the <see cref="T:Eto.Forms.Notification"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.Notification.Message">
+            <summary>
+            Gets or sets the message of the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <value>The message of the <see cref="T:Eto.Forms.Notification"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.Notification.RequiresTrayIndicator">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Eto.Forms.Notification"/>
+            requires a <see cref="T:Eto.Forms.TrayIndicator"/> to be displayed.
+            </summary>
+            <value><c>true</c> if <see cref="T:Eto.Forms.TrayIndicator"/> is required; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.Notification.Title">
+            <summary>
+            Gets or sets the title for the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <value>The title for the <see cref="T:Eto.Forms.Notification"/>.</value>
+        </member>
+        <member name="M:Eto.Forms.Notification.Show(Eto.Forms.TrayIndicator)">
+            <summary>
+            Shows the current notification.
+            </summary>
+            <remarks>
+            On some platforms like Gtk and Windows 10 the indicator
+            is not needed, while on the others like Windows 7 it's required.
+            
+            You can find out if the indicator is needed by
+            looking at <see cref="P:Eto.Forms.Notification.RequiresTrayIndicator"/> property.
+            </remarks>
+            <param name="indicator">Indicator to use to show the notification.</param>
+        </member>
+        <member name="T:Eto.Forms.Notification.IHandler">
+            <summary>
+            Handler interface for the <see cref="T:Eto.Forms.Notification"/> control
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.Notification.IHandler.Title">
+            <summary>
+            Gets or sets the title for the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <value>The title for the <see cref="T:Eto.Forms.Notification"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.Notification.IHandler.Message">
+            <summary>
+            Gets or sets the message of the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <value>The message of the <see cref="T:Eto.Forms.Notification"/>.</value>
+        </member>
+        <member name="P:Eto.Forms.Notification.IHandler.RequiresTrayIndicator">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Eto.Forms.Notification"/>
+            requires a <see cref="T:Eto.Forms.TrayIndicator"/> to be displayed.
+            </summary>
+            <value><c>true</c> if <see cref="T:Eto.Forms.TrayIndicator"/> is required; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Eto.Forms.Notification.IHandler.SetIcon(Eto.Drawing.Icon)">
+            <summary>
+            Sets the icon for the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+            <param name="icon">The icon of the <see cref="T:Eto.Forms.Notification"/>.</param>
+        </member>
+        <member name="M:Eto.Forms.Notification.IHandler.Show(Eto.Forms.TrayIndicator)">
+            <summary>
+            Shows the current notification.
+            </summary>
+            <param name="indicator">Indicator to use to show the notification.</param>
+        </member>
+        <member name="F:Eto.Forms.Notification.ActivatedEvent">
+            <summary>
+            Event identifier for handlers when attaching the <see cref="E:Eto.Forms.Notification.Activated"/> event.
+            </summary>
+        </member>
+        <member name="E:Eto.Forms.Notification.Activated">
+            <summary>
+            Event to handle when the user left click the <see cref="T:Eto.Forms.Notification"/>.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.Notification.OnActivated(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.Notification.Activated"/> event.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:Eto.Forms.Notification.ICallback">
+            <summary>
+            Callback interface for <see cref="T:Eto.Forms.Notification"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.Notification.ICallback.OnActivated(Eto.Forms.Notification,System.EventArgs)">
+            <summary>
+            Raises activated event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.Notification.Callback">
+            <summary>
+            Callback implementation for handlers of <see cref="T:Eto.Forms.Notification"/>
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.Notification.Callback.OnActivated(Eto.Forms.Notification,System.EventArgs)">
+            <summary>
+            Raises activated event.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.NumericMaskedTextStepper`1">
+            <summary>
+            Masked text box with a variable length numeric mask.
+            </summary>
+            <remarks>
+            This provides a text box that limits the user input to only allow numeric values.
+            </remarks>
+            <typeparam name="T">Numeric type such as int, decimal, double, etc.</typeparam>
+        </member>
+        <member name="P:Eto.Forms.NumericMaskedTextStepper`1.Provider">
+            <summary>
+            Gets the numeric provider.
+            </summary>
+            <value>The masked text provider.</value>
+        </member>
+        <member name="P:Eto.Forms.NumericMaskedTextStepper`1.AllowSign">
+            <summary>
+            Gets or sets a value indicating whether the mask can accept a sign.
+            </summary>
+            <remarks>
+            This defaults to whether the type specified by <typeparamref name="T"/> allows negative values.
+            </remarks>
+            <value><c>true</c> to allow sign character; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.NumericMaskedTextStepper`1.AllowDecimal">
+            <summary>
+            Gets or sets a value indicating whether the mask can input a decimal.
+            </summary>
+            <remarks>
+            This defaults to whether the type specified by <typeparamref name="T"/> allows decimals, such as when
+            it is a decimal, double, or float.
+            </remarks>
+            <value><c>true</c> to allow decimal; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Eto.Forms.NumericMaskedTextStepper`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.NumericMaskedTextStepper`1"/> class.
+            </summary>
+        </member>
+        <member name="T:Eto.Forms.MaskedTextStepper`1">
+            <summary>
+            Masked text box that provides a value converted to/from text
+            </summary>
+            <remarks>
+            This is useful when the text can be converted to another type (e.g. DateTime, numeric, etc).
+            
+            The <see cref="P:Eto.Forms.MaskedTextStepper`1.Provider"/> specified for the control is responsible for converting the value.
+            </remarks>
+        </member>
+        <member name="E:Eto.Forms.MaskedTextStepper`1.ValueChanged">
+            <summary>
+            Event to handle when the <see cref="P:Eto.Forms.MaskedTextStepper`1.Value"/> property changes
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper`1.Provider">
+            <summary>
+            Gets or sets the provider for the text box
+            </summary>
+            <value>The provider.</value>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.MaskedTextStepper`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper`1.#ctor(Eto.Forms.IMaskedTextProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.MaskedTextStepper`1"/> class with the specified masked text provider.
+            </summary>
+            <param name="provider">Masked text provider to format the mask.</param>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper`1.Value">
+            <summary>
+            Gets or sets the translated value of the masked text.
+            </summary>
+            <value>The translated value.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper`1.ValueBinding">
+            <summary>
+            Gets a binding for the <see cref="P:Eto.Forms.MaskedTextStepper`1.Value"/> property.
+            </summary>
+            <value>The value binding.</value>
+        </member>
+        <member name="T:Eto.Forms.MaskedTextStepper">
+            <summary>
+            Text box with masking capabilities.
+            </summary>
+            <remarks>
+            This uses the <see cref="T:Eto.Forms.IMaskedTextProvider"/> as its interface to the mask.  
+            The mask can implement any format it wishes, including both fixed or variable length masks.
+            </remarks>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.SupportsInsert">
+            <summary>
+            Gets a cached value indicating the current platform supports getting the insert mode state.
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.ManualOverwriteMode">
+            <summary>
+            If the platform doesn't support global insert/overwrite mode, this stores an application-wide state of the insert mode
+            </summary>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.Provider">
+            <summary>
+            Gets or sets the masked text provider to specify the mask format.
+            </summary>
+            <value>The masked text provider.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.InsertMode">
+            <summary>
+            Gets or sets the mode for insertion. Use <see cref="P:Eto.Forms.MaskedTextStepper.IsOverwrite"/> to determine the current mode.
+            </summary>
+            <value>The desired insert mode.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.IsOverwrite">
+            <summary>
+            Gets a value indicating whether typing will overwrite text.
+            </summary>
+            <seealso cref="P:Eto.Forms.MaskedTextStepper.InsertMode"/> 
+            <value><c>true</c> if text will be overwritten; otherwise, <c>false</c> to insert text.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.ShowPromptOnFocus">
+            <summary>
+            Gets or sets a value indicating that the prompt characters should only be shown when the control has focus.
+            </summary>
+            <value><c>true</c> if to show the prompt only when focussed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.ShowPlaceholderWhenEmpty">
+            <summary>
+            Gets or sets a value indicating that the placeholder should be shown when the mask is empty and the control does
+            not have focus.
+            </summary>
+            <value><c>true</c> to show the placeholder when its value is empty; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.MaskedTextStepper"/> class.
+            </summary>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.#ctor(Eto.Forms.IMaskedTextProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eto.Forms.MaskedTextStepper"/> class with the specified masked text provider.
+            </summary>
+            <param name="provider">Masked text provider to specify the format of the mask.</param>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.UpdateText">
+            <summary>
+            Updates the text to the display text from the provider.
+            </summary>
+            <remarks>
+            Call this in a subclass when you want to update the text based on the state of the control.
+            When the <see cref="P:Eto.Forms.IMaskedTextProvider.IsEmpty"/> is true, it will set the text to null to show the placeholder text.
+            
+            Override this to perform other actions before or after the text of the control is updated.
+            </remarks>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.OnLoadComplete(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.Control.LoadComplete"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.OnGotFocus(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.Control.GotFocus"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.OnLostFocus(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.Control.LostFocus"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.OnTextChanging(Eto.Forms.TextChangingEventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.TextBox.TextChanging"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Eto.Forms.MaskedTextStepper.OnKeyDown(Eto.Forms.KeyEventArgs)">
+            <summary>
+            Raises the <see cref="E:Eto.Forms.Control.KeyDown"/> event.
+            </summary>
+            <param name="e">Key event arguments</param>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.Text">
+            <summary>
+            Gets or sets the text of the control including any mask characters.
+            </summary>
+            <value>The text content of the control.</value>
+        </member>
+        <member name="P:Eto.Forms.MaskedTextStepper.MaskCompleted">
+            <summary>
+            Gets a value indicating whether the mask is completed.
+            </summary>
+            <value><c>true</c> if mask completed; otherwise, <c>false</c>.</value>
         </member>
         <member name="T:Eto.NamespaceInfo">
             <summary>
@@ -32568,6 +33744,12 @@
             Handles the disposal of this widget
             </summary>
             <param name="disposing">True if the caller called <see cref="M:Eto.Widget.Dispose"/> manually, false if being called from a finalizer</param>
+        </member>
+        <member name="M:Eto.Widget.ToString">
+            <summary>
+            Gets a string that represents the current object with its ID if specified.
+            </summary>
+            <returns>A string value indicating the type and ID (if specified) of this widget.</returns>
         </member>
         <member name="T:Eto.WidgetHandler`1">
             <summary>
